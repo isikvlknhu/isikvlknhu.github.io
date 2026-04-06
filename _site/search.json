@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Yazılar",
     "section": "",
-    "text": "About this site"
+    "text": "İlk Yazım\n\n\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/ilk-yazi.html",
+    "href": "blog/ilk-yazi.html",
+    "title": "İlk Yazım",
+    "section": "",
+    "text": "Bu benim ilk akademik blog yazım."
   },
   {
     "objectID": "index.html",
@@ -21,17 +28,10 @@
     "text": "Ben Doç. Dr. Volkan Işık.\nÇalışma alanlarım: - Sosyal politika\n- İşgücü piyasaları\n- Sosyal girişimcilik\n- Yapay zeka ve girişimcilik\nBu sitede akademik çalışmalarımı ve yazılarımı paylaşıyorum."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Yazılar",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "İlk Yazım\n\n\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/ilk-yazi.html",
-    "href": "blog/ilk-yazi.html",
-    "title": "İlk Yazım",
-    "section": "",
-    "text": "Bu benim ilk akademik blog yazım."
+    "text": "About this site"
   }
 ]
