@@ -1,1 +1,38 @@
+---
+title: "CV"
+---
 
+## Education
+
+- PhD in Labour Economics  
+- MSc in Social Policy  
+
+---
+
+## Academic Positions
+
+- Hacettepe University – Associate Professor  
+
+---
+
+## Research Areas
+
+- Labour Economics  
+- Social Policy  
+- Social Entrepreneurship  
+
+---
+
+## Skills
+
+- R, Python  
+- Data Analysis  
+- Econometrics  
+
+---
+
+## Languages
+
+- Turkish (Native)  
+- English (Advanced)  
+- Spanish (A1)
