@@ -1,15 +1,57 @@
 ---
 title: "Volkan Işık"
+format: html
 ---
 
-## Hoş geldiniz
+<div style="display: flex; align-items: center; gap: 30px;">
 
-Ben Doç. Dr. Volkan Işık.  
+<img src="images/profile.jpg" width="180" style="border-radius: 50%;">
 
-Çalışma alanlarım:
-- Sosyal politika  
-- İşgücü piyasaları  
-- Sosyal girişimcilik  
-- Yapay zeka ve girişimcilik  
+<div>
 
-Bu sitede akademik çalışmalarımı ve yazılarımı paylaşıyorum.
+## Doç. Dr. Volkan Işık
+
+**Social Policy | Labour Economics | Social Entrepreneurship**
+
+Hacettepe Üniversitesi  
+Sosyal Bilimler MYO
+
+📧 volkan@example.com  
+🔗 LinkedIn | Google Scholar | ORCID
+
+</div>
+
+</div>
+
+---
+
+## About Me
+
+I am an academic specializing in **labour economics, social policy, and social entrepreneurship**.  
+My research focuses on:
+
+- Labour market dynamics  
+- Gender inequality and employment  
+- Social entrepreneurship ecosystems  
+- AI and future of work  
+
+---
+
+## Research Interests
+
+- Labour Economics  
+- Social Policy  
+- Social Entrepreneurship  
+- Artificial Intelligence and Work  
+
+---
+
+## Recent Posts
+
+- [İlk Yazım](blog.qmd)
+
+---
+
+## Contact
+
+You can reach me via email for academic collaboration and research inquiries.
