@@ -1,5 +1,30 @@
 ---
-title: "About"
+title: "Hakkımda"
 ---
 
-About this site
+## Doç. Dr. Volkan Işık
+
+Ben Hacettepe Üniversitesi'nde görev yapan bir akademisyenim.  
+Çalışma alanlarım:
+
+- Sosyal politika  
+- İşgücü piyasaları  
+- Sosyal girişimcilik  
+- Yapay zeka ve istihdam  
+
+---
+
+## Akademik İlgi Alanları
+
+Araştırmalarım özellikle aşağıdaki konulara odaklanmaktadır:
+
+- Kadın istihdamı ve eşitsizlikler  
+- Gençlerin işgücü piyasasına geçişi  
+- Sosyal ekonomi ve kooperatifler  
+- Dijital dönüşüm ve işgücü  
+
+---
+
+## Amaç
+
+Bu site, akademik çalışmalarımı ve düşüncelerimi paylaşmak amacıyla hazırlanmıştır.
