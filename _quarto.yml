@@ -1,6 +1,3 @@
-project:
-  type: website
-
 website:
   title: "Volkan Işık"
   navbar:
@@ -9,7 +6,7 @@ website:
         text: Ana Sayfa
       - href: about.qmd
         text: Hakkımda
-        - href: cv.qmd
+      - href: cv.qmd
         text: CV
       - href: blog.qmd
         text: Yazılar
@@ -17,5 +14,6 @@ website:
 format:
   html:
     theme: cosmo
+
 execute:
   freeze: auto
