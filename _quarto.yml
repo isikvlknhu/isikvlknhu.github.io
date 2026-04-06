@@ -9,6 +9,8 @@ website:
         text: Ana Sayfa
       - href: about.qmd
         text: Hakkımda
+        - href: cv.qmd
+        text: CV
       - href: blog.qmd
         text: Yazılar
 
