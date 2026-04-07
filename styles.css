@@ -1,1 +1,13 @@
 /* css styles */
+i.bi {
+  margin-right: 6px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
