@@ -1,15 +1,20 @@
+---
+title: ""
+format: html
+---
+
 <div style="display:flex; align-items:flex-start; gap:32px; flex-wrap:wrap;">
 
 <img src="images/profile.jpg" width="220" style="border-radius:50%; object-fit:cover;">
 
 <div>
 
-## Doç. Dr. Volkan Işık
+## Assoc. Prof. Dr. Volkan Işık
 
-**Social Policy | Labour Economics | Social Entrepreneurship**
+**Labour Economics | Social Policy | Social Entrepreneurship**
 
-Hacettepe Üniversitesi  
-Sosyal Bilimler MYO
+Hacettepe University  
+Vocational School of Social Sciences  
 
 📧 volkani@hacettepe.edu.tr  
 
@@ -26,23 +31,36 @@ Sosyal Bilimler MYO
 
 ## About Me
 
-I am an academic specializing in **labour economics, social policy, and social entrepreneurship**.
+I am an Associate Professor specializing in **labour economics, social policy, and social entrepreneurship**.  
+My research focuses on analysing labour market dynamics, designing inclusive employment policies, and understanding the transformation of work in the digital age.
 
-My research focuses on:
+---
 
-- Labour market dynamics
-- Gender inequality and employment
-- Social entrepreneurship ecosystems
-- AI and future of work  
+## Research Interests
+
+- Labour Market Analysis  
+- Gender Inequality and Employment  
+- Social Entrepreneurship Ecosystems  
+- Occupational Health and Safety  
+- Future of Work & Artificial Intelligence  
+
+---
+
+## Quick Links
+
+👉 [View Publications](./publications.html)  
+👉 [Download CV](./cv.html)  
 
 ---
 
 ## Recent Posts
 
-- [İlk Yazım](blog.qmd)
+- [First Blog Post](blog.qmd)
 
 ---
 
 ## Contact
 
-You can reach me via email for academic collaboration and research inquiries.
+I am open to academic collaborations, research partnerships, and consultancy opportunities.
+
+📧 volkani@hacettepe.edu.tr
