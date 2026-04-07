@@ -31,13 +31,29 @@ Yeni bölümler her Perşembe yayınlanmaktadır.
 ## 🎧 Son Bölümler
 
 ::: {=html}
-<div style="border-radius:16px; overflow:hidden; margin-top:20px;">
+<div style="display:flex; flex-direction:column; gap:20px; margin-top:20px;">
+
+  <!-- Son Bölüm -->
   <iframe style="border-radius:16px"
-    src="https://open.spotify.com/embed/show/0LPh5UFa62GnNYVXj2XQ2I?utm_source=generator"
-    width="100%" height="352" frameborder="0"
-    allowfullscreen=""
+    src="https://open.spotify.com/embed/episode/45QHoyYpvlJnW7bMlDNbJw"
+    width="100%" height="152" frameborder="0"
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
   </iframe>
+
+  <!-- Önceki -->
+  <iframe style="border-radius:16px"
+    src="https://open.spotify.com/embed/episode/5no9M5OdGdFSEXjf7OYh0i"
+    width="100%" height="152" frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+
+  <!-- Önceki -->
+  <iframe style="border-radius:16px"
+    src="https://open.spotify.com/embed/episode/5qbEOtu9wwVDAjerW5Kh40"
+    width="100%" height="152" frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+
 </div>
 :::
 
