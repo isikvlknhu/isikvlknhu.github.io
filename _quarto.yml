@@ -8,15 +8,15 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Ana Sayfa
+        text: Home
       - href: about.qmd
-        text: Hakkımda
+        text: About
       - href: cv.qmd
         text: CV
       - href: publications.qmd
-        text: Yayınlar
+        text: Publications
       - href: blog.qmd
-        text: Yazılar
+        text: Blog
 
 format:
   html:
