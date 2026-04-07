@@ -282,3 +282,15 @@ p, li {
 .navbar-nav .nav-link:hover {
   color: #2d4ea2 !important;
 }
+.quarto-listing .listing-title {
+  font-weight: 600;
+}
+
+.quarto-listing .listing-item {
+  margin-bottom: 0.8rem;
+}
+
+.quarto-listing .listing-date {
+  color: #666;
+  font-size: 0.92rem;
+}
