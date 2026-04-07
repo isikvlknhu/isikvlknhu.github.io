@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
@@ -208,12 +208,23 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs=" data-listing-date-sort="1775509200000" data-listing-file-modified-sort="1775595522858" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./blog/my-first-post.html" class="no-external">İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden Gözlemlerim</a>
 </h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs='); return false;">Sosyal Girişimcilik</div>
+
+</div>
 <div class="delink listing-description"><a href="./blog/my-first-post.html" class="no-external">
 <p>2024 Haziran–Eylül döneminde İspanya’da yürüttüğüm gözlem ve değerlendirmeler ışığında sosyal girişimcilik ekosistemine dair notlar.</p>
 </a></div>
