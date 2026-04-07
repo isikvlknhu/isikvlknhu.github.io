@@ -123,7 +123,14 @@
     "href": "index.html#recent-posts",
     "title": "",
     "section": "Recent Posts",
-    "text": "Recent Posts\n\ncontents: blog sort: “date desc” type: default fields: [title, date] max-items: 5"
+    "text": "Recent Posts"
+  },
+  {
+    "objectID": "index.html#recent-posts-1",
+    "href": "index.html#recent-posts-1",
+    "title": "",
+    "section": "📝 Recent Posts",
+    "text": "📝 Recent Posts\n\ncontents: blog sort: “date desc” type: default fields: [title, date] max-items: 5"
   },
   {
     "objectID": "publications.html",
