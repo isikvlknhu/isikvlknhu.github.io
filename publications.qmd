@@ -3,8 +3,6 @@ title: "Yayınlar"
 format: html
 ---
 
-## Yayınlar
-
 <div id="pub-list">Yayınlar yükleniyor...</div>
 
 <script>
@@ -18,14 +16,14 @@ async function loadPublications() {
     }
 
     const data = await response.json();
-    const groups = data.group || [];
+    const groups = data.group || data["activities-summary"]?.works?.group || [];
 
     if (groups.length === 0) {
       container.innerHTML = "<p>Henüz yayın bulunamadı.</p>";
       return;
     }
 
-    let html = "<ol>";
+    let html = '<div class="pub-wrapper">';
 
     groups.forEach(group => {
       const work = group["work-summary"]?.[0];
@@ -34,11 +32,11 @@ async function loadPublications() {
       const title = work.title?.title?.value || "Başlıksız kayıt";
       const journal = work["journal-title"]?.value || "";
       const year = work["publication-date"]?.year?.value || "";
-      const type = work.type || "";
+      const type = (work.type || "").replaceAll("-", " ");
       const extIds = work["external-ids"]?.["external-id"] || [];
 
       let doiLink = "";
-      let urlLink = "";
+      let recordLink = "";
 
       extIds.forEach(id => {
         const idType = (id["external-id-type"] || "").toLowerCase();
@@ -46,25 +44,31 @@ async function loadPublications() {
         const idUrl = id["external-id-url"]?.value || "";
 
         if (idType === "doi" && idValue) {
-          doiLink = ` <a href="https://doi.org/${idValue}" target="_blank">DOI</a>`;
+          doiLink = `<a class="pub-btn" href="https://doi.org/${idValue}" target="_blank" rel="noopener noreferrer">DOI</a>`;
         }
 
         if (idUrl) {
-          urlLink = ` <a href="${idUrl}" target="_blank">Link</a>`;
+          recordLink = `<a class="pub-btn pub-btn-secondary" href="${idUrl}" target="_blank" rel="noopener noreferrer">Kayıt</a>`;
         }
       });
 
       html += `
-        <li style="margin-bottom: 1rem;">
-          <strong>${title}</strong><br>
-          ${journal ? `<em>${journal}</em><br>` : ""}
-          ${year ? `${year}` : ""} ${type ? `• ${type}` : ""}
-          ${doiLink}${urlLink}
-        </li>
+        <div class="pub-item">
+          <div class="pub-title">${title}</div>
+          ${journal ? `<div class="pub-journal">${journal}</div>` : ""}
+          <div class="pub-meta">
+            ${year ? `<span class="pub-badge">${year}</span>` : ""}
+            ${type ? `<span class="pub-badge pub-badge-light">${type}</span>` : ""}
+          </div>
+          <div class="pub-links">
+            ${doiLink}
+            ${recordLink}
+          </div>
+        </div>
       `;
     });
 
-    html += "</ol>";
+    html += "</div>";
     container.innerHTML = html;
 
   } catch (error) {
@@ -74,4 +78,3 @@ async function loadPublications() {
 
 loadPublications();
 </script>
-<!-- trigger rebuild -->
