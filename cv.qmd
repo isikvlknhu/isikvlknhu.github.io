@@ -3,98 +3,213 @@ title: "CV"
 format: html
 ---
 
-## 👤 Assoc. Prof. Dr. Volkan Işık
+## Assoc. Prof. Dr. Volkan Işık
 
-**Social Policy | Labour Economics | Social Entrepreneurship**
+**Labour Economics | Social Policy | Social Entrepreneurship**
 
-Hacettepe University – Vocational School of Social Sciences  
+Hacettepe University  
+Vocational School of Social Sciences  
+Ankara, Türkiye  
+
 📧 volkani@hacettepe.edu.tr  
+🌐 [ORCID](https://orcid.org/0000-0003-3690-969X) | [Web of Science](https://www.webofscience.com/wos/author/record/ADT-9246-2022) | [LinkedIn](https://www.linkedin.com/in/doç-dr-volkan-ışık-79150bbb/) | [AVESIS](https://avesis.hacettepe.edu.tr/volkani)
 
 ---
 
-## 🎓 Education
+## Profile
 
-- **Post-Doc Research**, Universitat Politècnica de València (Spain)  
-  *2024*  
-  Social Entrepreneurship Ecosystem – Valencia Case  
+Associate Professor with more than **18 years of academic and professional experience** in labour economics, social policy, occupational health and safety, labour law, social entrepreneurship, and labour market analysis. Experienced in teaching, academic research, EU-funded projects, TÜBİTAK-supported research, impact analysis, training design, and policy-oriented reporting.  
 
-- **Ph.D.**, Gazi University  
-  Labour Economics and Industrial Relations  
-  *2009–2016*
-
-- **M.A.**, Gazi University  
-  *2006–2009*
-
-- **B.S.**, Cumhuriyet University  
-  *2001–2005*
-
-- **Associate Degree**, Anadolu University (OHS)  
-  *2021–2023*
+My work combines **academic research, field-based analysis, and applied project experience**, with a particular focus on labour market transitions, disadvantaged groups, social entrepreneurship ecosystems, and the future of work.
 
 ---
 
-## 🏛 Academic Positions
+## Current Position
 
-- **Associate Professor**, Hacettepe University *(2019–Present)*  
-- **Deputy Manager**, Vocational School *(2022–Present)*  
-- **Deputy Manager**, Career Center *(2024–Present)*  
-- **Head of Department**, Marketing *(2019–2022)*  
-
----
-
-## 🌍 Research & Professional Experience
-
-- **Post-Doc Visiting Researcher**  
-  INGENIO (CSIC-UPV), Spain *(2024)*  
-
-- **Team Leader**  
-  TRB2 Regional Development Project *(2019–2020)*  
-
-- **Senior Expert (EU Projects)**  
-  İŞKUR & EU Projects *(2022–2024)*  
-
-- **Trainer & Expert**  
-  Labour Law, OHS, Social Dialogue Projects *(2016–2017)*  
+- **Associate Professor**, Hacettepe University *(since January 2019)*
+- **Deputy Manager**, Vocational School of Social Sciences *(2022–Present)*
+- **Deputy Manager**, Career Development Application and Research Center *(2024–Present)*
 
 ---
 
-## 📊 Research Areas
+## Education
 
-- Labour market dynamics  
-- Gender inequality  
-- Social entrepreneurship ecosystems  
-- Occupational health and safety  
-- AI and future of work  
+### Post-Doctoral Research
+**Universitat Politècnica de València, Spain**  
+*June 2024 – October 2024*  
+TÜBİTAK 2219 Scholarship Program  
+Research topic: *Strengthening the Social Entrepreneurship Ecosystem: Strategic Recommendations for Turkey through the Case of Valencia, Spain*
+
+### Ph.D.
+**Gazi University, Türkiye**  
+*2009 – 2016*  
+Field: Labour Economics and Industrial Relations  
+Dissertation: *Analysis of the Social Enterprises Employment in Turkey within the Framework of the Third Sector Employment and the Changing Meaning of Labour: Ashoka Example*
+
+### M.A.
+**Gazi University, Türkiye**  
+*2006 – 2009*  
+Field: Labour Economics and Industrial Relations
+
+### B.S.
+**Cumhuriyet University, Türkiye**  
+*2001 – 2005*  
+Field: Labour Economics and Industrial Relations
+
+### Associate Degree
+**Anadolu University, Türkiye**  
+*2021 – 2023*  
+Field: Occupational Health and Safety
 
 ---
 
-## 🧠 Skills
+## Academic and Administrative Experience
 
-- Academic writing & reporting  
+### Hacettepe University
+**Associate Professor**  
+*2019 – Present*  
+Vocational School of Social Sciences
+
+### Hacettepe University
+**Head of Department, Marketing**  
+*2019 – 2022*
+
+### Hacettepe University
+**Board Member, Vocational School of Social Sciences**  
+*2019 – Present*
+
+### Hacettepe University
+**Deputy Manager, Career Development Application and Research Center**  
+*2024 – Present*
+
+### Aksaray University
+**Assistant Professor**  
+*2016 – 2018*
+
+### Gazi University
+**Research and Teaching Assistant**  
+*2008 – 2016*
+
+### Aksaray University
+**Research and Teaching Assistant**  
+*2007 – 2008*
+
+### Aksaray Provincial Employment and Vocational Education Board
+**Board Member**  
+*2017 – 2018*
+
+---
+
+## Research Interests
+
+- Labour Market Analysis  
+- Social Policy  
+- Social Entrepreneurship  
+- Occupational Health and Safety  
+- Labour Law and Employment Relations  
+- Gender Inequality and Employment  
+- Disadvantaged Groups and Inclusive Labour Markets  
+- Future of Work and Artificial Intelligence  
+
+---
+
+## Areas of Expertise
+
+- Social Entrepreneurship and Business Model Development  
+- Labour Law and Employment Regulations  
+- Social Security Systems and Social Insurance  
+- Occupational Health and Safety  
+- Human Resource Management and Organizational Processes  
+- Labour Market Analysis and Data-Driven Decision Making  
+
+---
+
+## Selected Project Experience
+
+### Post-Doc Visiting Researcher
+**INGENIO CSIC – Universitat Politècnica de València**  
+*2024*  
+Research on social entrepreneurship ecosystems and model development.
+
+### Senior Non-Key Expert
+**EU Project (İŞKUR)**  
+*2024*  
+Training delivery on migrants and long-term unemployed; impact analysis.
+
+### Senior Non-Key Expert
+**KfW and Ministry of Education (MEB)**  
+*2024*  
+Interview design, fieldwork, analysis of findings, final report preparation.
+
+### Senior Non-Key Expert
+**EU Project (İŞKUR)**  
+*2022 – 2023*  
+Research and reporting on evidence-based employment services for disadvantaged groups, especially migrants.
+
+### Team Leader
+**Eastern Anatolia Development Agency (DAKA)**  
+*2019 – 2020*  
+Project for harmonization of vocational education and labour market in the TRB2 Region.
+
+### Junior / Senior Non-Key Expert
+**EU Project (HAK-İŞ – MÜSİAD)**  
+*2016 – 2017*  
+Training on labour law, OHS, social dialogue, industrial relations, productivity, innovation, and atypical work.
+
+### Project Scholar
+**TÜBİTAK Project (Gazi University – İŞKUR)**  
+*2008 – 2011*  
+Labour market information collection, analysis, questionnaire design, and reporting.
+
+---
+
+## Publications
+
+For the complete and updated publication list, please visit:  
+👉 [Publications](./publications.html)
+
+---
+
+## Books
+
+- *Çalışmanın Değişen Anlamı ve Sosyal Girişim*, Ekin Basım Yayın, 2016.  
+- *Üç Bileşenli Eğitim İstihdam Dengesi Modeli Kastamonu Örneği*, SETA Yayınları, 2020.  
+- *Mesleki Eğitimin İş Piyasası ile Uyumlaştırılmasında İhtiyaç Analizi ve Öz Değerlendirme Modeli*, SETA Yayınları, 2019.  
+- *İşgücü Piyasası Mesleki Eğitim Uyumunda Bölgesel Markalaşma Modeli*, SETA Yayınları, 2020.  
+- *Sosyal Girişimcilik*, Ekin Yayınları, 2021.  
+
+---
+
+## Editorial Role
+
+- **Editor**, *Hacettepe University Journal of Social Sciences*
+
+---
+
+## Languages
+
+- **Turkish** — Native  
+- **English** — C1/C2  
+- **Spanish** — A1/A2  
+
+---
+
+## Professional Memberships
+
+- Employment Research Association  
+- Social Policy Research Association  
+- Buğday Association for Supporting Ecological Living  
+- STAR – Social, Humanities and Basic Sciences Accreditation and Rating Association *(Member and Evaluator)*
+
+---
+
+## Skills
+
+- Academic writing and reporting  
 - Impact analysis  
-- Training design & delivery  
-- SPSS & data analysis  
-- Project management  
-
----
-
-## 🌐 Languages
-
-- Turkish (Native)  
-- English (C1–C2)  
-- Spanish (A1–A2)  
-
----
-
-## 📚 Publications
-
-👉 For WOS and Scopus Publications: [Publications](./publications.html)
-
----
-
-## 📌 Additional Information
-
-- 18+ years academic experience  
-- EU & TÜBİTAK project experience  
-- Trainer for trade unions & public institutions  
-- Editor: Hacettepe University Journal of Social Sciences  
+- Training design and delivery  
+- Workshop moderation  
+- Labour market research  
+- SPSS and Microsoft Office  
+- Teamwork and multicultural collaboration  
+- Project-based research and policy reporting
