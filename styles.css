@@ -924,3 +924,13 @@ a.listing-category[href*="%C4%B0spanya%20Notlar%C4%B1"] {
   color: #b42318 !important;
   border-color: #f4b4b4;
 }
+/* SPOTIFY EMBED */
+
+iframe {
+  border-radius: 16px;
+}
+
+/* Podcast section spacing */
+h2 {
+  margin-top: 40px;
+}
