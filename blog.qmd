@@ -1,5 +1,5 @@
 ---
-title: "Yazılar"
+title: "Blog"
 listing:
   contents: blog
   sort: "date desc"
