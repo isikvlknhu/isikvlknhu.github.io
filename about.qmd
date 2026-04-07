@@ -1,30 +1,59 @@
 ---
-title: "Hakkımda"
+title: "About"
+format: html
 ---
 
-## Doç. Dr. Volkan Işık
+## 👤 Assoc. Prof. Dr. Volkan Işık
 
-Ben Hacettepe Üniversitesi'nde görev yapan bir akademisyenim.  
-Çalışma alanlarım:
+I am an academic specializing in **labour economics, social policy, and social entrepreneurship**. My work focuses on analysing labour market dynamics, designing inclusive employment policies, and developing sustainable socio-economic models.
 
-- Sosyal politika  
-- İşgücü piyasaları  
-- Sosyal girişimcilik  
-- Yapay zeka ve istihdam  
+I have over **18 years of academic and professional experience**, including research, teaching, and project-based work with **EU-funded programs, TÜBİTAK, and regional development agencies**.
 
----
-
-## Akademik İlgi Alanları
-
-Araştırmalarım özellikle aşağıdaki konulara odaklanmaktadır:
-
-- Kadın istihdamı ve eşitsizlikler  
-- Gençlerin işgücü piyasasına geçişi  
-- Sosyal ekonomi ve kooperatifler  
-- Dijital dönüşüm ve işgücü  
+My research primarily addresses:
+- Labour market transitions and employment policies  
+- Social entrepreneurship ecosystems  
+- Occupational health and safety  
+- Disadvantaged groups and inclusive labour markets  
+- The future of work and artificial intelligence  
 
 ---
 
-## Amaç
+## 🎯 Areas of Expertise
 
-Bu site, akademik çalışmalarımı ve düşüncelerimi paylaşmak amacıyla hazırlanmıştır.
+### 📌 Social Entrepreneurship & Business Model Development
+Design and analysis of impact-driven ventures, sustainable business models, and social entrepreneurship ecosystems.
+
+### ⚖️ Labour Law and Employment Regulations
+Employment contracts, termination processes, employer obligations, and practical legal frameworks governing labour relations.
+
+### 🛡️ Social Security Systems
+Structure and functioning of social insurance schemes, public pension systems, and institutional applications.
+
+### 🦺 Occupational Health and Safety (OHS)
+Workplace accidents, occupational diseases, risk assessment, and regulatory frameworks (including OHS legislation).
+
+### 👥 Human Resource Management
+Recruitment, performance management, compensation systems, motivation, job analysis, and organizational processes.
+
+### 📊 Labour Market Analysis & Data-Driven Decision Making
+Quantitative and qualitative analysis of labour markets, policy evaluation, and evidence-based decision processes.
+
+---
+
+## 🌍 Academic and Professional Approach
+
+My work integrates:
+- **Academic rigor**
+- **Policy relevance**
+- **Applied research**
+- **Impact-oriented analysis**
+
+I aim to bridge the gap between **theoretical knowledge and real-world applications**, producing insights that support policymakers, institutions, and organizations.
+
+---
+
+## 🤝 Collaboration
+
+I am open to **academic collaborations, research partnerships, and consultancy projects**.
+
+📧 volkani@hacettepe.edu.tr
