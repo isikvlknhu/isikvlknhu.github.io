@@ -666,3 +666,167 @@ p, li {
     padding: 18px;
   }
 }
+/* SITE BACKGROUND + GENERAL LOOK */
+
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #f3f6fb 100%);
+  color: #1f2937;
+}
+
+main.content,
+.content,
+.page-layout-article,
+.page-columns {
+  position: relative;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#quarto-content,
+.quarto-container,
+.page-layout-full,
+.page-layout-article {
+  background: transparent;
+}
+
+h1, h2, h3, h4 {
+  color: #111827;
+}
+
+p, li {
+  color: #374151;
+}
+.hero-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #dbe4f0;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.hero-content h1 {
+  color: #1f2937;
+}
+
+.hero-subtitle {
+  color: #2d4ea2;
+  font-weight: 700;
+}
+
+.hero-affiliation,
+.hero-email {
+  color: #4b5563;
+}
+/* RECENT POSTS CARD STYLE */
+
+#listing-recent-posts .listing-item {
+  margin-bottom: 18px;
+  border-bottom: none;
+}
+
+#listing-recent-posts .quarto-post {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#listing-recent-posts .quarto-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
+}
+
+#listing-recent-posts .listing-title {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  font-weight: 750;
+  margin-bottom: 8px;
+}
+
+#listing-recent-posts .listing-description {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+#listing-recent-posts .listing-date {
+  color: #6b7280;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+#listing-recent-posts a {
+  text-decoration: none;
+}
+
+#listing-recent-posts a:hover {
+  text-decoration: none;
+}
+/* BLOG PAGE CARD STYLE */
+
+.quarto-listing-container-default {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.quarto-listing .listing-item {
+  margin-bottom: 22px;
+  border-bottom: none;
+  padding: 0;
+}
+
+.quarto-listing .quarto-post {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quarto-listing .quarto-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.quarto-listing .listing-title {
+  font-size: 1.6rem;
+  line-height: 1.22;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.quarto-listing .listing-description {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: #4b5563;
+  max-width: 760px;
+}
+
+.quarto-listing .listing-date {
+  color: #6b7280;
+  font-size: 0.94rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-top: 8px;
+}
+
+.quarto-listing a {
+  text-decoration: none;
+}
+
+.quarto-listing a:hover {
+  text-decoration: none;
+}
+
+.page-title,
+.quarto-title-block .title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #111827;
+}
