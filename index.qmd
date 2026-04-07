@@ -3,6 +3,8 @@ title: ""
 format: html
 ---
 
+## 👋 Welcome
+
 <div class="hero-section">
   <div class="hero-image">
     <img src="images/profile.jpg" alt="Volkan Işık">
@@ -37,7 +39,7 @@ format: html
   </div>
 </div>
 
-## Recent Posts
+## 📝 Recent Posts
 
 ::: {.listing}
 contents: blog
