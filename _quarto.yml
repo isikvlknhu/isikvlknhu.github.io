@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - publications.json
 
 website:
   title: ""
