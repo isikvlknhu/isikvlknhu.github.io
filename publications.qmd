@@ -74,3 +74,4 @@ async function loadPublications() {
 
 loadPublications();
 </script>
+<!-- trigger rebuild -->
