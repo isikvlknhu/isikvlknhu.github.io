@@ -3,15 +3,12 @@ title: ""
 format: html
 ---
 
-::: {=html}
 <div class="hero-section">
-
   <div class="hero-image">
     <img src="images/profile.jpg" alt="Volkan Işık">
   </div>
 
   <div class="hero-content">
-
     <h1>Assoc. Prof. Dr. Volkan Işık</h1>
 
     <p class="hero-subtitle">
@@ -47,11 +44,8 @@ format: html
       <a class="main-btn" href="./cv.html">View CV</a>
       <a class="secondary-btn" href="./publications.html">Publications</a>
     </div>
-
   </div>
-
 </div>
-:::
 
 ## Recent Posts
 
