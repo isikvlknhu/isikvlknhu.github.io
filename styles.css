@@ -570,3 +570,13 @@ p, li {
   font-weight: 800;
   margin-bottom: 18px;
 }
+/* SINGLE BLOG POST PAGE */
+
+.blog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
