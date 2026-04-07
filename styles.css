@@ -248,3 +248,19 @@ h3 {
     font-size: 1.6rem;
   }
 }
+/* CV page improvements */
+
+h2 {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.35rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1.2rem;
+  color: #2d4ea2;
+}
+
+p, li {
+  line-height: 1.65;
+}
