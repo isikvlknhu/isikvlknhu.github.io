@@ -1,7 +1,0 @@
----
-title: "İlk Yazım"
-date: 2026-04-06
-categories: [genel]
----
-
-Bu benim ilk akademik blog yazım.
