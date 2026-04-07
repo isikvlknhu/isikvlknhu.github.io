@@ -51,7 +51,7 @@ Vocational School of Social Sciences
 ::: {.listing}
 contents: blog
 sort: "date desc"
-type: default
-fields: title, date
-max-items: 5
+type: grid
+fields: title, date, categories
+max-items: 4
 :::
