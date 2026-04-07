@@ -11,3 +11,77 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.pub-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.pub-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.pub-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 0.4rem;
+}
+
+.pub-journal {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+.pub-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+
+.pub-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #eef3ff;
+  color: #2d4ea2;
+}
+
+.pub-badge-light {
+  background: #f3f4f6;
+  color: #444;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  background: #2d4ea2;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pub-btn:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.pub-btn-secondary {
+  background: #6b7280;
+}
