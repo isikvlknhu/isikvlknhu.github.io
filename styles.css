@@ -666,3 +666,37 @@ p, li {
     padding: 18px;
   }
 }
+/* SITE BACKGROUND + GENERAL LOOK */
+
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #f3f6fb 100%);
+  color: #1f2937;
+}
+
+main.content,
+.content,
+.page-layout-article,
+.page-columns {
+  position: relative;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#quarto-content,
+.quarto-container,
+.page-layout-full,
+.page-layout-article {
+  background: transparent;
+}
+
+h1, h2, h3, h4 {
+  color: #111827;
+}
+
+p, li {
+  color: #374151;
+}
