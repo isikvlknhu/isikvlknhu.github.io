@@ -9,10 +9,10 @@ website:
         text: Ana Sayfa
       - href: about.qmd
         text: Hakkımda
-        - href: publications.qmd
-        text: Yayınlar
       - href: cv.qmd
         text: CV
+      - href: publications.qmd
+        text: Yayınlar
       - href: blog.qmd
         text: Yazılar
 
