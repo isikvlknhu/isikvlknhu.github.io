@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Volkan Işık"
+  title: ""
   navbar:
     left:
       - href: index.qmd
