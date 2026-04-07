@@ -52,17 +52,25 @@ extIds.forEach(id => {
   }
 });
 
+// OA kontrolü (basit heuristic)
+const isOpenAccess =
+  recordUrl.includes("open") ||
+  recordUrl.includes("pdf") ||
+  recordUrl.includes("handle") ||
+  recordUrl.includes("researchgate");
+
 // link oluşturma
 let linksHtml = "";
 
-// Eğer DOI varsa ve record ile aynı değilse
+// DOI varsa (ve aynı değilse)
 if (doiUrl && doiUrl !== recordUrl) {
   linksHtml += `<a class="pub-btn" href="${doiUrl}" target="_blank">DOI</a>`;
 }
 
-// Eğer record varsa → Full Text olarak göster
+// record link varsa
 if (recordUrl) {
-  linksHtml += `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank">Full Text</a>`;
+  const label = isOpenAccess ? "Open Access" : "View Article";
+  linksHtml += `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank">${label}</a>`;
 }
 
       extIds.forEach(id => {
