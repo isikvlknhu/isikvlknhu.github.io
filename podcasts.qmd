@@ -1,0 +1,33 @@
+---
+title: "My Podcasts"
+format: html
+---
+
+::: {.hero-section}
+
+::: {.hero-content}
+
+# 🎙️ Volkan Işık ile İnovatif Sohbetler
+
+::: {.hero-subtitle}
+Toplumsal dönüşümü şekillendiren fikirler üzerine
+:::
+
+Bu podcastte, toplumsal yaşamı etkileyen yenilikçi fikirleri ele alıyorum.  
+
+Sosyal girişimcilik, sosyal sorumluluk, sosyal inovasyon ve yenilikçi sosyal politikalar üzerine düşüncelerimi paylaşıyor, güncel gelişmeleri değerlendiriyorum.  
+
+Zaman zaman alanında uzman konuklarla gerçekleştirdiğim söyleşilerle farklı bakış açılarını da programa dahil ediyorum.  
+
+Yeni bölümler her Perşembe yayınlanmaktadır.
+
+::: {.hero-buttons}
+[🎧 Spotify'da Dinle](https://open.spotify.com/show/0LPh5UFa62GnNYVXj2XQ2I){target="_blank" .main-btn}
+:::
+
+:::
+:::
+
+## 📌 Podcast Hakkında
+
+Bu sayfa üzerinden podcast bölümlerine ve içeriklere erişebilirsiniz.
