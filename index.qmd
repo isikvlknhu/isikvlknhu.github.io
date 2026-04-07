@@ -44,3 +44,14 @@ Vocational School of Social Sciences
 </div>
 
 :::
+---
+
+## Recent Posts
+
+::: {.listing}
+contents: blog
+sort: "date desc"
+type: default
+fields: title, date
+max-items: 5
+:::
