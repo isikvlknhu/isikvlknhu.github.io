@@ -2,6 +2,14 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/my-first-post.html",
+      "/blog/ilk-yazi.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/my-first-post.html",
       "/blog/ilk-yazi.html"
     ]
   }
