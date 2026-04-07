@@ -294,3 +294,15 @@ p, li {
   color: #666;
   font-size: 0.92rem;
 }
+/* BLOG POST STYLE */
+
+.blog-post {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+/* (devamını aynen yapıştır — sana verdiğim style bloğu) */
