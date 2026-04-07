@@ -1,9 +1,9 @@
 ---
-title: "Yayınlar"
+title: "Publications"
 format: html
 ---
 
-<div id="pub-list">Yayınlar yükleniyor...</div>
+<div id="pub-list">Downloading...</div>
 
 <script>
 async function loadPublications() {
