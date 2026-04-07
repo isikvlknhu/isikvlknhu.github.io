@@ -4,19 +4,20 @@ project:
     - publications.json
 
 website:
-  title: ""
+  title: "Volkan Işık"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
-      - href: cv.qmd
-        text: CV
-      - href: publications.qmd
-        text: Publications
       - href: blog.qmd
         text: Blog
+      - href: publications.qmd
+        text: Publications
+      - href: cv.qmd
+        text: CV
+      - href: podcasts.qmd
+        text: My Podcasts
+        
 
 format:
   html:
