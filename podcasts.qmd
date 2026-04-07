@@ -28,6 +28,19 @@ Yeni bölümler her Perşembe yayınlanmaktadır.
 :::
 :::
 
+## 🎧 Son Bölümler
+
+::: {=html}
+<div style="border-radius:16px; overflow:hidden; margin-top:20px;">
+  <iframe style="border-radius:16px"
+    src="https://open.spotify.com/embed/show/0LPh5UFa62GnNYVXj2XQ2I?utm_source=generator"
+    width="100%" height="352" frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</div>
+:::
+
 ## 📌 Podcast Hakkında
 
 Bu sayfa üzerinden podcast bölümlerine ve içeriklere erişebilirsiniz.
