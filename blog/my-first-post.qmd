@@ -5,160 +5,69 @@ categories:
   - Sosyal Girişimcilik
 format: html
 ---
-<article class="blog-post">
-  <header class="blog-hero">
-    <div class="blog-hero-content">
-      <span class="blog-category">Sosyal Girişimcilik</span>
-      <h1>İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden Gözlemlerim</h1>
-      <p class="blog-subtitle">
-        Sosyal girişimcilik İspanya’da yalnızca bireysel inisiyatiflerle değil, sosyal ekonomi,
-        kooperatifçilik kültürü ve kurumsal iş birlikleriyle birlikte gelişen güçlü bir yapı sunuyor.
-      </p>
-    </div>
-  </header>
 
-  <div class="blog-meta">
-    <span>Yazar: Doç. Dr. Volkan Işık</span>
-    <span>Tarih: Nisan 2026</span>
-    <span>Anahtar Kelimeler: İspanya’da sosyal girişimcilik, sosyal ekonomi, kooperatifler, sosyal girişim ekosistemi</span>
-  </div>
+2024 Haziran–Eylül ayları arasında, TÜBİTAK 2219 Yurtdışı Doktora Sonrası Araştırma Burs Programı kapsamında İspanya’da yürüttüğüm çalışma boyunca sosyal girişimcilik ekosistemini yerinde inceleme fırsatı buldum. Bu yazı, o süreçte edindiğim gözlemleri, görüşmeleri ve değerlendirmeleri yansıtmaktadır.
 
-  <section class="blog-content">
-    <p class="lead-text">
-      2024 Haziran–Eylül ayları arasında, TÜBİTAK 2219 Yurtdışı Doktora Sonrası Araştırma Burs Programı kapsamında
-      İspanya’da yürüttüğüm çalışma boyunca sosyal girişimcilik ekosistemini yerinde inceleme fırsatı buldum.
-      Bu yazı, o süreçte edindiğim gözlemleri, görüşmeleri ve değerlendirmeleri yansıtmaktadır.
-    </p>
+## İspanya’da sosyal girişimcilik ne anlama geliyor?
 
-    <figure class="inline-image">
-      <img src="images/spain-social-economy.jpg" alt="İspanya'da sosyal ekonomi ve sosyal girişimcilik ekosistemini temsil eden görsel">
-      <figcaption>İspanya’da sosyal girişimcilik çoğu zaman sosyal ekonomi yaklaşımı içinde ele alınıyor.</figcaption>
-    </figure>
+İspanya’da sosyal girişimcilik, Türkiye’de çoğu zaman düşündüğümüzden daha farklı bir çerçevede ilerliyor. Burada öne çıkan kavram doğrudan “sosyal girişimcilik” değil, daha çok “sosyal ekonomi” oluyor. Bu nedenle sosyal girişimler; kooperatifler, vakıflar, dernekler, iş entegrasyon şirketleri ve benzeri yapılarla birlikte daha geniş bir alan içinde değerlendiriliyor.
 
-    <h2>İspanya’da sosyal girişimcilik ne anlama geliyor?</h2>
-    <p>
-      İspanya’da sosyal girişimcilik, Türkiye’de çoğu zaman düşündüğümüzden daha farklı bir çerçevede ilerliyor.
-      Burada öne çıkan kavram doğrudan “sosyal girişimcilik” değil, daha çok “sosyal ekonomi” oluyor.
-      Bu nedenle sosyal girişimler; kooperatifler, vakıflar, dernekler, iş entegrasyon şirketleri ve benzeri yapılarla
-      birlikte daha geniş bir alan içinde değerlendiriliyor.
-    </p>
+> İspanya’da sosyal girişimcilik yalnızca iyi niyetli bireysel çabalarla değil, güçlü bir hukuki zemin, dayanışma kültürü ve kurumsal iş birlikleriyle besleniyor.
 
-    <div class="highlight-box">
-      <strong>En dikkat çekici nokta:</strong>
-      İspanya’da sosyal girişimcilik yalnızca iyi niyetli bireysel çabalarla değil, güçlü bir hukuki zemin,
-      dayanışma kültürü ve kurumsal iş birlikleriyle besleniyor.
-    </div>
+## Neden İspanya dikkat çekici bir örnek?
 
-    <h2>Neden İspanya dikkat çekici bir örnek?</h2>
-    <p>
-      İspanya, sosyal ekonomi alanında Avrupa’daki en kurumsallaşmış örneklerden biri. Özellikle 2011 yılında kabul edilen
-      yasal çerçeve, bu alandaki çok sayıda yapıyı ortak bir zeminde buluşturuyor. Bu da sosyal girişimlerin yalnızca
-      proje bazlı değil, daha kalıcı ve sürdürülebilir bir yapıya kavuşmasına katkı sağlıyor.
-    </p>
+İspanya, sosyal ekonomi alanında Avrupa’daki en kurumsallaşmış örneklerden biri. Özellikle 2011 yılında kabul edilen yasal çerçeve, bu alandaki çok sayıda yapıyı ortak bir zeminde buluşturuyor. Bu da sosyal girişimlerin yalnızca proje bazlı değil, daha kalıcı ve sürdürülebilir bir yapıya kavuşmasına katkı sağlıyor.
 
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Kooperatifçilik Geleneği</h3>
-        <p>İspanya’da sosyal girişimcilik kültürü, güçlü kooperatifçilik ve dayanışma geçmişi üzerinde yükseliyor.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Yasal Çerçeve</h3>
-        <p>Sosyal ekonomi odaklı yasal yapı, farklı örgütlenme biçimlerine kurumsal meşruiyet kazandırıyor.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Çok Aktörlü Yapı</h3>
-        <p>Üniversiteler, STK’lar, kamu kurumları ve özel sektör aynı ekosistem içinde etkileşim kuruyor.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Sürdürülebilirlik Arayışı</h3>
-        <p>Sosyal etki ile ekonomik faaliyet arasında denge kurma çabası sistemin merkezinde yer alıyor.</p>
-      </div>
-    </div>
+### Öne çıkan yönler
 
-    <h2>Ekosistemin temel bileşenleri</h2>
-    <p>
-      İspanya’daki sosyal girişimcilik yapısını anlamak için yalnızca girişimcilere bakmak yeterli değil.
-      Gözlemlediğim kadarıyla bu ekosistem birkaç temel sütun üzerinde yükseliyor:
-    </p>
+- **Kooperatifçilik geleneği:** Sosyal girişimcilik kültürü güçlü bir dayanışma geçmişi üzerinde yükseliyor.
+- **Yasal çerçeve:** Sosyal ekonomi odaklı yapı, farklı örgütlenme biçimlerine kurumsal meşruiyet kazandırıyor.
+- **Çok aktörlü yapı:** Üniversiteler, STK’lar, kamu kurumları ve özel sektör aynı ekosistem içinde etkileşim kuruyor.
+- **Sürdürülebilirlik arayışı:** Sosyal etki ile ekonomik faaliyet arasında denge kurma çabası sistemin merkezinde yer alıyor.
 
-    <div class="key-points">
-      <ul>
-        <li><strong>Sosyal girişimciler:</strong> Toplumsal ya da çevresel sorunları çözmek için ekonomik araçları kullanan aktörler.</li>
-        <li><strong>Kültür:</strong> Kooperatifçilik, dayanışma ve sosyal fayda odaklı çalışma anlayışı.</li>
-        <li><strong>Kamu politikaları:</strong> Düzenleyici ve destekleyici devlet yaklaşımı.</li>
-        <li><strong>Finansman:</strong> Kamu destekleri, AB fonları, satış gelirleri ve özel sektör iş birlikleri.</li>
-        <li><strong>Ağlar:</strong> Üniversiteler, STK’lar, şirketler ve inkübatörler arasında kurulan ilişkiler.</li>
-        <li><strong>İnsan kaynağı:</strong> Profesyoneller, uzmanlar ve gönüllülerden oluşan çok katmanlı yapı.</li>
-      </ul>
-    </div>
+## Ekosistemin temel bileşenleri
 
-    <figure class="inline-image">
-      <img src="images/spain-network-collaboration.jpg" alt="İspanya’da sosyal girişimcilik ağları ve kurumlar arası iş birliği">
-      <figcaption>Üniversiteler, STK’lar, şirketler ve inkübatörler arasındaki bağlantılar sistemin merkezinde yer alıyor.</figcaption>
-    </figure>
+İspanya’daki sosyal girişimcilik yapısını anlamak için yalnızca girişimcilere bakmak yeterli değil. Gözlemlediğim kadarıyla bu ekosistem birkaç temel sütun üzerinde yükseliyor:
 
-    <h2>İş birliği kültürü neden bu kadar önemli?</h2>
-    <p>
-      İspanya’da beni en çok etkileyen başlıklardan biri, sosyal girişimlerin çoğunlukla yalnız hareket etmemesi oldu.
-      Üniversiteler bilgi ve insan kaynağı sağlarken, sivil toplum sahadaki deneyimi taşıyor; şirketler finansman ve ağ desteği sunabiliyor;
-      kamu kurumları ise bu yapının daha görünür ve uygulanabilir hale gelmesini destekliyor.
-    </p>
-    <p>
-      Kısacası burada “tek başına girişimci” anlatısından çok, “birlikte çalışan ekosistem” yaklaşımı öne çıkıyor.
-    </p>
+- **Sosyal girişimciler:** Toplumsal ya da çevresel sorunları çözmek için ekonomik araçları kullanan aktörler
+- **Kültür:** Kooperatifçilik, dayanışma ve sosyal fayda odaklı çalışma anlayışı
+- **Kamu politikaları:** Düzenleyici ve destekleyici devlet yaklaşımı
+- **Finansman:** Kamu destekleri, AB fonları, satış gelirleri ve özel sektör iş birlikleri
+- **Ağlar:** Üniversiteler, STK’lar, şirketler ve inkübatörler arasında kurulan ilişkiler
+- **İnsan kaynağı:** Profesyoneller, uzmanlar ve gönüllülerden oluşan çok katmanlı yapı
 
-    <h2>Finansman meselesi: yalnızca hibeye dayalı değil</h2>
-    <p>
-      Sosyal girişimcilik denildiğinde çoğu zaman ilk akla gelen konu hibe ve destekler oluyor. Oysa İspanya örneğinde,
-      sürdürülebilirlik için yalnızca dış desteklere yaslanmanın yeterli olmadığı açık biçimde görülüyor.
-      Yerel kamu destekleri ve AB fonları önemli olsa da, kendi gelirini yaratabilen sosyal girişimler daha güçlü bir zemine oturuyor.
-    </p>
-    <p>
-      Bu nedenle ürün ve hizmet satışı, şirketlerle geliştirilen iş birlikleri ve daha uzun vadeli finansman kaynakları ekosistemin önemli parçaları arasında yer alıyor.
-    </p>
+## İş birliği kültürü neden bu kadar önemli?
 
-    <h2>Üniversiteler neden kilit aktörlerden biri?</h2>
-    <p>
-      İspanya’da üniversitelerin yalnızca eğitim veren kurumlar değil, aynı zamanda sosyal girişimcilik kültürünü besleyen alanlar olduğunu gördüm.
-      Öğrencileri sosyal projelere yönlendiren uygulamalar, girişimcilik odaklı eğitimler ve üniversite dışı kurumlarla kurulan iş birlikleri bu kültürü güçlendiriyor.
-    </p>
-    <p>
-      Özellikle gençlerin sosyal meselelerle daha erken dönemde temas kurması, sosyal girişimcilik farkındalığını artırıyor.
-    </p>
+İspanya’da beni en çok etkileyen başlıklardan biri, sosyal girişimlerin çoğunlukla yalnız hareket etmemesi oldu. Üniversiteler bilgi ve insan kaynağı sağlarken, sivil toplum sahadaki deneyimi taşıyor; şirketler finansman ve ağ desteği sunabiliyor; kamu kurumları ise bu yapının daha görünür ve uygulanabilir hale gelmesini destekliyor.
 
-    <figure class="inline-image">
-      <img src="images/spain-university-social-innovation.jpg" alt="Üniversitelerde sosyal girişimcilik ve sosyal inovasyon çalışmaları">
-      <figcaption>Üniversiteler, sosyal girişimcilik kültürünün oluşmasında önemli bir rol üstleniyor.</figcaption>
-    </figure>
+Kısacası burada “tek başına girişimci” anlatısından çok, “birlikte çalışan ekosistem” yaklaşımı öne çıkıyor.
 
-    <h2>Her şey güçlü mü? Karşılaşılan güçlükler de var</h2>
-    <p>
-      Elbette İspanya örneği kusursuz değil. Özellikle başlangıç aşamasındaki girişimler için finansmana erişim hâlâ önemli bir sorun.
-      Geleneksel finans kuruluşlarının temkinli yaklaşımı, bazı sosyal girişimlerin büyümesini yavaşlatabiliyor.
-      Ayrıca sosyal girişimcilik kavramının kendisi de her zaman aynı netlikte anlaşılmıyor; çoğu zaman sosyal ekonomi şemsiyesi altında düşünülüyor.
-    </p>
-    <p>
-      Buna rağmen, güçlü kurumlar arası bağlar ve yerleşik sosyal ekonomi geleneği, sistemi ayakta tutan en önemli unsurlar olarak öne çıkıyor.
-    </p>
+## Finansman meselesi: yalnızca hibeye dayalı değil
 
-    <h2>Türkiye açısından neden önemli?</h2>
-    <p>
-      İspanya deneyimi bana sosyal girişimciliğin sadece bireysel motivasyonla değil, kurumsal çevreyle birlikte geliştiğini bir kez daha gösterdi.
-      Eğer güçlü bir sosyal girişimcilik yapısı oluşturulmak isteniyorsa; hukuki altyapı, üniversitelerin rolü, finansman araçları ve iş birliği ağları birlikte düşünülmeli.
-    </p>
-    <p>
-      Türkiye açısından bu deneyim, sosyal girişimciliği yalnızca proje ya da hibe düzeyinde değil, daha geniş bir ekosistem yaklaşımıyla ele almanın ne kadar gerekli olduğunu düşündürüyor.
-    </p>
+Sosyal girişimcilik denildiğinde çoğu zaman ilk akla gelen konu hibe ve destekler oluyor. Oysa İspanya örneğinde, sürdürülebilirlik için yalnızca dış desteklere yaslanmanın yeterli olmadığı açık biçimde görülüyor. Yerel kamu destekleri ve AB fonları önemli olsa da, kendi gelirini yaratabilen sosyal girişimler daha güçlü bir zemine oturuyor.
 
-    <div class="closing-box">
-      <p>
-        İspanya’da geçirdiğim bu süreç, sosyal girişimciliğin yalnızca sosyal fayda üretme iradesiyle değil,
-        aynı zamanda doğru kurumlar, doğru ilişkiler ve doğru destek mekanizmalarıyla güçlendiğini gösterdi.
-      </p>
-      <p>
-        Sosyal etki ile ekonomik sürdürülebilirliğin birlikte mümkün olduğu bir model arıyorsak,
-        İspanya örneği üzerinde dikkatle düşünmeye değer.
-      </p>
-    </div>
-  </section>
-</article>
+Bu nedenle ürün ve hizmet satışı, şirketlerle geliştirilen iş birlikleri ve daha uzun vadeli finansman kaynakları ekosistemin önemli parçaları arasında yer alıyor.
+
+## Üniversiteler neden kilit aktörlerden biri?
+
+İspanya’da üniversitelerin yalnızca eğitim veren kurumlar değil, aynı zamanda sosyal girişimcilik kültürünü besleyen alanlar olduğunu gördüm. Öğrencileri sosyal projelere yönlendiren uygulamalar, girişimcilik odaklı eğitimler ve üniversite dışı kurumlarla kurulan iş birlikleri bu kültürü güçlendiriyor.
+
+Özellikle gençlerin sosyal meselelerle daha erken dönemde temas kurması, sosyal girişimcilik farkındalığını artırıyor.
+
+## Her şey güçlü mü? Karşılaşılan güçlükler de var
+
+Elbette İspanya örneği kusursuz değil. Özellikle başlangıç aşamasındaki girişimler için finansmana erişim hâlâ önemli bir sorun. Geleneksel finans kuruluşlarının temkinli yaklaşımı, bazı sosyal girişimlerin büyümesini yavaşlatabiliyor. Ayrıca sosyal girişimcilik kavramının kendisi de her zaman aynı netlikte anlaşılmıyor; çoğu zaman sosyal ekonomi şemsiyesi altında düşünülüyor.
+
+Buna rağmen, güçlü kurumlar arası bağlar ve yerleşik sosyal ekonomi geleneği, sistemi ayakta tutan en önemli unsurlar olarak öne çıkıyor.
+
+## Türkiye açısından neden önemli?
+
+İspanya deneyimi bana sosyal girişimciliğin sadece bireysel motivasyonla değil, kurumsal çevreyle birlikte geliştiğini bir kez daha gösterdi. Eğer güçlü bir sosyal girişimcilik yapısı oluşturulmak isteniyorsa; hukuki altyapı, üniversitelerin rolü, finansman araçları ve iş birliği ağları birlikte düşünülmeli.
+
+Türkiye açısından bu deneyim, sosyal girişimciliği yalnızca proje ya da hibe düzeyinde değil, daha geniş bir ekosistem yaklaşımıyla ele almanın ne kadar gerekli olduğunu düşündürüyor.
+
+## Sonuç
+
+İspanya’da geçirdiğim bu süreç, sosyal girişimciliğin yalnızca sosyal fayda üretme iradesiyle değil, aynı zamanda doğru kurumlar, doğru ilişkiler ve doğru destek mekanizmalarıyla güçlendiğini gösterdi.
+
+Sosyal etki ile ekonomik sürdürülebilirliğin birlikte mümkün olduğu bir model arıyorsak, İspanya örneği üzerinde dikkatle düşünmeye değer.
