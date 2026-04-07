@@ -12,39 +12,44 @@ listing:
     filter-ui: false
 ---
 
-<div class="hero-section">
-  <div class="hero-image">
-    <img src="images/profile.jpg" alt="Volkan Işık">
-  </div>
+::: {.hero-section}
 
-  <div class="hero-content">
-    <h1>Assoc. Prof. Dr. Volkan Işık</h1>
+::: {.hero-image}
+![](images/profile.jpg){alt="Volkan Işık"}
+:::
 
-    <p class="hero-subtitle">
-      Labour Economics | Social Policy | Social Entrepreneurship
-    </p>
+::: {.hero-content}
 
-    <p class="hero-affiliation">
-      Hacettepe University<br>
-      Vocational School of Social Sciences
-    </p>
+# Assoc. Prof. Dr. Volkan Işık
 
-    <p class="hero-email">📧 volkani@hacettepe.edu.tr</p>
+::: {.hero-subtitle}
+Labour Economics | Social Policy | Social Entrepreneurship
+:::
 
-    <div class="hero-links">
-      <a href="https://www.linkedin.com/in/do%C3%A7-dr-volkan-%C4%B1%C5%9F%C4%B1k-79150bbb/" target="_blank">LinkedIn</a>
-      <a href="https://x.com/volkannisik" target="_blank">Twitter</a>
-      <a href="https://avesis.hacettepe.edu.tr/volkani" target="_blank">Avesis</a>
-      <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" target="_blank">Web of Science</a>
-      <a href="https://orcid.org/0000-0003-3690-969X" target="_blank">ORCID</a>
-    </div>
+::: {.hero-affiliation}
+Hacettepe University  
+Vocational School of Social Sciences
+:::
 
-    <div class="hero-buttons">
-      <a class="main-btn" href="./cv.html">View CV</a>
-      <a class="secondary-btn" href="./publications.html">Publications</a>
-    </div>
-  </div>
-</div>
+::: {.hero-email}
+📧 volkani@hacettepe.edu.tr
+:::
+
+::: {.hero-links}
+[LinkedIn](https://www.linkedin.com/in/do%C3%A7-dr-volkan-%C4%B1%C5%9F%C4%B1k-79150bbb/){target="_blank"}
+[Twitter](https://x.com/volkannisik){target="_blank"}
+[Avesis](https://avesis.hacettepe.edu.tr/volkani){target="_blank"}
+[Web of Science](https://www.webofscience.com/wos/author/record/ADT-9246-2022){target="_blank"}
+[ORCID](https://orcid.org/0000-0003-3690-969X){target="_blank"}
+:::
+
+::: {.hero-buttons}
+[View CV](./cv.html){.main-btn}
+[Publications](./publications.html){.secondary-btn}
+:::
+
+:::
+:::
 
 ## 📝 Recent Posts
 
