@@ -3,9 +3,7 @@ title: ""
 format: html
 ---
 
-::: {=html}
 <div class="hero-section">
-
   <div class="hero-image">
     <img src="images/profile.jpg" alt="Volkan Işık">
   </div>
@@ -37,10 +35,14 @@ format: html
       <a class="secondary-btn" href="./publications.html">Publications</a>
     </div>
   </div>
-
 </div>
-:::
 
 ## Recent Posts
 
-{{< listing blog sort="date desc" type="default" fields="title,date" max-items="5" >}}
+::: {.listing}
+contents: blog
+sort: "date desc"
+type: default
+fields: [title, date]
+max-items: 5
+:::
