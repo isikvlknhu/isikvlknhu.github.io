@@ -12,7 +12,7 @@ async function loadPublications() {
   const container = document.getElementById("pub-list");
 
   try {
-    const response = await fetch("/publications.json");
+    const response = await fetch("publications.json");
     if (!response.ok) {
       throw new Error("publications.json yüklenemedi.");
     }
