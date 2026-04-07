@@ -1,1 +1,12 @@
+---
+title: "My First Blog Post"
+date: 2026-04-07
+author: "Volkan Işık"
+categories: [Labour Economics, Social Policy]
+---
 
+## Introduction
+
+This is my first blog post on my academic website.
+
+I will use this section to share short reflections, research notes, and commentary on labour markets, social policy, and social entrepreneurship.
