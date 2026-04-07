@@ -35,8 +35,35 @@ async function loadPublications() {
       const type = (work.type || "").replaceAll("-", " ");
       const extIds = work["external-ids"]?.["external-id"] || [];
 
-      let doiLink = "";
-      let recordLink = "";
+let doiUrl = "";
+let recordUrl = "";
+
+extIds.forEach(id => {
+  const idType = (id["external-id-type"] || "").toLowerCase();
+  const idValue = id["external-id-value"] || "";
+  const idUrl = id["external-id-url"]?.value || "";
+
+  if (idType === "doi" && idValue) {
+    doiUrl = `https://doi.org/${idValue}`;
+  }
+
+  if (idUrl) {
+    recordUrl = idUrl;
+  }
+});
+
+// link oluşturma
+let linksHtml = "";
+
+// Eğer DOI varsa ve record ile aynı değilse
+if (doiUrl && doiUrl !== recordUrl) {
+  linksHtml += `<a class="pub-btn" href="${doiUrl}" target="_blank">DOI</a>`;
+}
+
+// Eğer record varsa → Full Text olarak göster
+if (recordUrl) {
+  linksHtml += `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank">Full Text</a>`;
+}
 
       extIds.forEach(id => {
         const idType = (id["external-id-type"] || "").toLowerCase();
@@ -60,10 +87,9 @@ async function loadPublications() {
             ${year ? `<span class="pub-badge">${year}</span>` : ""}
             ${type ? `<span class="pub-badge pub-badge-light">${type}</span>` : ""}
           </div>
-          <div class="pub-links">
-            ${doiLink}
-            ${recordLink}
-          </div>
+        <div class="pub-links">
+          ${linksHtml}
+        </div>
         </div>
       `;
     });
