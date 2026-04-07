@@ -1,0 +1,11 @@
+---
+title: "Publications"
+---
+
+## Publications
+
+This page will list my academic publications.
+
+- Journal articles
+- Book chapters
+- Conference papers
