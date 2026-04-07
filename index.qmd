@@ -3,36 +3,44 @@ title: ""
 format: html
 ---
 
-<div style="display:flex; align-items:flex-start; gap:32px; flex-wrap:wrap;">
+<div class="hero-section">
 
-<img src="images/profile.jpg" width="220" style="border-radius:50%; object-fit:cover;">
+  <div class="hero-image">
+    <img src="images/profile.jpg" alt="Volkan Işık">
+  </div>
 
-<div>
+  <div class="hero-content">
+    <h1>Assoc. Prof. Dr. Volkan Işık</h1>
+    <p class="hero-subtitle">Labour Economics | Social Policy | Social Entrepreneurship</p>
 
-## Assoc. Prof. Dr. Volkan Işık
+    <p class="hero-affiliation">
+      Hacettepe University<br>
+      Vocational School of Social Sciences
+    </p>
 
-**Labour Economics | Social Policy | Social Entrepreneurship**
+    <p class="hero-email">📧 volkani@hacettepe.edu.tr</p>
 
-Hacettepe University  
-Vocational School of Social Sciences  
+    <div class="hero-links">
+      <a href="https://www.linkedin.com/in/doç-dr-volkan-ışık-79150bbb/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a href="https://x.com/volkannisık" target="_blank"><i class="bi bi-twitter-x"></i> X</a>
+      <a href="https://avesis.hacettepe.edu.tr/volkani" target="_blank"><i class="bi bi-building"></i> Hacettepe</a>
+      <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" target="_blank"><i class="bi bi-journal-text"></i> Web of Science</a>
+      <a href="https://orcid.org/0000-0003-3690-969X" target="_blank"><i class="bi bi-person-badge"></i> ORCID</a>
+    </div>
 
-📧 volkani@hacettepe.edu.tr  
+    <div class="hero-buttons">
+      <a class="main-btn" href="./cv.html">View CV</a>
+      <a class="secondary-btn" href="./publications.html">Publications</a>
+    </div>
+  </div>
 
-<i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/doç-dr-volkan-ışık-79150bbb/" target="_blank">LinkedIn</a> | 
-<i class="bi bi-twitter-x"></i> <a href="https://x.com/volkannisık" target="_blank">X</a> | 
-<i class="bi bi-building"></i> <a href="https://avesis.hacettepe.edu.tr/volkani" target="_blank">Hacettepe</a> | 
-<i class="bi bi-journal-text"></i> <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" target="_blank">Web of Science</a> | 
-<i class="bi bi-person-badge"></i> <a href="https://orcid.org/0000-0003-3690-969X" target="_blank">ORCID</a>
-
-</div>
 </div>
 
 ---
 
-## About Me
+## About
 
-I am an Associate Professor specializing in **labour economics, social policy, and social entrepreneurship**.  
-My research focuses on analysing labour market dynamics, designing inclusive employment policies, and understanding the transformation of work in the digital age.
+I am an Associate Professor specializing in **labour economics, social policy, and social entrepreneurship**. My research focuses on labour market dynamics, inclusive employment policies, occupational health and safety, and the transformation of work in the digital age.
 
 ---
 
@@ -42,20 +50,21 @@ My research focuses on analysing labour market dynamics, designing inclusive emp
 - Gender Inequality and Employment  
 - Social Entrepreneurship Ecosystems  
 - Occupational Health and Safety  
-- Future of Work & Artificial Intelligence  
+- Future of Work and Artificial Intelligence  
 
 ---
 
-## Quick Links
+## Current Focus
 
-👉 [View Publications](./publications.html)  
-👉 [Download CV](./cv.html)  
+- AI-supported labour market analysis  
+- Social entrepreneurship ecosystem development  
+- Data-driven policy design for inclusive labour markets  
 
 ---
 
 ## Recent Posts
 
-- [First Blog Post](blog.qmd)
+- [First Blog Post](./blog.html)
 
 ---
 
