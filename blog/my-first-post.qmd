@@ -3,6 +3,7 @@ title: "İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden G
 date: 2026-04-07
 categories:
   - Sosyal Girişimcilik
+description: "2024 Haziran–Eylül döneminde İspanya’da yürüttüğüm gözlem ve değerlendirmeler ışığında sosyal girişimcilik ekosistemine dair notlar."
 format: html
 ---
 
