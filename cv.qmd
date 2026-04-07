@@ -1,38 +1,100 @@
 ---
 title: "CV"
+format: html
 ---
 
-## Education
+## 👤 Doç. Dr. Volkan Işık
 
-- PhD in Labour Economics  
-- MSc in Social Policy  
+**Social Policy | Labour Economics | Social Entrepreneurship**
 
----
-
-## Academic Positions
-
-- Hacettepe University – Associate Professor  
+Hacettepe University – Vocational School of Social Sciences  
+📧 volkani@hacettepe.edu.tr  
 
 ---
 
-## Research Areas
+## 🎓 Education
 
-- Labour Economics  
-- Social Policy  
-- Social Entrepreneurship  
+- **Post-Doc Research**, Universitat Politècnica de València (Spain)  
+  *2024*  
+  Social Entrepreneurship Ecosystem – Valencia Case  
+
+- **Ph.D.**, Gazi University  
+  Labour Economics and Industrial Relations  
+  *2009–2016*
+
+- **M.A.**, Gazi University  
+  *2006–2009*
+
+- **B.S.**, Cumhuriyet University  
+  *2001–2005*
+
+- **Associate Degree**, Anadolu University (OHS)  
+  *2021–2023*
 
 ---
 
-## Skills
+## 🏛 Academic Positions
 
-- R, Python  
-- Data Analysis  
-- Econometrics  
+- **Associate Professor**, Hacettepe University *(2019–Present)*  
+- **Deputy Manager**, Vocational School *(2022–Present)*  
+- **Deputy Manager**, Career Center *(2024–Present)*  
+- **Head of Department**, Marketing *(2019–2022)*  
 
 ---
 
-## Languages
+## 🌍 Research & Professional Experience
+
+- **Post-Doc Visiting Researcher**  
+  INGENIO (CSIC-UPV), Spain *(2024)*  
+
+- **Team Leader**  
+  TRB2 Regional Development Project *(2019–2020)*  
+
+- **Senior Expert (EU Projects)**  
+  İŞKUR & EU Projects *(2022–2024)*  
+
+- **Trainer & Expert**  
+  Labour Law, OHS, Social Dialogue Projects *(2016–2017)*  
+
+---
+
+## 📊 Research Areas
+
+- Labour market dynamics  
+- Gender inequality  
+- Social entrepreneurship ecosystems  
+- Occupational health and safety  
+- AI and future of work  
+
+---
+
+## 🧠 Skills
+
+- Academic writing & reporting  
+- Impact analysis  
+- Training design & delivery  
+- SPSS & data analysis  
+- Project management  
+
+---
+
+## 🌐 Languages
 
 - Turkish (Native)  
-- English (Advanced)  
-- Spanish (A1)
+- English (C1–C2)  
+- Spanish (A1–A2)  
+
+---
+
+## 📚 Publications
+
+👉 Tüm yayınlar için: [Publications](./publications.html)
+
+---
+
+## 📌 Additional Information
+
+- 18+ years academic experience  
+- EU & TÜBİTAK project experience  
+- Trainer for trade unions & public institutions  
+- Editor: Hacettepe University Journal of Social Sciences  
