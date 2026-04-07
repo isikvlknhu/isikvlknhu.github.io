@@ -38,6 +38,7 @@ format: html
 </div>
 
 ## Recent Posts
+## 📝 Recent Posts
 
 ::: {.listing}
 contents: blog
