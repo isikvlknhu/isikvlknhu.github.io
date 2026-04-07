@@ -1,5 +1,6 @@
 ---
-title: "Publications"
+title: "Research Publications"
+subtitle: "Web of Science & Scopus Indexed Articles"
 format: html
 ---
 
