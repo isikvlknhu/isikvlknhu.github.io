@@ -1,7 +1,9 @@
 ---
 title: "İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden Gözlemlerim"
 date: 2026-04-07
-categories: [general]
+categories:
+  - Sosyal Girişimcilik
+format: html
 ---
 <article class="blog-post">
   <header class="blog-hero">
