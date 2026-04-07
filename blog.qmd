@@ -4,9 +4,9 @@ listing:
   contents: blog
   sort: "date desc"
   type: default
-  fields: [title, date, description]
+  fields: [title, date, categories, description]
   sort-ui: false
-  filter-ui: false
+  filter-ui: true
 ---
 
 Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.
