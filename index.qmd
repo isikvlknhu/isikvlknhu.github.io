@@ -1,6 +1,15 @@
 ---
 title: ""
 format: html
+listing:
+  id: recent-posts
+  contents: blog
+  sort: "date desc"
+  type: default
+  fields: [title, date]
+  max-items: 5
+  sort-ui: false
+  filter-ui: false
 ---
 
 ::: {=html}
