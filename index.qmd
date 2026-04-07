@@ -3,9 +3,9 @@ title: "Volkan Işık"
 format: html
 ---
 
-<div style="display: flex; align-items: center; gap: 30px;">
+<div style="display:flex; align-items:flex-start; gap:32px; flex-wrap:wrap;">
 
-<img src="images/profile.jpg" width="180" style="border-radius: 50%;">
+<img src="images/profile.jpg" width="220" style="border-radius:50%; object-fit:cover;">
 
 <div>
 
@@ -16,33 +16,24 @@ format: html
 Hacettepe Üniversitesi  
 Sosyal Bilimler MYO
 
-📧 volkan@example.com  
+📧 volkan83@gmail.com  
 🔗 LinkedIn | Google Scholar | ORCID
 
 </div>
-
 </div>
 
 ---
 
 ## About Me
 
-I am an academic specializing in **labour economics, social policy, and social entrepreneurship**.  
+I am an academic specializing in **labour economics, social policy, and social entrepreneurship**.
+
 My research focuses on:
 
-- Labour market dynamics  
-- Gender inequality and employment  
-- Social entrepreneurship ecosystems  
+- Labour market dynamics
+- Gender inequality and employment
+- Social entrepreneurship ecosystems
 - AI and future of work  
-
----
-
-## Research Interests
-
-- Labour Economics  
-- Social Policy  
-- Social Entrepreneurship  
-- Artificial Intelligence and Work  
 
 ---
 
