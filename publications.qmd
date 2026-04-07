@@ -1,11 +1,76 @@
 ---
-title: "Publications"
+title: "Yayınlar"
+format: html
 ---
 
-## Publications
+## Yayınlar
 
-This page will list my academic publications.
+<div id="pub-list">Yayınlar yükleniyor...</div>
 
-- Journal articles
-- Book chapters
-- Conference papers
+<script>
+async function loadPublications() {
+  const container = document.getElementById("pub-list");
+
+  try {
+    const response = await fetch("/publications.json");
+    if (!response.ok) {
+      throw new Error("publications.json yüklenemedi.");
+    }
+
+    const data = await response.json();
+    const groups = data.group || [];
+
+    if (groups.length === 0) {
+      container.innerHTML = "<p>Henüz yayın bulunamadı.</p>";
+      return;
+    }
+
+    let html = "<ol>";
+
+    groups.forEach(group => {
+      const work = group["work-summary"]?.[0];
+      if (!work) return;
+
+      const title = work.title?.title?.value || "Başlıksız kayıt";
+      const journal = work["journal-title"]?.value || "";
+      const year = work["publication-date"]?.year?.value || "";
+      const type = work.type || "";
+      const extIds = work["external-ids"]?.["external-id"] || [];
+
+      let doiLink = "";
+      let urlLink = "";
+
+      extIds.forEach(id => {
+        const idType = (id["external-id-type"] || "").toLowerCase();
+        const idValue = id["external-id-value"] || "";
+        const idUrl = id["external-id-url"]?.value || "";
+
+        if (idType === "doi" && idValue) {
+          doiLink = ` <a href="https://doi.org/${idValue}" target="_blank">DOI</a>`;
+        }
+
+        if (idUrl) {
+          urlLink = ` <a href="${idUrl}" target="_blank">Link</a>`;
+        }
+      });
+
+      html += `
+        <li style="margin-bottom: 1rem;">
+          <strong>${title}</strong><br>
+          ${journal ? `<em>${journal}</em><br>` : ""}
+          ${year ? `${year}` : ""} ${type ? `• ${type}` : ""}
+          ${doiLink}${urlLink}
+        </li>
+      `;
+    });
+
+    html += "</ol>";
+    container.innerHTML = html;
+
+  } catch (error) {
+    container.innerHTML = `<p>Yayınlar yüklenirken hata oluştu: ${error.message}</p>`;
+  }
+}
+
+loadPublications();
+</script>
