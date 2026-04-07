@@ -1,8 +1,11 @@
 name: Fetch ORCID Publications
 
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: "0 6 * * *"   # her gün sabah 09:00 (TR)
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
