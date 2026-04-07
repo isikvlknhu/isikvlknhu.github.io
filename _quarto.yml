@@ -9,12 +9,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: blog.qmd
-        text: Blog
       - href: publications.qmd
         text: Publications
       - href: cv.qmd
         text: CV
+      - href: blog.qmd
+        text: Blog
       - href: podcasts.qmd
         text: My Podcasts
         
