@@ -1627,3 +1627,39 @@ h2, h3 {
     align-items: center;
   }
 }
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.event-date {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #2d4ea2;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.event-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.02rem;
+  color: #2d4ea2;
+}
+
+.event-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #555;
+}
