@@ -1144,3 +1144,36 @@ td, th {
 .schedule-wrapper {
   gap: 14px;
 }
+/* === LECTURES EXTRA COMPACT === */
+
+.day-card {
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.day-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.course-item {
+  margin-bottom: 4px;
+  gap: 6px;
+}
+
+.time {
+  font-size: 0.82rem;
+  min-width: 80px;
+}
+
+.course-item strong {
+  font-size: 0.88rem;
+}
+
+.location {
+  font-size: 0.78rem;
+}
+
+.schedule-wrapper {
+  gap: 10px;
+}
