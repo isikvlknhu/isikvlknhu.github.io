@@ -5,31 +5,81 @@ format: html
 
 ## 2025–2026 Bahar Dönemi Ders Programı
 
-| Gün | Saat | Ders | Derslik |
-|---|---|---|---|
-| Pazartesi | 08:40–11:30 | **SBY 202** Girişimcilik | Z-02 |
-| Pazartesi | 13:40–16:30 | **BYA 114** Bilgisayar Büro Programları (Şube 1) | Lab-1 |
-| Salı | 13:40–16:30 | **BYA 114** Bilgisayar Büro Programları (Şube 2) | Lab-1 |
-| Çarşamba | 13:40–15:30 | **TOT 208** İş Sağlığı ve Güvenliği | 105 |
-| Çarşamba | 15:40–17:30 | **TOT 224** Satış Yönetimi | 105 |
+::: {=html}
+
+<div class="schedule-wrapper">
+
+<div class="day-card">
+<h3>📅 Pazartesi</h3>
+
+<div class="course-item">
+<span class="time">08:40–11:30</span>
+<div>
+<strong>SBY 202 – Girişimcilik</strong><br>
+<span class="location">Derslik Z-02</span>
+</div>
+</div>
+
+<div class="course-item">
+<span class="time">13:40–16:30</span>
+<div>
+<strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
+<span class="location">Lab-1</span>
+</div>
+</div>
+
+</div>
+
+<div class="day-card">
+<h3>📅 Salı</h3>
+
+<div class="course-item">
+<span class="time">13:40–16:30</span>
+<div>
+<strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
+<span class="location">Lab-1</span>
+</div>
+</div>
+
+</div>
+
+<div class="day-card">
+<h3>📅 Çarşamba</h3>
+
+<div class="course-item">
+<span class="time">13:40–15:30</span>
+<div>
+<strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
+<span class="location">Derslik 105</span>
+</div>
+</div>
+
+<div class="course-item">
+<span class="time">15:40–17:30</span>
+<div>
+<strong>TOT 224 – Satış Yönetimi</strong><br>
+<span class="location">Derslik 105</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+:::
 
 ---
 
 ## Dersler
 
 ### SBY 202 – Girişimcilik
-Girişimcilik kavramı, iş fikri geliştirme, iş modeli oluşturma ve girişimcilik ekosistemi üzerine odaklanan derstir.
+Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.
 
 ### BYA 114 – Bilgisayar Büro Programları
-Ofis yazılımlarının etkin kullanımı, temel dijital beceriler ve büro uygulamalarına yönelik içerikler sunar.
+Ofis yazılımları ve temel dijital becerilere odaklanır.
 
 ### TOT 208 – İş Sağlığı ve Güvenliği
-İş sağlığı ve güvenliği kavramı, iş kazaları, meslek hastalıkları ve önleyici yaklaşım çerçevesinde temel bilgileri içerir.
+İSG kavramı, riskler ve önleyici yaklaşım ele alınır.
 
 ### TOT 224 – Satış Yönetimi
-Satış süreci, müşteri ilişkileri, satış planlaması ve satış stratejilerine odaklanan derstir.
-
----
-
-## Not
-Ders programı dönemsel olarak güncellenebilir.
+Satış süreçleri ve müşteri ilişkileri yönetimi.
