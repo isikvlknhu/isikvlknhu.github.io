@@ -1,10 +1,18 @@
+---
+title: "İş Sağlığı ve Güvenliğinde Küresel Görünüm: İlerleme Var, Ama Yeterli mi?"
+date: 2026-04-08
+categories:
+  - İş Sağlığı ve Güvenliği
+description: "A Global Snapshot of Workplace Safety"
+format: html
+---
+
 ## 🌍 A Global Snapshot of Workplace Safety
 
 ![Küresel iş sağlığı ve güvenliği istatistikleri (ILO, 2026)](../images/workplace-safety.png){fig-align="center" width="80%"}
 
 *Kaynak: International Labour Organization (ILO), görselleştirme: Statista*
 
-İş Sağlığı ve Güvenliğinde Küresel Görünüm: İlerleme Var, Ama Yeterli mi?
 
 Son 20 yılda dünyanın birçok bölgesinde iş sağlığı ve güvenliği alanında önemli ilerlemeler kaydedildi. Daha güvenli ve sağlıklı çalışma ortamları milyonlarca çalışan için artık bir gerçek. Ancak tablo hâlâ düşündürücü.
 
