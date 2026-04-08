@@ -13,6 +13,7 @@ format: html
 ### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 1/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
 :::
 
 ::: {.event-card}
@@ -23,6 +24,7 @@ format: html
 ### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 2/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
 :::
 
 ::: {.event-card}
@@ -43,6 +45,7 @@ format: html
 ### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 3/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
 :::
 
 ::: {.event-card}
@@ -53,6 +56,7 @@ format: html
 ### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 4/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
 :::
 
 ::: {.event-card}
