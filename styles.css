@@ -934,3 +934,16 @@ iframe {
 h2 {
   margin-top: 40px;
 }
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #2d4ea2;
+  color: white;
+}
+
+td, th {
+  padding: 10px 12px;
+}
