@@ -66,9 +66,6 @@ format: html
 
 </div>
 
-:::
-::: {=html}
-
 <div class="office-hours">
 
 <h3>🕘 Danışmanlık Saatleri</h3>
