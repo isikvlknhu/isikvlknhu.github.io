@@ -1713,3 +1713,77 @@ h2, h3 {
     display: block !important;
   }
 }
+/* === MOBILE SLIDE-IN DRAWER NAVBAR === */
+@media (max-width: 991.98px) {
+  /* Hamburger görünür kalsın */
+  .navbar-toggler {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1101;
+    position: relative;
+  }
+
+  /* Mobil menü: soldan kayan panel */
+  .navbar-collapse {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    max-width: 82vw;
+    height: 100vh;
+    overflow-y: auto;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    padding: 90px 24px 24px 24px;
+    z-index: 1100;
+
+    transform: translateX(-100%);
+    transition: transform 0.28s ease;
+  }
+
+  /* Açılınca içeri kayarak gelsin */
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  /* Menü linkleri dikey dizilsin */
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    list-style: none;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  /* Marka solda kalsın */
+  .navbar-brand {
+    position: relative;
+    z-index: 1101;
+  }
+
+  /* Üst bar temiz dursun */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1090;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+  }
+}
