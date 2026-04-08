@@ -1013,3 +1013,54 @@ td, th {
   margin: 0;
   font-size: 1rem;
 }
+/* GENEL LAYOUT DARALT */
+.container {
+  max-width: 1000px;
+}
+
+/* GÜNLER GRID */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* GÜN KARTI */
+.day-card {
+  padding: 14px 16px;      /* küçültüldü */
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+/* GÜN BAŞLIK */
+.day-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* DERS ITEM */
+.course-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* SAAT */
+.time {
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 90px;
+  color: #2d4ea2;
+}
+
+/* DERS ADI */
+.course-item strong {
+  font-size: 0.95rem;
+}
+
+/* SINIF */
+.location {
+  font-size: 0.85rem;
+  color: #666;
+}
