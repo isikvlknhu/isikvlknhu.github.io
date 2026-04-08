@@ -71,7 +71,8 @@ format: html
 <h3>🕘 Danışmanlık Saatleri</h3>
 
 <p>
-<strong>Çarşamba:</strong> 10:00 – 12:00
+<strong>Gün:</strong> Çarşamba <br>
+<strong>Saat:</strong> 10:00 – 12:00
 </p>
 
 </div>
