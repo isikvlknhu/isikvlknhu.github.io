@@ -1094,3 +1094,14 @@ td, th {
   background: #eef3ff;
   border: 1px solid #dbe4ff;
 }
+.schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.day-card {
+  width: 100%;
+  max-width: 900px;
+}
