@@ -80,20 +80,28 @@ format: html
 :::
 ---
 
-<div class="course-descriptions">
+<div class="course-cards">
 
-## Dersler
+  <div class="course-card">
+    <h3>🚀 SBY 202 – Girişimcilik</h3>
+    <p>Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.</p>
+  </div>
 
-### SBY 202 – Girişimcilik
-Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.
+  <div class="course-card">
+    <h3>💻 BYA 114 – Bilgisayar Büro Programları</h3>
+    <p>Ofis yazılımları ve temel dijital becerilere odaklanır.</p>
+  </div>
 
-### BYA 114 – Bilgisayar Büro Programları
-Ofis yazılımları ve temel dijital becerilere odaklanır.
+  <div class="course-card">
+    <h3>⚠️ TOT 208 – İş Sağlığı ve Güvenliği</h3>
+    <p>İSG kavramı, riskler ve önleyici yaklaşım ele alınır.</p>
+  </div>
 
-### TOT 208 – İş Sağlığı ve Güvenliği
-İSG kavramı, riskler ve önleyici yaklaşım ele alınır.
+  <div class="course-card">
+    <h3>📈 TOT 224 – Satış Yönetimi</h3>
+    <p>Satış süreçleri ve müşteri ilişkileri yönetimi.</p>
+  </div>
 
-### TOT 224 – Satış Yönetimi
-Satış süreçleri ve müşteri ilişkileri yönetimi.
+</div>
 
 </div>
