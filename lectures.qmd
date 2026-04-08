@@ -80,6 +80,8 @@ format: html
 :::
 ---
 
+<div class="course-descriptions">
+
 ## Dersler
 
 ### SBY 202 – Girişimcilik
@@ -93,3 +95,5 @@ Ofis yazılımları ve temel dijital becerilere odaklanır.
 
 ### TOT 224 – Satış Yönetimi
 Satış süreçleri ve müşteri ilişkileri yönetimi.
+
+</div>
