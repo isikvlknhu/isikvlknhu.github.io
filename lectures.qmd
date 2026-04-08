@@ -6,7 +6,6 @@ format: html
 ## 2025–2026 Bahar Dönemi Ders Programı
 
 ::: {=html}
-
 <div class="schedule-wrapper">
 
   <div class="day-card">
@@ -65,12 +64,8 @@ format: html
 
 <div class="office-hours">
   <h3>🕘 Danışmanlık Saatleri</h3>
-  <p>
-    <strong>Gün:</strong> Çarşamba <br>
-    <strong>Saat:</strong> 10:00 – 12:00
-  </p>
+  <p><strong>Gün:</strong> Çarşamba<br><strong>Saat:</strong> 10:00 – 12:00</p>
 </div>
-
 :::
 
 ---
@@ -78,41 +73,31 @@ format: html
 ## Dersler
 
 ::: {=html}
-
 <div class="course-cards">
 
   <div class="course-card">
     <h3>🚀 SBY 202 – Girişimcilik</h3>
     <p>Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1568323/mod_resource/content/0/SBY202%20Ders%20I%CC%87zlencesi.pdf" target="_blank">
-      📄 Ders İzlencesi
-    </a>
+    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1568323/mod_resource/content/0/SBY202%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
   </div>
 
   <div class="course-card">
     <h3>💻 BYA 114 – Bilgisayar Büro Programları</h3>
     <p>Ofis yazılımları ve temel dijital becerilere odaklanır.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1440269/mod_resource/content/0/BYA114%20Ders%20I%CC%87zlencesi.pdf" target="_blank">
-      📄 Ders İzlencesi
-    </a>
+    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1440269/mod_resource/content/0/BYA114%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
   </div>
 
   <div class="course-card">
     <h3>⚠️ TOT 208 – İş Sağlığı ve Güvenliği</h3>
     <p>İSG kavramı, riskler ve önleyici yaklaşım ele alınır.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563091/mod_resource/content/0/TOT208%20Ders%20I%CC%87zlencesi.pdf" target="_blank">
-      📄 Ders İzlencesi
-    </a>
+    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563091/mod_resource/content/0/TOT208%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
   </div>
 
   <div class="course-card">
     <h3>📈 TOT 224 – Satış Yönetimi</h3>
     <p>Satış süreçleri ve müşteri ilişkileri yönetimi.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563089/mod_resource/content/0/TOT224%20Ders%20I%CC%87zlencesi.pdf" target="_blank">
-      📄 Ders İzlencesi
-    </a>
+    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563089/mod_resource/content/0/TOT224%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
   </div>
 
 </div>
-
 :::
