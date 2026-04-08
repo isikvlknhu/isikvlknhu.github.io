@@ -1,0 +1,35 @@
+---
+title: "Lectures"
+format: html
+---
+
+## 2025–2026 Bahar Dönemi Ders Programı
+
+| Gün | Saat | Ders | Derslik |
+|---|---|---|---|
+| Pazartesi | 08:40–11:30 | **SBY 202** Girişimcilik | Z-02 |
+| Pazartesi | 13:40–16:30 | **BYA 114** Bilgisayar Büro Programları (Şube 1) | Lab-1 |
+| Salı | 13:40–16:30 | **BYA 114** Bilgisayar Büro Programları (Şube 2) | Lab-1 |
+| Çarşamba | 13:40–15:30 | **TOT 208** İş Sağlığı ve Güvenliği | 105 |
+| Çarşamba | 15:40–17:30 | **TOT 224** Satış Yönetimi | 105 |
+
+---
+
+## Dersler
+
+### SBY 202 – Girişimcilik
+Girişimcilik kavramı, iş fikri geliştirme, iş modeli oluşturma ve girişimcilik ekosistemi üzerine odaklanan derstir.
+
+### BYA 114 – Bilgisayar Büro Programları
+Ofis yazılımlarının etkin kullanımı, temel dijital beceriler ve büro uygulamalarına yönelik içerikler sunar.
+
+### TOT 208 – İş Sağlığı ve Güvenliği
+İş sağlığı ve güvenliği kavramı, iş kazaları, meslek hastalıkları ve önleyici yaklaşım çerçevesinde temel bilgileri içerir.
+
+### TOT 224 – Satış Yönetimi
+Satış süreci, müşteri ilişkileri, satış planlaması ve satış stratejilerine odaklanan derstir.
+
+---
+
+## Not
+Ders programı dönemsel olarak güncellenebilir.
