@@ -1866,3 +1866,11 @@ h2, h3 {
 .translate-btn:hover {
   opacity: 0.92;
 }
+.name-subtitle {
+  font-size: 0.95rem;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
