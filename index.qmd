@@ -26,7 +26,11 @@ function translateToTurkish() {
 
 ::: {.hero-content}
 
-# Assoc. Prof. Dr. Volkan Işık
+# Doç. Dr. Volkan IŞIK
+
+::: {.name-subtitle}
+Associate Professor
+:::
 
 ::: {.hero-subtitle}
 Labour Economics | Social Policy | Social Entrepreneurship
