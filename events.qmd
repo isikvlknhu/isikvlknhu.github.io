@@ -6,6 +6,7 @@ format: html
 ## Upcoming Events
 
 ::: {=html}
+
 <div class="events-list">
 
   <div class="event-card">
@@ -41,14 +42,15 @@ format: html
   <div class="event-card">
     <div class="event-date">29 April 2026</div>
     <h3>TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World</h3>
-    <p><strong>Location:</strong> Yayla Mesleki ve Teknik Anadolu Lisesi, Zonguldak</p>
+    <p><strong>Location:</strong> Yayla MTAL, Zonguldak</p>
   </div>
 
   <div class="event-card">
     <div class="event-date">30 April 2026</div>
     <h3>TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World</h3>
-    <p><strong>Location:</strong> Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu</p>
+    <p><strong>Location:</strong> Gerede Hacı Sadık Öztosun AL, Bolu</p>
   </div>
 
 </div>
+
 :::
