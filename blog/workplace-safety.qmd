@@ -22,11 +22,44 @@ Uluslararası Çalışma Örgütü’nün son tahminlerine göre:
 -Ayrıca her yıl 400 milyon kişi ölümcül olmayan iş kazalarına maruz kalıyor.
 
 Ülkeler arası karşılaştırmalar ise önemli farklılıklara işaret ediyor:
-🔴 Kosta Rika, iş kazası oranlarında en yüksek seviyelerden birine sahip.
-🔴 Kolombiya ve Türkiye, hem ölümcül hem de ölümcül olmayan iş kazaları açısından üst sıralarda yer alıyor. Bu durum, iş güvenliği standartları ve uygulamalarında önemli zorluklara işaret ediyor.
-🟢 Buna karşılık Norveç ve Japonya, güçlü düzenlemeler ve etkin denetim mekanizmaları sayesinde oldukça düşük oranlara sahip.
+- Kosta Rika, iş kazası oranlarında en yüksek seviyelerden birine sahip.
+- Kolombiya ve Türkiye, hem ölümcül hem de ölümcül olmayan iş kazaları açısından üst sıralarda yer alıyor. Bu durum, iş güvenliği standartları ve uygulamalarında önemli zorluklara işaret ediyor.
+- Buna karşılık Norveç ve Japonya, güçlü düzenlemeler ve etkin denetim mekanizmaları sayesinde oldukça düşük oranlara sahip.
 
 ABD, gelişmiş ülkeler arasında olmasına rağmen hâlâ dikkat çekici bir risk profiline sahip:
 🔹 Yılda 5.000’in üzerinde iş kaynaklı ölüm.
 🔹 Başlıca nedenler: düşmeler, kaymalar, ulaşım kazaları.
 🔹 Özellikle tarım, ormancılık, taşımacılık ve inşaat gibi sektörlerde risk yüksek.
+
+<div class="share-buttons">
+  <a class="share-btn x"
+     href=""
+     id="share-x"
+     target="_blank" rel="noopener noreferrer">X'te Paylaş</a>
+
+  <a class="share-btn linkedin"
+     href=""
+     id="share-linkedin"
+     target="_blank" rel="noopener noreferrer">LinkedIn'de Paylaş</a>
+
+  <a class="share-btn instagram"
+     href="#"
+     onclick="copyInstagramLink(); return false;">Instagram için Linki Kopyala</a>
+</div>
+
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  document.getElementById("share-x").href =
+    `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+  document.getElementById("share-linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+  function copyInstagramLink() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Link kopyalandı.");
+    });
+  }
+</script>
