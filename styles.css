@@ -1252,3 +1252,117 @@ h2, h3 {
   background: #2d4ea2;
   color: #fff !important;
 }
+.schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.day-card {
+  width: 100%;
+  max-width: 900px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.day-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.course-item {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 0.82rem;
+  min-width: 80px;
+  font-weight: 600;
+  color: #2d4ea2;
+}
+
+.course-item strong {
+  font-size: 0.88rem;
+}
+
+.location {
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.office-hours {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #eef3ff;
+  border: 1px solid #dbe4ff;
+}
+
+.office-hours h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+  color: #2d4ea2;
+}
+
+.office-hours p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.course-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.course-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #2d4ea2;
+}
+
+.course-card p {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+
+.syllabus-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #2d4ea2 !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.syllabus-btn:hover {
+  background: #2d4ea2;
+  color: #fff !important;
+}
