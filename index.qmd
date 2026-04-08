@@ -13,7 +13,13 @@ listing:
 ---
 
 ::: {.hero-section}
-
+<script>
+function translateToTurkish() {
+  const currentUrl = encodeURIComponent(window.location.href);
+  const translateUrl = "https://translate.google.com/translate?sl=auto&tl=tr&u=" + currentUrl;
+  window.open(translateUrl, "_blank");
+}
+</script>
 ::: {.hero-image}
 ![](images/profile.jpg){alt="Volkan Işık"}
 :::
