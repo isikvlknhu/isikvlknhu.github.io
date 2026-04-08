@@ -9,76 +9,73 @@ format: html
 
 <div class="schedule-wrapper">
 
-<div class="day-card">
-<h3>📅 Pazartesi</h3>
+  <div class="day-card">
+    <h3>📅 Pazartesi</h3>
 
-<div class="course-item">
-<span class="time">08:40–11:30</span>
-<div>
-<strong>SBY 202 – Girişimcilik</strong><br>
-<span class="location">Derslik Z-02</span>
-</div>
-</div>
+    <div class="course-item">
+      <span class="time">08:40–11:30</span>
+      <div>
+        <strong>SBY 202 – Girişimcilik</strong><br>
+        <span class="location">Derslik Z-02</span>
+      </div>
+    </div>
 
-<div class="course-item">
-<span class="time">13:40–16:30</span>
-<div>
-<strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
-<span class="location">Lab-1</span>
-</div>
-</div>
+    <div class="course-item">
+      <span class="time">13:40–16:30</span>
+      <div>
+        <strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
+        <span class="location">Lab-1</span>
+      </div>
+    </div>
+  </div>
 
-</div>
+  <div class="day-card">
+    <h3>📅 Salı</h3>
 
-<div class="day-card">
-<h3>📅 Salı</h3>
+    <div class="course-item">
+      <span class="time">13:40–16:30</span>
+      <div>
+        <strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
+        <span class="location">Lab-1</span>
+      </div>
+    </div>
+  </div>
 
-<div class="course-item">
-<span class="time">13:40–16:30</span>
-<div>
-<strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
-<span class="location">Lab-1</span>
-</div>
-</div>
+  <div class="day-card">
+    <h3>📅 Çarşamba</h3>
 
-</div>
+    <div class="course-item">
+      <span class="time">13:40–15:30</span>
+      <div>
+        <strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
+        <span class="location">Derslik 105</span>
+      </div>
+    </div>
 
-<div class="day-card">
-<h3>📅 Çarşamba</h3>
-
-<div class="course-item">
-<span class="time">13:40–15:30</span>
-<div>
-<strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
-<span class="location">Derslik 105</span>
-</div>
-</div>
-
-<div class="course-item">
-<span class="time">15:40–17:30</span>
-<div>
-<strong>TOT 224 – Satış Yönetimi</strong><br>
-<span class="location">Derslik 105</span>
-</div>
-</div>
-
-</div>
+    <div class="course-item">
+      <span class="time">15:40–17:30</span>
+      <div>
+        <strong>TOT 224 – Satış Yönetimi</strong><br>
+        <span class="location">Derslik 105</span>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 <div class="office-hours">
-
-<h3>🕘 Danışmanlık Saatleri</h3>
-
-<p>
-<strong>Gün:</strong> Çarşamba <br>
-<strong>Saat:</strong> 10:00 – 12:00
-</p>
-
+  <h3>🕘 Danışmanlık Saatleri</h3>
+  <p>
+    <strong>Gün:</strong> Çarşamba <br>
+    <strong>Saat:</strong> 10:00 – 12:00
+  </p>
 </div>
 
 :::
+
 ---
+
+## Dersler
 
 ::: {=html}
 
@@ -107,5 +104,3 @@ format: html
 </div>
 
 :::
-
-</div>
