@@ -5,95 +5,105 @@ format: html
 
 ## 2025–2026 Bahar Dönemi Ders Programı
 
-<div class="schedule-wrapper">
+::: {.schedule-wrapper}
 
-  <div class="day-card">
-    <h3>📅 Pazartesi</h3>
+::: {.day-card}
+### 📅 Pazartesi
 
-    <div class="course-item">
-      <span class="time">08:40–11:30</span>
-      <div>
-        <strong>SBY 202 – Girişimcilik</strong><br>
-        <span class="location">Derslik Z-02</span>
-      </div>
-    </div>
-
-    <div class="course-item">
-      <span class="time">13:40–16:30</span>
-      <div>
-        <strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
-        <span class="location">Lab-1</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <h3>📅 Salı</h3>
-
-    <div class="course-item">
-      <span class="time">13:40–16:30</span>
-      <div>
-        <strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
-        <span class="location">Lab-1</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <h3>📅 Çarşamba</h3>
-
-    <div class="course-item">
-      <span class="time">13:40–15:30</span>
-      <div>
-        <strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
-        <span class="location">Derslik 105</span>
-      </div>
-    </div>
-
-    <div class="course-item">
-      <span class="time">15:40–17:30</span>
-      <div>
-        <strong>TOT 224 – Satış Yönetimi</strong><br>
-        <span class="location">Derslik 105</span>
-      </div>
-    </div>
-  </div>
-
+::: {.course-item}
+<span class="time">08:40–11:30</span>
+<div>
+<strong>SBY 202 – Girişimcilik</strong><br>
+<span class="location">Derslik Z-02</span>
 </div>
+:::
 
-<div class="office-hours">
-  <h3>🕘 Danışmanlık Saatleri</h3>
-  <p><strong>Gün:</strong> Çarşamba<br><strong>Saat:</strong> 10:00 – 12:00</p>
+::: {.course-item}
+<span class="time">13:40–16:30</span>
+<div>
+<strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
+<span class="location">Lab-1</span>
 </div>
+:::
+:::
+
+::: {.day-card}
+### 📅 Salı
+
+::: {.course-item}
+<span class="time">13:40–16:30</span>
+<div>
+<strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
+<span class="location">Lab-1</span>
+</div>
+:::
+:::
+
+::: {.day-card}
+### 📅 Çarşamba
+
+::: {.course-item}
+<span class="time">13:40–15:30</span>
+<div>
+<strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
+<span class="location">Derslik 105</span>
+</div>
+:::
+
+::: {.course-item}
+<span class="time">15:40–17:30</span>
+<div>
+<strong>TOT 224 – Satış Yönetimi</strong><br>
+<span class="location">Derslik 105</span>
+</div>
+:::
+:::
+
+:::
+
+::: {.office-hours}
+### 🕘 Danışmanlık Saatleri
+
+**Gün:** Çarşamba  
+**Saat:** 10:00 – 12:00
+:::
 
 ---
 
 ## Dersler
 
-<div class="course-cards">
+::: {.course-cards}
 
-  <div class="course-card">
-    <h3>🚀 SBY 202 – Girişimcilik</h3>
-    <p>Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1568323/mod_resource/content/0/SBY202%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
-  </div>
+::: {.course-card}
+### 🚀 SBY 202 – Girişimcilik
 
-  <div class="course-card">
-    <h3>💻 BYA 114 – Bilgisayar Büro Programları</h3>
-    <p>Ofis yazılımları ve temel dijital becerilere odaklanır.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1440269/mod_resource/content/0/BYA114%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
-  </div>
+Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.
 
-  <div class="course-card">
-    <h3>⚠️ TOT 208 – İş Sağlığı ve Güvenliği</h3>
-    <p>İSG kavramı, riskler ve önleyici yaklaşım ele alınır.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563091/mod_resource/content/0/TOT208%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
-  </div>
+[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1568323/mod_resource/content/0/SBY202%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+:::
 
-  <div class="course-card">
-    <h3>📈 TOT 224 – Satış Yönetimi</h3>
-    <p>Satış süreçleri ve müşteri ilişkileri yönetimi.</p>
-    <a class="syllabus-btn" href="https://hadi.hacettepe.edu.tr/pluginfile.php/1563089/mod_resource/content/0/TOT224%20Ders%20I%CC%87zlencesi.pdf" target="_blank">📄 Ders İzlencesi</a>
-  </div>
+::: {.course-card}
+### 💻 BYA 114 – Bilgisayar Büro Programları
 
-</div>
+Ofis yazılımları ve temel dijital becerilere odaklanır.
+
+[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1440269/mod_resource/content/0/BYA114%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+:::
+
+::: {.course-card}
+### ⚠️ TOT 208 – İş Sağlığı ve Güvenliği
+
+İSG kavramı, riskler ve önleyici yaklaşım ele alınır.
+
+[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1563091/mod_resource/content/0/TOT208%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+:::
+
+::: {.course-card}
+### 📈 TOT 224 – Satış Yönetimi
+
+Satış süreçleri ve müşteri ilişkileri yönetimi.
+
+[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1563089/mod_resource/content/0/TOT224%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+:::
+
+:::
