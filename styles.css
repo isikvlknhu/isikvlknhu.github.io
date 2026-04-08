@@ -1105,3 +1105,42 @@ td, th {
   width: 100%;
   max-width: 900px;
 }
+/* === LECTURES COMPACT STYLE === */
+
+.day-card {
+  width: 100%;
+  max-width: 900px;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.course-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.time {
+  font-size: 0.85rem;
+  min-width: 85px;
+}
+
+.course-item strong {
+  font-size: 0.9rem;
+}
+
+.location {
+  font-size: 0.8rem;
+}
+
+.day-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.schedule-wrapper {
+  gap: 14px;
+}
