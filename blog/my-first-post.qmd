@@ -72,3 +72,36 @@ Türkiye açısından bu deneyim, sosyal girişimciliği yalnızca proje ya da h
 İspanya’da geçirdiğim bu süreç, sosyal girişimciliğin yalnızca sosyal fayda üretme iradesiyle değil, aynı zamanda doğru kurumlar, doğru ilişkiler ve doğru destek mekanizmalarıyla güçlendiğini gösterdi.
 
 Sosyal etki ile ekonomik sürdürülebilirliğin birlikte mümkün olduğu bir model arıyorsak, İspanya örneği üzerinde dikkatle düşünmeye değer.
+
+<div class="share-buttons">
+  <a class="share-btn x"
+     href=""
+     id="share-x"
+     target="_blank" rel="noopener noreferrer">X'te Paylaş</a>
+
+  <a class="share-btn linkedin"
+     href=""
+     id="share-linkedin"
+     target="_blank" rel="noopener noreferrer">LinkedIn'de Paylaş</a>
+
+  <a class="share-btn instagram"
+     href="#"
+     onclick="copyInstagramLink(); return false;">Instagram için Linki Kopyala</a>
+</div>
+
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  document.getElementById("share-x").href =
+    `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+  document.getElementById("share-linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+  function copyInstagramLink() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Link kopyalandı.");
+    });
+  }
+</script>
