@@ -947,3 +947,50 @@ th {
 td, th {
   padding: 10px 12px;
 }
+/* Schedule cards */
+
+.schedule-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.day-card {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+}
+
+.day-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #2d4ea2;
+}
+
+.course-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.time {
+  font-weight: 700;
+  color: #2d4ea2;
+  min-width: 90px;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* hover efekti (çok güzel olur) */
+.day-card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
