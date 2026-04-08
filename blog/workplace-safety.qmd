@@ -1,0 +1,24 @@
+## 🌍 A Global Snapshot of Workplace Safety
+
+![Küresel iş sağlığı ve güvenliği istatistikleri (ILO, 2026)](../images/workplace-safety.png){fig-align="center" width="80%"}
+
+*Kaynak: International Labour Organization (ILO), görselleştirme: Statista*
+
+İş Sağlığı ve Güvenliğinde Küresel Görünüm: İlerleme Var, Ama Yeterli mi?
+
+Son 20 yılda dünyanın birçok bölgesinde iş sağlığı ve güvenliği alanında önemli ilerlemeler kaydedildi. Daha güvenli ve sağlıklı çalışma ortamları milyonlarca çalışan için artık bir gerçek. Ancak tablo hâlâ düşündürücü.
+
+Uluslararası Çalışma Örgütü’nün son tahminlerine göre:
+-Her yıl yaklaşık 3 milyon kişi iş kazaları ve meslek hastalıkları nedeniyle hayatını kaybediyor.
+-Bu ölümlerin %89’u meslek hastalıklarından, %11’i iş kazalarından kaynaklanıyor.
+-Ayrıca her yıl 400 milyon kişi ölümcül olmayan iş kazalarına maruz kalıyor.
+
+Ülkeler arası karşılaştırmalar ise önemli farklılıklara işaret ediyor:
+🔴 Kosta Rika, iş kazası oranlarında en yüksek seviyelerden birine sahip.
+🔴 Kolombiya ve Türkiye, hem ölümcül hem de ölümcül olmayan iş kazaları açısından üst sıralarda yer alıyor. Bu durum, iş güvenliği standartları ve uygulamalarında önemli zorluklara işaret ediyor.
+🟢 Buna karşılık Norveç ve Japonya, güçlü düzenlemeler ve etkin denetim mekanizmaları sayesinde oldukça düşük oranlara sahip.
+
+ABD, gelişmiş ülkeler arasında olmasına rağmen hâlâ dikkat çekici bir risk profiline sahip:
+🔹 Yılda 5.000’in üzerinde iş kaynaklı ölüm.
+🔹 Başlıca nedenler: düşmeler, kaymalar, ulaşım kazaları.
+🔹 Özellikle tarım, ormancılık, taşımacılık ve inşaat gibi sektörlerde risk yüksek.
