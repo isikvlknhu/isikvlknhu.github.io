@@ -13,6 +13,8 @@ website:
         text: Publications
       - href: cv.qmd
         text: CV
+      - href: lectures.qmd
+        text: Lectures
       - href: blog.qmd
         text: Blog
       - href: podcasts.qmd
