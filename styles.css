@@ -994,3 +994,22 @@ td, th {
   transform: translateY(-3px);
   transition: 0.2s ease;
 }
+/* Office hours */
+
+.office-hours {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #eef3ff;
+  border: 1px solid #dbe4ff;
+}
+
+.office-hours h3 {
+  margin-top: 0;
+  color: #2d4ea2;
+}
+
+.office-hours p {
+  margin: 0;
+  font-size: 1rem;
+}
