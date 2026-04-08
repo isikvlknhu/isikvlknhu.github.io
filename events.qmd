@@ -5,52 +5,76 @@ format: html
 
 ## Upcoming Events
 
-::: {=html}
+::: {.events-list}
 
-<div class="events-list">
+::: {.event-card}
+::: {.event-date}
+03 April 2026
+:::
 
-  <div class="event-card">
-    <div class="event-date">03 April 2026</div>
-    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program</h3>
-    <p><strong>Location:</strong> Beytepe Campus, Sociology Seminar Hall</p>
-  </div>
+### Hacettepe University Social Entrepreneurship Training of Trainers Program
 
-  <div class="event-card">
-    <div class="event-date">10 April 2026</div>
-    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program</h3>
-    <p><strong>Location:</strong> Beytepe Campus, Sociology Seminar Hall</p>
-  </div>
+**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+:::
 
-  <div class="event-card">
-    <div class="event-date">16 April 2026</div>
-    <h3>TÜBİTAK Science Talks – Social Entrepreneurship</h3>
-    <p><strong>Location:</strong> Ankara Lisesi, Ankara</p>
-  </div>
+::: {.event-card}
+::: {.event-date}
+10 April 2026
+:::
 
-  <div class="event-card">
-    <div class="event-date">17 April 2026</div>
-    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program</h3>
-    <p><strong>Location:</strong> Beytepe Campus, Sociology Seminar Hall</p>
-  </div>
+### Hacettepe University Social Entrepreneurship Training of Trainers Program
 
-  <div class="event-card">
-    <div class="event-date">24 April 2026</div>
-    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program</h3>
-    <p><strong>Location:</strong> Beytepe Campus, Sociology Seminar Hall</p>
-  </div>
+**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+:::
 
-  <div class="event-card">
-    <div class="event-date">29 April 2026</div>
-    <h3>TÜBİTAK Science Talks – Social Entrepreneurship</h3>
-    <p><strong>Location:</strong> Zonguldak</p>
-  </div>
+::: {.event-card}
+::: {.event-date}
+16 April 2026
+:::
 
-  <div class="event-card">
-    <div class="event-date">30 April 2026</div>
-    <h3>TÜBİTAK Science Talks – Social Entrepreneurship</h3>
-    <p><strong>Location:</strong> Bolu</p>
-  </div>
+### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
 
-</div>
+**Location:** Ankara Lisesi, Ankara
+:::
+
+::: {.event-card}
+::: {.event-date}
+17 April 2026
+:::
+
+### Hacettepe University Social Entrepreneurship Training of Trainers Program
+
+**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+:::
+
+::: {.event-card}
+::: {.event-date}
+24 April 2026
+:::
+
+### Hacettepe University Social Entrepreneurship Training of Trainers Program
+
+**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+:::
+
+::: {.event-card}
+::: {.event-date}
+29 April 2026
+:::
+
+### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
+
+**Location:** Yayla Mesleki ve Teknik Anadolu Lisesi, Zonguldak
+:::
+
+::: {.event-card}
+::: {.event-date}
+30 April 2026
+:::
+
+### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
+
+**Location:** Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu
+:::
 
 :::
