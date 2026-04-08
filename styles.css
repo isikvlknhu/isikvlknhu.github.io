@@ -1815,3 +1815,40 @@ h2, h3 {
 .event-card a:hover {
   text-decoration: underline;
 }
+.share-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.share-btn.x {
+  background: #111;
+  color: white;
+}
+
+.share-btn.linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+.share-btn.instagram {
+  background: #e1306c;
+  color: white;
+}
