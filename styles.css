@@ -1233,3 +1233,22 @@ h2, h3 {
   color: #555;
   margin: 0;
 }
+/* === SYLLABUS BUTTON === */
+
+.syllabus-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #2d4ea2 !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.syllabus-btn:hover {
+  background: #2d4ea2;
+  color: #fff !important;
+}
