@@ -1068,3 +1068,29 @@ td, th {
   font-size: 0.85rem;
   color: #666;
 }
+.schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.day-card {
+  width: 100%;
+  max-width: 900px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.office-hours {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #eef3ff;
+  border: 1px solid #dbe4ff;
+}
