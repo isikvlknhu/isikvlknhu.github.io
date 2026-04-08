@@ -3,8 +3,6 @@ title: "Upcoming Events"
 format: html
 ---
 
-## Upcoming Events
-
 ::: {.events-list}
 
 ::: {.event-card}
