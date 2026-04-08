@@ -1787,3 +1787,19 @@ h2, h3 {
     backdrop-filter: blur(8px);
   }
 }
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link:hover {
+    color: #2d4ea2 !important;
+  }
+
+  .navbar-collapse.show::before {
+    content: "Menu";
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 18px;
+  }
+}
