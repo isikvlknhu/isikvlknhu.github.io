@@ -1852,3 +1852,17 @@ h2, h3 {
   background: #e1306c;
   color: white;
 }
+.translate-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #0d6efd;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.translate-btn:hover {
+  opacity: 0.92;
+}
