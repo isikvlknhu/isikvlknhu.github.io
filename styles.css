@@ -1200,3 +1200,36 @@ h2, h3 {
   font-size: 1.05rem;
   margin-bottom: 4px;
 }
+/* === COURSE CARDS (ŞIK TASARIM) === */
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.course-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.course-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #2d4ea2;
+}
+
+.course-card p {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0;
+}
