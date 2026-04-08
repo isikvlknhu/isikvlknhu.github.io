@@ -80,6 +80,8 @@ format: html
 :::
 ---
 
+::: {=html}
+
 <div class="course-cards">
 
   <div class="course-card">
@@ -103,5 +105,7 @@ format: html
   </div>
 
 </div>
+
+:::
 
 </div>
