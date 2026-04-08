@@ -1699,3 +1699,17 @@ h2, h3 {
   font-size: 0.92rem;
   color: #555;
 }
+/* 🔥 MOBILE NAVBAR FIX (override) */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-nav {
+    display: block !important;
+  }
+}
