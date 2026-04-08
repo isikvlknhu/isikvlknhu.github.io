@@ -67,7 +67,19 @@ format: html
 </div>
 
 :::
+::: {=html}
 
+<div class="office-hours">
+
+<h3>🕘 Danışmanlık Saatleri</h3>
+
+<p>
+<strong>Çarşamba:</strong> 10:00 – 12:00
+</p>
+
+</div>
+
+:::
 ---
 
 ## Dersler
