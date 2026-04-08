@@ -12,7 +12,7 @@ format: html
 03 April 2026
 :::
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program
+### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 1/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
 :::
@@ -22,7 +22,7 @@ format: html
 10 April 2026
 :::
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program
+### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 2/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
 :::
@@ -32,7 +32,7 @@ format: html
 16 April 2026
 :::
 
-### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
+### TÜBİTAK Science Talks-1: Social Entrepreneurship – The Art of Changing the World
 
 **Location:** Ankara Lisesi, Ankara
 :::
@@ -42,7 +42,7 @@ format: html
 17 April 2026
 :::
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program
+### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 3/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
 :::
@@ -52,7 +52,7 @@ format: html
 24 April 2026
 :::
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program
+### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 4/4
 
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
 :::
@@ -62,7 +62,7 @@ format: html
 29 April 2026
 :::
 
-### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
+### TÜBİTAK Science Talks-2: Social Entrepreneurship – The Art of Changing the World
 
 **Location:** Yayla Mesleki ve Teknik Anadolu Lisesi, Zonguldak
 :::
@@ -72,7 +72,7 @@ format: html
 30 April 2026
 :::
 
-### TÜBİTAK Science Talks: Social Entrepreneurship – The Art of Changing the World
+### TÜBİTAK Science Talks-3: Social Entrepreneurship – The Art of Changing the World
 
 **Location:** Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu
 :::
