@@ -1020,17 +1020,21 @@ td, th {
 
 /* GÜNLER GRID */
 .schedule-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 /* GÜN KARTI */
 .day-card {
-  padding: 14px 16px;      /* küçültüldü */
+  padding: 14px 16px;
   border-radius: 12px;
   background: #fff;
   border: 1px solid #e5e7eb;
+
+  width: 100%;
+  max-width: 900px;
 }
 
 /* GÜN BAŞLIK */
