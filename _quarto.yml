@@ -21,7 +21,9 @@ website:
         text: My Podcasts
       - href: events.qmd
         text: Upcoming Events
-        
+    right:
+      - text: "Translate TR"
+        href: "https://translate.google.com/translate?sl=auto&tl=tr&u=https://isikliknhu.github.io"  
 
 format:
   html:
