@@ -19,6 +19,8 @@ website:
         text: Blog
       - href: podcasts.qmd
         text: My Podcasts
+      - href: events.qmd
+        text: Upcoming Events
         
 
 format:
