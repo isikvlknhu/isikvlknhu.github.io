@@ -13,3 +13,19 @@ listing:
 ---
 
 Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.
+
+<hr>
+
+<h3>📩 Abone Ol</h3>
+<p>Yeni yazılar yayınlandığında e-posta almak için abone olun.</p>
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/volkani83"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/volkani83', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <input type="email" name="email" placeholder="E-posta adresiniz" required>
+  <input type="submit" value="Abone Ol">
+</form>
