@@ -30,22 +30,145 @@ async function loadPublications() {
       return;
     }
 
-    const seen = new Set();
-    works = works.filter(work => {
-      const title = work.title?.title?.value || "";
-      const type = work.type || "";
-      const year = work["publication-date"]?.year?.value || "";
+    function normalizeText(str) {
+      return (str || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")   // aksanları temizle
+        .replace(/&/g, "and")
+        .replace(/[^\w\s]/g, " ")          // noktalama işaretlerini temizle
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function getDOI(work) {
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      for (const id of extIds) {
+        const idType = (id["external-id-type"] || "").toLowerCase();
+        const idValue = (id["external-id-value"] || "").trim().toLowerCase();
+        if (idType === "doi" && idValue) {
+          return idValue;
+        }
+      }
+      return "";
+    }
+
+    function getRecordUrl(work) {
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      for (const id of extIds) {
+        const idUrl = id["external-id-url"]?.value || "";
+        if (idUrl) return idUrl;
+      }
+      return work.url?.value || "";
+    }
+
+    function scoreWork(work) {
+      let score = 0;
+
+      const doi = getDOI(work);
       const journal = work["journal-title"]?.value || "";
-      const key = `${title}|${type}|${year}|${journal}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
+      const year = work["publication-date"]?.year?.value || "";
+      const month = work["publication-date"]?.month?.value || "";
+      const day = work["publication-date"]?.day?.value || "";
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      const title = work.title?.title?.value || "";
+
+      if (doi) score += 100;
+      if (journal) score += 20;
+      if (year) score += 10;
+      if (month) score += 3;
+      if (day) score += 2;
+      if (extIds.length > 0) score += 5;
+      if (title) score += 5;
+
+      return score;
+    }
+
+    function chooseBetterWork(existing, candidate) {
+      const existingType = (existing.type || "").toLowerCase();
+      const candidateType = (candidate.type || "").toLowerCase();
+
+      // Aynı kayıt hem book hem book-chapter görünüyorsa book-chapter tercih et
+      if (existingType === "book" && candidateType === "book-chapter") {
+        return candidate;
+      }
+      if (existingType === "book-chapter" && candidateType === "book") {
+        return existing;
+      }
+
+      // Daha zengin metadata taşıyan kaydı tercih et
+      return scoreWork(candidate) > scoreWork(existing) ? candidate : existing;
+    }
+
+    function titleSignature(title) {
+      const normalized = normalizeText(title);
+      const words = normalized.split(" ").filter(Boolean);
+
+      // İlk 10 kelimeyi alarak başlık varyasyonlarını biraz tolere eder
+      return words.slice(0, 10).join(" ");
+    }
+
+    const deduped = new Map();
+
+    works.forEach(work => {
+      const rawTitle = work.title?.title?.value || "";
+      const normalizedTitle = normalizeText(rawTitle);
+      const signature = titleSignature(rawTitle);
+      const doi = getDOI(work);
+
+      let key = "";
+
+      // 1) DOI varsa en güçlü eşleştirme
+      if (doi) {
+        key = `doi:${doi}`;
+      } else {
+        // 2) DOI yoksa başlık imzasına göre eşleştir
+        key = `title:${signature}`;
+      }
+
+      if (!deduped.has(key)) {
+        deduped.set(key, work);
+      } else {
+        const existing = deduped.get(key);
+        deduped.set(key, chooseBetterWork(existing, work));
+      }
     });
+
+    works = Array.from(deduped.values());
+
+    // Ek güvenlik katmanı:
+    // Aynı başlık + aynı tür + çok benzer kayıtlar tekrar geldiyse ikinci kez temizle
+    const secondPass = new Map();
+
+    works.forEach(work => {
+      const type = (work.type || "").toLowerCase();
+      const year = work["publication-date"]?.year?.value || "";
+      const titleKey = titleSignature(work.title?.title?.value || "");
+      const doi = getDOI(work);
+
+      const key = doi
+        ? `doi2:${doi}`
+        : `fallback:${titleKey}|${type}|${year}`;
+
+      if (!secondPass.has(key)) {
+        secondPass.set(key, work);
+      } else {
+        const existing = secondPass.get(key);
+        secondPass.set(key, chooseBetterWork(existing, work));
+      }
+    });
+
+    works = Array.from(secondPass.values());
 
     works.sort((a, b) => {
       const yearA = parseInt(a["publication-date"]?.year?.value || "0", 10);
       const yearB = parseInt(b["publication-date"]?.year?.value || "0", 10);
-      return yearB - yearA;
+
+      if (yearB !== yearA) return yearB - yearA;
+
+      const titleA = (a.title?.title?.value || "").toLowerCase();
+      const titleB = (b.title?.title?.value || "").toLowerCase();
+      return titleA.localeCompare(titleB);
     });
 
     const categorized = {
@@ -70,31 +193,22 @@ async function loadPublications() {
     });
 
     function renderWork(work) {
-      const title = work.title?.title?.value || "Başlıksız kayıt";
+      const title = work.title?.title?.value || "Untitled record";
       const journal = work["journal-title"]?.value || "";
       const year = work["publication-date"]?.year?.value || "";
       const type = (work.type || "").replaceAll("-", " ");
-      const extIds = work["external-ids"]?.["external-id"] || [];
+      const doi = getDOI(work);
+      const recordUrl = getRecordUrl(work);
 
       let doiLink = "";
       let recordLink = "";
 
-      extIds.forEach(id => {
-        const idType = (id["external-id-type"] || "").toLowerCase();
-        const idValue = id["external-id-value"] || "";
-        const idUrl = id["external-id-url"]?.value || "";
+      if (doi) {
+        doiLink = `<a class="pub-btn" href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI</a>`;
+      }
 
-        if (idType === "doi" && idValue && !doiLink) {
-          doiLink = `<a class="pub-btn" href="https://doi.org/${idValue}" target="_blank" rel="noopener noreferrer">DOI</a>`;
-        }
-
-        if (idUrl && !recordLink) {
-          recordLink = `<a class="pub-btn pub-btn-secondary" href="${idUrl}" target="_blank" rel="noopener noreferrer">View Record</a>`;
-        }
-      });
-
-      if (!recordLink && work.url?.value) {
-        recordLink = `<a class="pub-btn pub-btn-secondary" href="${work.url.value}" target="_blank" rel="noopener noreferrer">View Record</a>`;
+      if (recordUrl) {
+        recordLink = `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank" rel="noopener noreferrer">View Record</a>`;
       }
 
       return `
