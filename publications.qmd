@@ -17,76 +17,70 @@ async function loadPublications() {
     }
 
     const data = await response.json();
-    const groups = data.group || data["activities-summary"]?.works?.group || [];
+    const groups = data.group || [];
 
-    if (groups.length === 0) {
+    // Tüm work-summary kayıtlarını düzleştir
+    let works = [];
+    groups.forEach(group => {
+      const summaries = group["work-summary"] || [];
+      summaries.forEach(work => works.push(work));
+    });
+
+    if (works.length === 0) {
       container.innerHTML = "<p>Henüz yayın bulunamadı.</p>";
       return;
     }
 
+    // Tekrarlıları azalt
+    const seen = new Set();
+    works = works.filter(work => {
+      const title = work.title?.title?.value || "";
+      const type = work.type || "";
+      const year = work["publication-date"]?.year?.value || "";
+      const key = `${title}|${type}|${year}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
+    // Yıla göre sırala
+    works.sort((a, b) => {
+      const yearA = parseInt(a["publication-date"]?.year?.value || "0", 10);
+      const yearB = parseInt(b["publication-date"]?.year?.value || "0", 10);
+      return yearB - yearA;
+    });
+
     let html = '<div class="pub-wrapper">';
 
-    groups.forEach(group => {
-      const work = group["work-summary"]?.[0];
-      if (!work) return;
-
+    works.forEach(work => {
       const title = work.title?.title?.value || "Başlıksız kayıt";
       const journal = work["journal-title"]?.value || "";
       const year = work["publication-date"]?.year?.value || "";
       const type = (work.type || "").replaceAll("-", " ");
       const extIds = work["external-ids"]?.["external-id"] || [];
 
-let doiUrl = "";
-let recordUrl = "";
+      let doiLink = "";
+      let recordLink = "";
 
-extIds.forEach(id => {
-  const idType = (id["external-id-type"] || "").toLowerCase();
-  const idValue = id["external-id-value"] || "";
-  const idUrl = id["external-id-url"]?.value || "";
-
-  if (idType === "doi" && idValue) {
-    doiUrl = `https://doi.org/${idValue}`;
-  }
-
-  if (idUrl) {
-    recordUrl = idUrl;
-  }
-});
-
-// OA kontrolü (basit heuristic)
-const isOpenAccess =
-  recordUrl.includes("open") ||
-  recordUrl.includes("pdf") ||
-  recordUrl.includes("handle") ||
-  recordUrl.includes("researchgate");
-
-// link oluşturma
-let linksHtml = "";
-
-// DOI varsa (ve aynı değilse)
-if (doiUrl && doiUrl !== recordUrl) {
-  linksHtml += `<a class="pub-btn" href="${doiUrl}" target="_blank">DOI</a>`;
-}
-
-// record link varsa
-if (recordUrl) {
-  const label = isOpenAccess ? "Open Access" : "View Article";
-  linksHtml += `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank">${label}</a>`;
-}
-
+      // Önce DOI / external-id-url bak
       extIds.forEach(id => {
         const idType = (id["external-id-type"] || "").toLowerCase();
         const idValue = id["external-id-value"] || "";
         const idUrl = id["external-id-url"]?.value || "";
 
-        if (idType === "doi" && idValue) {
+        if (idType === "doi" && idValue && !doiLink) {
           doiLink = `<a class="pub-btn" href="https://doi.org/${idValue}" target="_blank" rel="noopener noreferrer">DOI</a>`;
         }
 
-        if (idUrl) {
-          recordLink = `<a class="pub-btn pub-btn-secondary" href="${idUrl}" target="_blank" rel="noopener noreferrer">Kayıt</a>`;
+        if (idUrl && !recordLink) {
+          recordLink = `<a class="pub-btn pub-btn-secondary" href="${idUrl}" target="_blank" rel="noopener noreferrer">View Record</a>`;
         }
       });
+
+      // Fallback: work.url.value kullan
+      if (!recordLink && work.url?.value) {
+        recordLink = `<a class="pub-btn pub-btn-secondary" href="${work.url.value}" target="_blank" rel="noopener noreferrer">View Record</a>`;
+      }
 
       html += `
         <div class="pub-item">
@@ -96,9 +90,10 @@ if (recordUrl) {
             ${year ? `<span class="pub-badge">${year}</span>` : ""}
             ${type ? `<span class="pub-badge pub-badge-light">${type}</span>` : ""}
           </div>
-        <div class="pub-links">
-          ${linksHtml}
-        </div>
+          <div class="pub-links">
+            ${doiLink}
+            ${recordLink}
+          </div>
         </div>
       `;
     });
