@@ -1874,3 +1874,14 @@ h2, h3 {
   margin-top: -8px;
   margin-bottom: 12px;
 }
+.pub-section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.pub-section-title:first-child {
+  margin-top: 0;
+}
