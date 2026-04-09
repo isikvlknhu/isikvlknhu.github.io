@@ -19,7 +19,6 @@ async function loadPublications() {
     const data = await response.json();
     const groups = data.group || [];
 
-    // Tüm work-summary kayıtlarını düzleştir
     let works = [];
     groups.forEach(group => {
       const summaries = group["work-summary"] || [];
@@ -31,28 +30,46 @@ async function loadPublications() {
       return;
     }
 
-    // Tekrarlıları azalt
     const seen = new Set();
     works = works.filter(work => {
       const title = work.title?.title?.value || "";
       const type = work.type || "";
       const year = work["publication-date"]?.year?.value || "";
-      const key = `${title}|${type}|${year}`;
+      const journal = work["journal-title"]?.value || "";
+      const key = `${title}|${type}|${year}|${journal}`;
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
     });
 
-    // Yıla göre sırala
     works.sort((a, b) => {
       const yearA = parseInt(a["publication-date"]?.year?.value || "0", 10);
       const yearB = parseInt(b["publication-date"]?.year?.value || "0", 10);
       return yearB - yearA;
     });
 
-    let html = '<div class="pub-wrapper">';
+    const categorized = {
+      "Journal Articles": [],
+      "Books": [],
+      "Book Chapters": [],
+      "Other Publications": []
+    };
 
     works.forEach(work => {
+      const type = (work.type || "").toLowerCase();
+
+      if (type === "journal-article") {
+        categorized["Journal Articles"].push(work);
+      } else if (type === "book") {
+        categorized["Books"].push(work);
+      } else if (type === "book-chapter") {
+        categorized["Book Chapters"].push(work);
+      } else {
+        categorized["Other Publications"].push(work);
+      }
+    });
+
+    function renderWork(work) {
       const title = work.title?.title?.value || "Başlıksız kayıt";
       const journal = work["journal-title"]?.value || "";
       const year = work["publication-date"]?.year?.value || "";
@@ -62,7 +79,6 @@ async function loadPublications() {
       let doiLink = "";
       let recordLink = "";
 
-      // Önce DOI / external-id-url bak
       extIds.forEach(id => {
         const idType = (id["external-id-type"] || "").toLowerCase();
         const idValue = id["external-id-value"] || "";
@@ -77,12 +93,11 @@ async function loadPublications() {
         }
       });
 
-      // Fallback: work.url.value kullan
       if (!recordLink && work.url?.value) {
         recordLink = `<a class="pub-btn pub-btn-secondary" href="${work.url.value}" target="_blank" rel="noopener noreferrer">View Record</a>`;
       }
 
-      html += `
+      return `
         <div class="pub-item">
           <div class="pub-title">${title}</div>
           ${journal ? `<div class="pub-journal">${journal}</div>` : ""}
@@ -96,9 +111,21 @@ async function loadPublications() {
           </div>
         </div>
       `;
+    }
+
+    let html = "";
+
+    Object.entries(categorized).forEach(([sectionTitle, items]) => {
+      if (items.length === 0) return;
+
+      html += `<h2 class="pub-section-title">${sectionTitle}</h2>`;
+      html += `<div class="pub-wrapper">`;
+      items.forEach(work => {
+        html += renderWork(work);
+      });
+      html += `</div>`;
     });
 
-    html += "</div>";
     container.innerHTML = html;
 
   } catch (error) {
