@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Volkan Işık"
+  site-url: https://volkanisiklab.com
   navbar:
     left:
       - href: index.qmd
@@ -23,7 +24,9 @@ website:
         text: Upcoming Events
     right:
       - text: "Translate TR"
-        href: "https://translate.google.com/translate?sl=auto&tl=tr&u=https://volkanisiklab.com"  
+        href: "https://translate.google.com/translate?sl=auto&tl=tr&u=https://volkanisiklab.com"
+      - icon: rss
+        href: blog.xml
 
 format:
   html:
