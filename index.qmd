@@ -44,7 +44,7 @@ Vocational School of Social Sciences
 ::: {.hero-email}
 📧 volkani@hacettepe.edu.tr
 <span class="contact-info">📞 Office: +90 312 311 60 15 - 129</span>  
-<span class="contact-info">💬: [ Message Me on WhatsApp ](https://wa.me/34600900949)</span>
+<span class="contact-info">💬 [ Message Me on WhatsApp ](https://wa.me/34600900949)</span>
 :::
 
 ::: {.hero-links}
