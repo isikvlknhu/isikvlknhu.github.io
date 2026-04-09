@@ -1,6 +1,6 @@
 ---
 title: "Research Publications"
-subtitle: "Web of Science, Scopus and TR-Dizin Indexed Publications"
+subtitle: "Web of Science (SSCI & AHCI), Scopus, ESCI and TR-Dizin Indexed Publications"
 format: html
 ---
 
