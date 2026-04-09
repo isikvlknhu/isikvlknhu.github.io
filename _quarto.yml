@@ -6,6 +6,7 @@ project:
 website:
   title: "Volkan Işık"
   site-url: https://volkanisiklab.com
+  description: "Academic website of Volkan Işık"
   navbar:
     left:
       - href: index.qmd
@@ -35,6 +36,145 @@ format:
     include-in-header:
       - text: |
           <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+          <style>
+          #subscribe-popup-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 9998;
+          }
+
+          #subscribe-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(92vw, 520px);
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.20);
+            padding: 28px 24px 22px;
+            z-index: 9999;
+          }
+
+          #subscribe-popup h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+          }
+
+          #subscribe-popup p {
+            margin-bottom: 16px;
+            color: #444;
+            line-height: 1.6;
+          }
+
+          #subscribe-popup .popup-close {
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            border: none;
+            background: transparent;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: #666;
+          }
+
+          #subscribe-popup form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+          }
+
+          #subscribe-popup input[type="email"] {
+            flex: 1 1 240px;
+            padding: 12px 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+          }
+
+          #subscribe-popup input[type="submit"] {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 10px;
+            background: #1f3c88;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+          }
+
+          #subscribe-popup .popup-note {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #777;
+          }
+
+          @media (max-width: 576px) {
+            #subscribe-popup {
+              padding: 24px 18px 18px;
+            }
+
+            #subscribe-popup h3 {
+              font-size: 1.25rem;
+            }
+          }
+          </style>
+
+          <div id="subscribe-popup-overlay"></div>
+
+          <div id="subscribe-popup" aria-label="Subscribe popup" role="dialog" aria-modal="true">
+            <button class="popup-close" onclick="closeSubscribePopup()" aria-label="Close">&times;</button>
+            <h3>Subscribe to new posts</h3>
+            <p>
+              Receive email updates when I publish new posts on social entrepreneurship,
+              social policy, labor markets, and academic research.
+            </p>
+
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/volkani83"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.email/volkani83', 'popupwindow')"
+              class="embeddable-buttondown-form"
+            >
+              <input type="email" name="email" placeholder="Your email address" required>
+              <input type="submit" value="Subscribe">
+            </form>
+
+            <div class="popup-note">
+              No spam. Only updates when a new post is published.
+            </div>
+          </div>
+
+          <script>
+          function closeSubscribePopup() {
+            document.getElementById("subscribe-popup").style.display = "none";
+            document.getElementById("subscribe-popup-overlay").style.display = "none";
+            localStorage.setItem("subscribePopupClosed", "true");
+          }
+
+          function openSubscribePopup() {
+            document.getElementById("subscribe-popup").style.display = "block";
+            document.getElementById("subscribe-popup-overlay").style.display = "block";
+          }
+
+          window.addEventListener("load", function () {
+            const alreadyClosed = localStorage.getItem("subscribePopupClosed");
+            if (!alreadyClosed) {
+              setTimeout(openSubscribePopup, 2500);
+            }
+          });
+
+          document.addEventListener("click", function (e) {
+            const overlay = document.getElementById("subscribe-popup-overlay");
+            if (e.target === overlay) {
+              closeSubscribePopup();
+            }
+          });
+          </script>
 
 execute:
   freeze: auto
