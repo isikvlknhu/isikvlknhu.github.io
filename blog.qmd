@@ -7,6 +7,9 @@ listing:
   fields: [title, date, categories, description]
   sort-ui: false
   filter-ui: true
+  feed:
+    items: 10
+    type: partial
 ---
 
 Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.
