@@ -79,7 +79,7 @@ format: html
 
 Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.
 
-[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1568323/mod_resource/content/0/SBY202%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+[📄 Ders İzlencesi](https://drive.google.com/file/d/1DBG-lLrooSs8rZL29ey5KR--RSguEg6u/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 ::: {.course-card}
@@ -87,7 +87,7 @@ Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçle
 
 Ofis yazılımları ve temel dijital becerilere odaklanır.
 
-[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1440269/mod_resource/content/0/BYA114%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+[📄 Ders İzlencesi](https://drive.google.com/file/d/1gepDTVIT_kFsl1lLUmpkNIFNDkH9iYQS/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 ::: {.course-card}
@@ -95,7 +95,7 @@ Ofis yazılımları ve temel dijital becerilere odaklanır.
 
 İSG kavramı, riskler ve önleyici yaklaşım ele alınır.
 
-[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1563091/mod_resource/content/0/TOT208%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+[📄 Ders İzlencesi](https://drive.google.com/file/d/1iLjIAgHRqq7h8xkyz7jj0Sk3W23cTcGG/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 ::: {.course-card}
@@ -103,7 +103,7 @@ Ofis yazılımları ve temel dijital becerilere odaklanır.
 
 Satış süreçleri ve müşteri ilişkileri yönetimi.
 
-[📄 Ders İzlencesi](https://hadi.hacettepe.edu.tr/pluginfile.php/1563089/mod_resource/content/0/TOT224%20Ders%20I%CC%87zlencesi.pdf){.syllabus-btn target="_blank"}
+[📄 Ders İzlencesi](https://drive.google.com/file/d/1GXlY8tXYazwtVjytsztu52lQp6e0FZIz/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 :::
