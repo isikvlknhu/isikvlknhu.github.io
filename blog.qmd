@@ -15,19 +15,3 @@ listing:
 Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.
 
 <hr>
-
-<h3>Newsletter Subscription</h3>
-
-<p>
-Stay updated with my latest research, blog posts, and insights on
-social entrepreneurship, social policy, and labor markets.
-</p>
-
-<iframe 
-  src="https://volkanisiklab.substack.com/embed" 
-  width="100%" 
-  height="320" 
-  style="border:1px solid #EEE; background:white;" 
-  frameborder="0" 
-  scrolling="no">
-</iframe>
