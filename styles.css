@@ -1934,3 +1934,6 @@ h3 + p {
   color: #2d4ea2;
   font-size: 0.95rem;
 }
+.tool-card {
+  cursor: pointer;
+}
