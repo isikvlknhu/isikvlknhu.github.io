@@ -7,45 +7,42 @@ format: html
 
 Interactive visualisation of labour force participation, employment, and unemployment indicators based on TÜİK Household Labour Force Survey results.
 
-<div class="source-note">
-  <strong>Source:</strong> TÜİK Household Labour Force Survey Results —
-  <a href="https://veriportali.tuik.gov.tr/tr/statistical-themes" target="_blank" rel="noopener noreferrer">
-    TÜİK Statistical Themes / Veri Portalı
-  </a>
-</div>
+::: {.source-note}
+**Source:** TÜİK Household Labour Force Survey Results — [TÜİK Statistical Themes / Veri Portalı](https://veriportali.tuik.gov.tr/tr/statistical-themes){target="_blank"}
+:::
 
-<div class="lab-toolbar">
-  <div class="indicator-buttons">
-    <button class="indicator-btn active" data-indicator="lfpr">LFPR</button>
-    <button class="indicator-btn" data-indicator="employment">Employment</button>
-    <button class="indicator-btn" data-indicator="unemployment">Unemployment</button>
-  </div>
+::: {.lab-toolbar}
+::: {.indicator-buttons}
+<button class="indicator-btn active" data-indicator="lfpr">LFPR</button>
+<button class="indicator-btn" data-indicator="employment">Employment</button>
+<button class="indicator-btn" data-indicator="unemployment">Unemployment</button>
+:::
 
-  <div class="lang-toggle">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="tr">TR</button>
-  </div>
-</div>
+::: {.lang-toggle}
+<button class="lang-btn active" data-lang="en">EN</button>
+<button class="lang-btn" data-lang="tr">TR</button>
+:::
+:::
 
-<div class="lab-controls">
-  <div class="lab-control">
-    <label for="startYear"><strong>Start Year</strong></label>
-    <select id="startYear"></select>
-  </div>
+::: {.lab-controls}
+::: {.lab-control}
+<label for="startYear"><strong>Start Year</strong></label>
+<select id="startYear"></select>
+:::
 
-  <div class="lab-control">
-    <label for="endYear"><strong>End Year</strong></label>
-    <select id="endYear"></select>
-  </div>
-</div>
+::: {.lab-control}
+<label for="endYear"><strong>End Year</strong></label>
+<select id="endYear"></select>
+:::
+:::
 
 <div class="lab-summary" id="labSummary"></div>
 <div class="lab-commentary" id="labCommentary"></div>
 <div id="labourChart" style="width:100%;height:540px;"></div>
 
-<div class="download-bar">
-  <a id="downloadCsvBtn" class="tool-link" href="/data/labour_market.csv" download>Download CSV</a>
-</div>
+::: {.download-bar}
+[Download CSV](/data/labour_market.csv){.tool-link download=""}
+:::
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script>
@@ -138,6 +135,7 @@ function filteredRows(data, indicator, startYear, endYear) {
 function updateSummary(data, indicator, endYear) {
   const row = data.find(d => d.year === endYear && d.indicator === indicator);
   const summary = document.getElementById("labSummary");
+  if (!summary) return;
 
   if (!row) {
     summary.innerHTML = "";
@@ -170,6 +168,8 @@ function updateSummary(data, indicator, endYear) {
 
 function updateCommentary(rows) {
   const box = document.getElementById("labCommentary");
+  if (!box) return;
+
   if (!rows.length) {
     box.innerHTML = "";
     return;
@@ -199,6 +199,9 @@ function updateCommentary(rows) {
 }
 
 function drawChart(rows, indicator) {
+  const chartEl = document.getElementById("labourChart");
+  if (!chartEl) return;
+
   const years = rows.map(d => d.year);
 
   const traces = [
@@ -262,8 +265,10 @@ async function initLabourMarketTool() {
       btn.classList.add("active");
       currentLang = btn.dataset.lang;
 
-      document.querySelector('label[for="startYear"] strong').textContent = currentLang === "tr" ? "Başlangıç Yılı" : "Start Year";
-      document.querySelector('label[for="endYear"] strong').textContent = currentLang === "tr" ? "Bitiş Yılı" : "End Year";
+      const startLabel = document.querySelector('label[for="startYear"] strong');
+      const endLabel = document.querySelector('label[for="endYear"] strong');
+      if (startLabel) startLabel.textContent = currentLang === "tr" ? "Başlangıç Yılı" : "Start Year";
+      if (endLabel) endLabel.textContent = currentLang === "tr" ? "Bitiş Yılı" : "End Year";
 
       refresh();
     });
@@ -276,7 +281,9 @@ async function initLabourMarketTool() {
 }
 
 initLabourMarketTool().catch(err => {
-  document.getElementById("labourChart").innerHTML =
-    `<p style="color:#b91c1c;">Error: ${err.message}</p>`;
+  const chartEl = document.getElementById("labourChart");
+  if (chartEl) {
+    chartEl.innerHTML = `<p style="color:#b91c1c;">Error: ${err.message}</p>`;
+  }
 });
 </script>
