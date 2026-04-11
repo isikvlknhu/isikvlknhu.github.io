@@ -3,8 +3,6 @@ title: "Social Economy Data"
 format: html
 ---
 
-## Social Economy Data
-
 This section will include interactive visual tools related to the social economy ecosystem.
 
 ### Planned tools
