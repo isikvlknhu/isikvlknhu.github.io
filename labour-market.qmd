@@ -149,7 +149,7 @@ function drawChart(data, indicator, startYear, endYear) {
 }
 
 async function initLabourMarketTool() {
-  const data = await loadCSV("labour_market.csv");
+  const data = await loadCSV("data/labour_market.csv");
 
   const allYears = [...new Set(data.map(d => d.year))].sort((a, b) => a - b);
 
