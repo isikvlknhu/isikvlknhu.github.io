@@ -3,8 +3,6 @@ title: "Occupational Accident Data"
 format: html
 ---
 
-## Occupational Accident Data
-
 This section will include interactive visual tools for occupational accident and safety statistics.
 
 ### Planned tools
