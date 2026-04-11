@@ -24,7 +24,7 @@ social entrepreneurship, social policy, and labor markets.
 </p>
 
 <iframe 
-  src="https://volkan320471.substack.com/embed" 
+  src="https://volkanisiklab.substack.com/embed" 
   width="100%" 
   height="320" 
   style="border:1px solid #EEE; background:white;" 
