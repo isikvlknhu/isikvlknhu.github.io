@@ -3,18 +3,183 @@ title: "Labour Market Data"
 format: html
 ---
 
-This section will include interactive visual tools based on TÜİK labour market statistics.
+## Labour Market Trends Explorer
 
-### Planned tools
-
-- Labour force participation rates
-- Employment rates
-- Unemployment rates
-- Female, male, and total comparisons
-- Year-based dynamic filtering
+This interactive tool visualises labour force participation, employment, and unemployment indicators using TÜİK data.
 
 ::: {=html}
-<div class="tool-note">
-First interactive tool coming soon: <strong>Labour Market Trends Explorer</strong>
+<div class="lab-controls">
+  <div class="lab-control">
+    <label for="indicatorSelect"><strong>Indicator</strong></label>
+    <select id="indicatorSelect">
+      <option value="lfpr">Labour Force Participation Rate</option>
+      <option value="employment">Employment Rate</option>
+      <option value="unemployment">Unemployment Rate</option>
+    </select>
+  </div>
+
+  <div class="lab-control">
+    <label for="startYear"><strong>Start Year</strong></label>
+    <select id="startYear"></select>
+  </div>
+
+  <div class="lab-control">
+    <label for="endYear"><strong>End Year</strong></label>
+    <select id="endYear"></select>
+  </div>
 </div>
+
+<div class="lab-summary" id="labSummary"></div>
+
+<div id="labourChart" style="width:100%;height:520px;"></div>
 :::
+
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+async function loadCSV(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error("CSV file could not be loaded.");
+  const text = await response.text();
+
+  const lines = text.trim().split("\n");
+  const headers = lines[0].split(",");
+
+  return lines.slice(1).map(line => {
+    const values = line.split(",");
+    const obj = {};
+    headers.forEach((h, i) => obj[h.trim()] = values[i].trim());
+    obj.year = +obj.year;
+    obj.total = +obj.total;
+    obj.male = +obj.male;
+    obj.female = +obj.female;
+    return obj;
+  });
+}
+
+function indicatorLabel(code) {
+  const labels = {
+    lfpr: "Labour Force Participation Rate",
+    employment: "Employment Rate",
+    unemployment: "Unemployment Rate"
+  };
+  return labels[code] || code;
+}
+
+function populateYearSelect(selectEl, years, selectedValue) {
+  selectEl.innerHTML = "";
+  years.forEach(year => {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    if (year === selectedValue) option.selected = true;
+    selectEl.appendChild(option);
+  });
+}
+
+function updateSummary(data, indicator, endYear) {
+  const row = data.find(d => d.year === endYear && d.indicator === indicator);
+  const summary = document.getElementById("labSummary");
+
+  if (!row) {
+    summary.innerHTML = "";
+    return;
+  }
+
+  summary.innerHTML = `
+    <div class="summary-card">
+      <div class="summary-title">Selected Indicator</div>
+      <div class="summary-value">${indicatorLabel(indicator)}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-title">Year</div>
+      <div class="summary-value">${row.year}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-title">Total</div>
+      <div class="summary-value">${row.total}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-title">Male</div>
+      <div class="summary-value">${row.male}</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-title">Female</div>
+      <div class="summary-value">${row.female}</div>
+    </div>
+  `;
+}
+
+function drawChart(data, indicator, startYear, endYear) {
+  const filtered = data
+    .filter(d => d.indicator === indicator && d.year >= startYear && d.year <= endYear)
+    .sort((a, b) => a.year - b.year);
+
+  const years = filtered.map(d => d.year);
+
+  const traces = [
+    {
+      x: years,
+      y: filtered.map(d => d.total),
+      mode: "lines+markers",
+      name: "Total"
+    },
+    {
+      x: years,
+      y: filtered.map(d => d.male),
+      mode: "lines+markers",
+      name: "Male"
+    },
+    {
+      x: years,
+      y: filtered.map(d => d.female),
+      mode: "lines+markers",
+      name: "Female"
+    }
+  ];
+
+  const layout = {
+    title: indicatorLabel(indicator),
+    xaxis: { title: "Year" },
+    yaxis: { title: "Rate (%)" },
+    margin: { t: 60, r: 20, b: 60, l: 60 },
+    hovermode: "x unified"
+  };
+
+  Plotly.newPlot("labourChart", traces, layout, { responsive: true });
+}
+
+async function initLabourMarketTool() {
+  const data = await loadCSV("labour_market.csv");
+
+  const allYears = [...new Set(data.map(d => d.year))].sort((a, b) => a - b);
+
+  const indicatorSelect = document.getElementById("indicatorSelect");
+  const startYearSelect = document.getElementById("startYear");
+  const endYearSelect = document.getElementById("endYear");
+
+  populateYearSelect(startYearSelect, allYears, allYears[0]);
+  populateYearSelect(endYearSelect, allYears, allYears[allYears.length - 1]);
+
+  function refresh() {
+    const indicator = indicatorSelect.value;
+    const startYear = +startYearSelect.value;
+    const endYear = +endYearSelect.value;
+
+    if (startYear > endYear) return;
+
+    drawChart(data, indicator, startYear, endYear);
+    updateSummary(data, indicator, endYear);
+  }
+
+  indicatorSelect.addEventListener("change", refresh);
+  startYearSelect.addEventListener("change", refresh);
+  endYearSelect.addEventListener("change", refresh);
+
+  refresh();
+}
+
+initLabourMarketTool().catch(err => {
+  document.getElementById("labourChart").innerHTML =
+    `<p style="color:#b91c1c;">Error: ${err.message}</p>`;
+});
+</script>
