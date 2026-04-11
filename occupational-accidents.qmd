@@ -1,0 +1,22 @@
+---
+title: "Occupational Accident Data"
+format: html
+---
+
+## Occupational Accident Data
+
+This section will include interactive visual tools for occupational accident and safety statistics.
+
+### Planned tools
+
+- Annual accident trends
+- Fatal and non-fatal accidents
+- Sectoral distribution
+- Gender and age comparisons
+- Time-series visualisation
+
+::: {=html}
+<div class="tool-note">
+Interactive occupational accident explorer coming soon.
+</div>
+:::
