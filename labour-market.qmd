@@ -7,7 +7,6 @@ format: html
 
 Interactive visualisation of labour force participation, employment, and unemployment indicators based on TÜİK Household Labour Force Survey results.
 
-::: {=html}
 <div class="source-note">
   <strong>Source:</strong> TÜİK Household Labour Force Survey Results —
   <a href="https://veriportali.tuik.gov.tr/tr/statistical-themes" target="_blank" rel="noopener noreferrer">
@@ -41,15 +40,12 @@ Interactive visualisation of labour force participation, employment, and unemplo
 </div>
 
 <div class="lab-summary" id="labSummary"></div>
-
 <div class="lab-commentary" id="labCommentary"></div>
-
 <div id="labourChart" style="width:100%;height:540px;"></div>
 
 <div class="download-bar">
   <a id="downloadCsvBtn" class="tool-link" href="/data/labour_market.csv" download>Download CSV</a>
 </div>
-:::
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script>
@@ -206,24 +202,9 @@ function drawChart(rows, indicator) {
   const years = rows.map(d => d.year);
 
   const traces = [
-    {
-      x: years,
-      y: rows.map(d => d.total),
-      mode: "lines+markers",
-      name: t("total")
-    },
-    {
-      x: years,
-      y: rows.map(d => d.male),
-      mode: "lines+markers",
-      name: t("male")
-    },
-    {
-      x: years,
-      y: rows.map(d => d.female),
-      mode: "lines+markers",
-      name: t("female")
-    }
+    { x: years, y: rows.map(d => d.total), mode: "lines+markers", name: t("total") },
+    { x: years, y: rows.map(d => d.male), mode: "lines+markers", name: t("male") },
+    { x: years, y: rows.map(d => d.female), mode: "lines+markers", name: t("female") }
   ];
 
   const layout = {
