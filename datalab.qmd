@@ -1,0 +1,29 @@
+---
+title: "Data Lab"
+format: html
+---
+
+## Data Lab
+
+Interactive tools for analysing labour market indicators, social economy trends, and occupational accident statistics.
+
+::: {=html}
+<div class="tool-grid">
+
+  <a class="tool-card" href="./labour-market.html">
+    <h3>Labour Market Data</h3>
+    <p>Interactive tools for labour force participation, employment, and unemployment indicators.</p>
+  </a>
+
+  <a class="tool-card" href="./social-economy.html">
+    <h3>Social Economy Data</h3>
+    <p>Interactive visualisations for cooperatives, social enterprises, and related ecosystem indicators.</p>
+  </a>
+
+  <a class="tool-card" href="./occupational-accidents.html">
+    <h3>Occupational Accident Data</h3>
+    <p>Dynamic tools for accident trends, sectoral comparisons, and occupational safety indicators.</p>
+  </a>
+
+</div>
+:::
