@@ -1,0 +1,22 @@
+---
+title: "Labour Market Data"
+format: html
+---
+
+## Labour Market Data
+
+This section will include interactive visual tools based on TÜİK labour market statistics.
+
+### Planned tools
+
+- Labour force participation rates
+- Employment rates
+- Unemployment rates
+- Female, male, and total comparisons
+- Year-based dynamic filtering
+
+::: {=html}
+<div class="tool-note">
+First interactive tool coming soon: <strong>Labour Market Trends Explorer</strong>
+</div>
+:::
