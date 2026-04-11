@@ -3,8 +3,6 @@ title: "Labour Market Data"
 format: html
 ---
 
-## Labour Market Data
-
 This section will include interactive visual tools based on TÜİK labour market statistics.
 
 ### Planned tools
