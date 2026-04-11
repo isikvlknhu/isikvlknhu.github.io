@@ -8,20 +8,23 @@ Interactive tools for analysing labour market indicators, social economy trends,
 ::: {=html}
 <div class="tool-grid">
 
-  <a class="tool-card" href="./labour-market.html">
+  <div class="tool-card">
     <h3>Labour Market Data</h3>
     <p>Interactive tools for labour force participation, employment, and unemployment indicators.</p>
-  </a>
+    <a class="tool-link" href="./labour-market.html">Open Tool</a>
+  </div>
 
-  <a class="tool-card" href="./social-economy.html">
+  <div class="tool-card">
     <h3>Social Economy Data</h3>
     <p>Interactive visualisations for cooperatives, social enterprises, and ecosystem indicators.</p>
-  </a>
+    <a class="tool-link" href="./social-economy.html">Open Tool</a>
+  </div>
 
-  <a class="tool-card" href="./occupational-accidents.html">
+  <div class="tool-card">
     <h3>Occupational Accident Data</h3>
     <p>Dynamic tools for accident trends, sectoral comparisons, and safety indicators.</p>
-  </a>
+    <a class="tool-link" href="./occupational-accidents.html">Open Tool</a>
+  </div>
 
 </div>
 :::
