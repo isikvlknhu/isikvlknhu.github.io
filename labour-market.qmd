@@ -5,19 +5,30 @@ format: html
 
 ## Labour Market Trends Explorer
 
-This interactive tool visualises labour force participation, employment, and unemployment indicators using TÜİK data.
+Interactive visualisation of labour force participation, employment, and unemployment indicators based on TÜİK Household Labour Force Survey results.
 
 ::: {=html}
-<div class="lab-controls">
-  <div class="lab-control">
-    <label for="indicatorSelect"><strong>Indicator</strong></label>
-    <select id="indicatorSelect">
-      <option value="lfpr">Labour Force Participation Rate</option>
-      <option value="employment">Employment Rate</option>
-      <option value="unemployment">Unemployment Rate</option>
-    </select>
+<div class="source-note">
+  <strong>Source:</strong> TÜİK Household Labour Force Survey Results —
+  <a href="https://veriportali.tuik.gov.tr/tr/statistical-themes" target="_blank" rel="noopener noreferrer">
+    TÜİK Statistical Themes / Veri Portalı
+  </a>
+</div>
+
+<div class="lab-toolbar">
+  <div class="indicator-buttons">
+    <button class="indicator-btn active" data-indicator="lfpr">LFPR</button>
+    <button class="indicator-btn" data-indicator="employment">Employment</button>
+    <button class="indicator-btn" data-indicator="unemployment">Unemployment</button>
   </div>
 
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="tr">TR</button>
+  </div>
+</div>
+
+<div class="lab-controls">
   <div class="lab-control">
     <label for="startYear"><strong>Start Year</strong></label>
     <select id="startYear"></select>
@@ -31,7 +42,13 @@ This interactive tool visualises labour force participation, employment, and une
 
 <div class="lab-summary" id="labSummary"></div>
 
-<div id="labourChart" style="width:100%;height:520px;"></div>
+<div class="lab-commentary" id="labCommentary"></div>
+
+<div id="labourChart" style="width:100%;height:540px;"></div>
+
+<div class="download-bar">
+  <a id="downloadCsvBtn" class="tool-link" href="data/labour_market.csv" download>Download CSV</a>
+</div>
 :::
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
@@ -47,7 +64,7 @@ async function loadCSV(path) {
   return lines.slice(1).map(line => {
     const values = line.split(",");
     const obj = {};
-    headers.forEach((h, i) => obj[h.trim()] = values[i].trim());
+    headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
     obj.year = +obj.year;
     obj.total = +obj.total;
     obj.male = +obj.male;
@@ -56,13 +73,53 @@ async function loadCSV(path) {
   });
 }
 
-function indicatorLabel(code) {
-  const labels = {
+const labels = {
+  en: {
     lfpr: "Labour Force Participation Rate",
     employment: "Employment Rate",
-    unemployment: "Unemployment Rate"
-  };
-  return labels[code] || code;
+    unemployment: "Unemployment Rate",
+    total: "Total",
+    male: "Male",
+    female: "Female",
+    year: "Year",
+    rate: "Rate (%)",
+    selectedIndicator: "Selected Indicator",
+    selectedYear: "Selected Year",
+    sourceTitle: "Source-based note",
+    commentaryRise: "The selected indicator shows an upward pattern compared with the beginning of the selected period.",
+    commentaryFall: "The selected indicator shows a downward pattern compared with the beginning of the selected period.",
+    commentaryStable: "The selected indicator appears broadly stable compared with the beginning of the selected period.",
+    femaleGap: "The female series remains below the male series in the selected year.",
+    maleGap: "The male series remains below the female series in the selected year.",
+    equalGap: "Male and female values are equal or nearly equal in the selected year."
+  },
+  tr: {
+    lfpr: "İşgücüne Katılma Oranı",
+    employment: "İstihdam Oranı",
+    unemployment: "İşsizlik Oranı",
+    total: "Toplam",
+    male: "Erkek",
+    female: "Kadın",
+    year: "Yıl",
+    rate: "Oran (%)",
+    selectedIndicator: "Seçili Gösterge",
+    selectedYear: "Seçili Yıl",
+    sourceTitle: "Kaynak notu",
+    commentaryRise: "Seçilen gösterge, seçilen dönemin başlangıcına göre artış eğilimi göstermektedir.",
+    commentaryFall: "Seçilen gösterge, seçilen dönemin başlangıcına göre düşüş eğilimi göstermektedir.",
+    commentaryStable: "Seçilen gösterge, seçilen dönemin başlangıcına göre genel olarak yatay seyretmektedir.",
+    femaleGap: "Seçili yılda kadın serisi erkek serisinin altında kalmaktadır.",
+    maleGap: "Seçili yılda erkek serisi kadın serisinin altında kalmaktadır.",
+    equalGap: "Seçili yılda kadın ve erkek değerleri eşit ya da birbirine çok yakındır."
+  }
+};
+
+let currentIndicator = "lfpr";
+let currentLang = "en";
+let labourData = [];
+
+function t(key) {
+  return labels[currentLang][key] || key;
 }
 
 function populateYearSelect(selectEl, years, selectedValue) {
@@ -76,6 +133,12 @@ function populateYearSelect(selectEl, years, selectedValue) {
   });
 }
 
+function filteredRows(data, indicator, startYear, endYear) {
+  return data
+    .filter(d => d.indicator === indicator && d.year >= startYear && d.year <= endYear)
+    .sort((a, b) => a.year - b.year);
+}
+
 function updateSummary(data, indicator, endYear) {
   const row = data.find(d => d.year === endYear && d.indicator === indicator);
   const summary = document.getElementById("labSummary");
@@ -87,93 +150,146 @@ function updateSummary(data, indicator, endYear) {
 
   summary.innerHTML = `
     <div class="summary-card">
-      <div class="summary-title">Selected Indicator</div>
-      <div class="summary-value">${indicatorLabel(indicator)}</div>
+      <div class="summary-title">${t("selectedIndicator")}</div>
+      <div class="summary-value">${t(indicator)}</div>
     </div>
     <div class="summary-card">
-      <div class="summary-title">Year</div>
+      <div class="summary-title">${t("selectedYear")}</div>
       <div class="summary-value">${row.year}</div>
     </div>
     <div class="summary-card">
-      <div class="summary-title">Total</div>
+      <div class="summary-title">${t("total")}</div>
       <div class="summary-value">${row.total}</div>
     </div>
     <div class="summary-card">
-      <div class="summary-title">Male</div>
+      <div class="summary-title">${t("male")}</div>
       <div class="summary-value">${row.male}</div>
     </div>
     <div class="summary-card">
-      <div class="summary-title">Female</div>
+      <div class="summary-title">${t("female")}</div>
       <div class="summary-value">${row.female}</div>
     </div>
   `;
 }
 
-function drawChart(data, indicator, startYear, endYear) {
-  const filtered = data
-    .filter(d => d.indicator === indicator && d.year >= startYear && d.year <= endYear)
-    .sort((a, b) => a.year - b.year);
+function updateCommentary(rows) {
+  const box = document.getElementById("labCommentary");
+  if (!rows.length) {
+    box.innerHTML = "";
+    return;
+  }
 
-  const years = filtered.map(d => d.year);
+  const first = rows[0];
+  const last = rows[rows.length - 1];
+  const diff = +(last.total - first.total).toFixed(1);
+
+  let trendText = "";
+  if (diff > 0.3) trendText = t("commentaryRise");
+  else if (diff < -0.3) trendText = t("commentaryFall");
+  else trendText = t("commentaryStable");
+
+  let gapText = "";
+  if (last.female < last.male) gapText = t("femaleGap");
+  else if (last.male < last.female) gapText = t("maleGap");
+  else gapText = t("equalGap");
+
+  box.innerHTML = `
+    <div class="commentary-card">
+      <div class="commentary-title">${t("sourceTitle")}</div>
+      <p>${trendText}</p>
+      <p>${gapText}</p>
+    </div>
+  `;
+}
+
+function drawChart(rows, indicator) {
+  const years = rows.map(d => d.year);
 
   const traces = [
     {
       x: years,
-      y: filtered.map(d => d.total),
+      y: rows.map(d => d.total),
       mode: "lines+markers",
-      name: "Total"
+      name: t("total")
     },
     {
       x: years,
-      y: filtered.map(d => d.male),
+      y: rows.map(d => d.male),
       mode: "lines+markers",
-      name: "Male"
+      name: t("male")
     },
     {
       x: years,
-      y: filtered.map(d => d.female),
+      y: rows.map(d => d.female),
       mode: "lines+markers",
-      name: "Female"
+      name: t("female")
     }
   ];
 
   const layout = {
-    title: indicatorLabel(indicator),
-    xaxis: { title: "Year" },
-    yaxis: { title: "Rate (%)" },
+    title: t(indicator),
+    xaxis: { title: t("year") },
+    yaxis: { title: t("rate") },
     margin: { t: 60, r: 20, b: 60, l: 60 },
     hovermode: "x unified"
   };
 
-  Plotly.newPlot("labourChart", traces, layout, { responsive: true });
+  Plotly.newPlot("labourChart", traces, layout, {
+    responsive: true,
+    displaylogo: false,
+    toImageButtonOptions: {
+      format: "png",
+      filename: "labour_market_chart",
+      height: 700,
+      width: 1200,
+      scale: 1
+    }
+  });
+}
+
+function refresh() {
+  const startYear = +document.getElementById("startYear").value;
+  const endYear = +document.getElementById("endYear").value;
+  if (startYear > endYear) return;
+
+  const rows = filteredRows(labourData, currentIndicator, startYear, endYear);
+  drawChart(rows, currentIndicator);
+  updateSummary(labourData, currentIndicator, endYear);
+  updateCommentary(rows);
 }
 
 async function initLabourMarketTool() {
-  const data = await loadCSV("data/labour_market.csv");
+  labourData = await loadCSV("data/labour_market.csv");
 
-  const allYears = [...new Set(data.map(d => d.year))].sort((a, b) => a - b);
+  const allYears = [...new Set(labourData.map(d => d.year))].sort((a, b) => a - b);
 
-  const indicatorSelect = document.getElementById("indicatorSelect");
-  const startYearSelect = document.getElementById("startYear");
-  const endYearSelect = document.getElementById("endYear");
+  populateYearSelect(document.getElementById("startYear"), allYears, allYears[0]);
+  populateYearSelect(document.getElementById("endYear"), allYears, allYears[allYears.length - 1]);
 
-  populateYearSelect(startYearSelect, allYears, allYears[0]);
-  populateYearSelect(endYearSelect, allYears, allYears[allYears.length - 1]);
+  document.querySelectorAll(".indicator-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".indicator-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentIndicator = btn.dataset.indicator;
+      refresh();
+    });
+  });
 
-  function refresh() {
-    const indicator = indicatorSelect.value;
-    const startYear = +startYearSelect.value;
-    const endYear = +endYearSelect.value;
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentLang = btn.dataset.lang;
 
-    if (startYear > endYear) return;
+      document.querySelector('label[for="startYear"] strong').textContent = currentLang === "tr" ? "Başlangıç Yılı" : "Start Year";
+      document.querySelector('label[for="endYear"] strong').textContent = currentLang === "tr" ? "Bitiş Yılı" : "End Year";
 
-    drawChart(data, indicator, startYear, endYear);
-    updateSummary(data, indicator, endYear);
-  }
+      refresh();
+    });
+  });
 
-  indicatorSelect.addEventListener("change", refresh);
-  startYearSelect.addEventListener("change", refresh);
-  endYearSelect.addEventListener("change", refresh);
+  document.getElementById("startYear").addEventListener("change", refresh);
+  document.getElementById("endYear").addEventListener("change", refresh);
 
   refresh();
 }
