@@ -47,7 +47,7 @@ Interactive visualisation of labour force participation, employment, and unemplo
 <div id="labourChart" style="width:100%;height:540px;"></div>
 
 <div class="download-bar">
-  <a id="downloadCsvBtn" class="tool-link" href="data/labour_market.csv" download>Download CSV</a>
+  <a id="downloadCsvBtn" class="tool-link" href="/data/labour_market.csv" download>Download CSV</a>
 </div>
 :::
 
@@ -259,7 +259,7 @@ function refresh() {
 }
 
 async function initLabourMarketTool() {
-  labourData = await loadCSV("data/labour_market.csv");
+  labourData = await loadCSV("/data/labour_market.csv");
 
   const allYears = [...new Set(labourData.map(d => d.year))].sort((a, b) => a - b);
 
