@@ -1,0 +1,22 @@
+---
+title: "Social Economy Data"
+format: html
+---
+
+## Social Economy Data
+
+This section will include interactive visual tools related to the social economy ecosystem.
+
+### Planned tools
+
+- Cooperatives
+- Social enterprises
+- Social entrepreneurship ecosystem indicators
+- Regional comparisons
+- Time-series trends
+
+::: {=html}
+<div class="tool-note">
+Interactive social economy dashboard coming soon.
+</div>
+:::
