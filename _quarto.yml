@@ -23,6 +23,8 @@ website:
         text: My Podcasts
       - href: events.qmd
         text: Upcoming Events
+      - href: datalab.qmd
+        text: Data Lab
     right:
       - text: "Translate TR"
         href: "https://translate.google.com/translate?sl=auto&tl=tr&u=https://volkanisiklab.com"
