@@ -2430,3 +2430,42 @@ h3 + p {
   opacity: 0.85;
   text-decoration: none;
 }
+.share-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.share-buttons a,
+.share-buttons button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.share-x {
+  background: #111;
+  color: #fff !important;
+}
+
+.share-linkedin {
+  background: #0a66c2;
+  color: #fff !important;
+}
+
+.share-instagram {
+  background: #e1306c;
+  color: #fff !important;
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover {
+  opacity: 0.88;
+  text-decoration: none;
+}
