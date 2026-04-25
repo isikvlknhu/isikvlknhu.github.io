@@ -27,8 +27,6 @@ format: html
 
 <div class="data-lab-wrap">
 
-# Social Economy Data
-
 ## Social Economy Trends Explorer
 
 Interactive visualisation of cooperatives, associations, foundations, income indicators and selected macroeconomic context variables.
