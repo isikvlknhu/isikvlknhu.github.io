@@ -168,15 +168,15 @@ temel araçlarından biri olarak görülmektedir.
 İspanya örneği, sosyal ekonominin geleceğinin yalnızca dayanışma temelli kurumsal yapılarda değil; aynı zamanda veri, yönetişim, kamu politikası entegrasyonu ve sosyal etki odaklı yeni hibrit modellerde şekilleneceğini göstermektedir.
 
 <div class="share-buttons" style="margin-top: 2rem;">
-  <a id="share-x" class="btn btn-outline-dark btn-sm me-2" target="_blank">
-    <i class="bi bi-twitter-x"></i> X'te Paylaş
+  <a id="share-x" class="share-x" target="_blank">
+    <i class="bi bi-twitter-x"></i> X’te Paylaş
   </a>
 
-  <a id="share-linkedin" class="btn btn-outline-primary btn-sm me-2" target="_blank">
-    <i class="bi bi-linkedin"></i> LinkedIn'de Paylaş
+  <a id="share-linkedin" class="share-linkedin" target="_blank">
+    <i class="bi bi-linkedin"></i> LinkedIn’de Paylaş
   </a>
 
-  <button class="btn btn-outline-danger btn-sm" onclick="copyInstagramLink()">
+  <button class="share-instagram" onclick="copyInstagramLink()">
     <i class="bi bi-instagram"></i> Instagram için Linki Kopyala
   </button>
 </div>
