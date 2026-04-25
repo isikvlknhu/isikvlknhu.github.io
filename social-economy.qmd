@@ -194,8 +194,18 @@ document.querySelectorAll(".dl-btn").forEach(btn => {
   });
 });
 
-d3.dsv(";", "data/social_economy_data.csv").then(data => {
-  rawData = data.map(d => ({...d, year: Number(d.year)}));
+d3.text("data/social_economy_data.csv").then(function(text) {
+  // Remove possible BOM and split rows
+  let rows = text.replace(/^\uFEFF/, "").trim().split(/\r?\n/);
+  // If the first row is only a file/table title, remove it
+  if (rows[0].startsWith("social_economy_data")) {
+    rows = rows.slice(1);
+  }
+  const cleanedText = rows.join("\n");
+  rawData = d3.dsvFormat(";").parse(cleanedText).map(d => ({
+    ...d,
+    year: Number(d.year)
+  }));
   populateYears();
   drawChart();
 });
