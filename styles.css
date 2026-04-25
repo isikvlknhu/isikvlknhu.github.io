@@ -2381,3 +2381,12 @@ h3 + p {
 .download-bar {
   margin-top: 14px;
 }
+.event-date.past-event-date {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.event-date.upcoming-event-date {
+  background: #dcfce7;
+  color: #166534;
+}
