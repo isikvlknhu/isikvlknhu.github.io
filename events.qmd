@@ -78,6 +78,16 @@ format: html
 
 **Location:** Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu
 :::
+::: {.event-card}
+::: {.event-date}
+08 May 2026
+:::
+
+### Hacettepe University Social Entrepreneurship Training of Trainers Program- Ankara Development Agency 2026 Social Innovation and Social Development Technical Support Programme – Project Application Workshop
+
+**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
+:::
 
 :::
 <script>
