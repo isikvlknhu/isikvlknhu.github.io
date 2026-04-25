@@ -96,6 +96,7 @@ const groups = {
       {key:"emp_rate", label:"Employment rate"},
       {key:"unempl_rate", label:"Unemployment rate"},
       {key:"gdp_growth", label:"GDP growth"}
+      {key:"coop_emp_rate", label:"Cooperative employment rate"}
     ]
   }
 };
