@@ -2390,3 +2390,43 @@ h3 + p {
   background: #dcfce7;
   color: #166534;
 }
+/* BLOG SHARE BUTTONS - STANDARD STYLE */
+
+.share-buttons a,
+.share-buttons button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+}
+
+/* X (Twitter) */
+.share-buttons a[href*="twitter"],
+.share-buttons a[href*="x.com"] {
+  background: #111;
+  color: #fff !important;
+}
+
+/* LinkedIn */
+.share-buttons a[href*="linkedin"] {
+  background: #0a66c2;
+  color: #fff !important;
+}
+
+/* Instagram (copy link) */
+.share-buttons a.copy-link,
+.share-buttons button.copy-link {
+  background: #e1306c;
+  color: #fff !important;
+}
+
+/* Hover */
+.share-buttons a:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
