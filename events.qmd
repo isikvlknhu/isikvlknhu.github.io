@@ -80,3 +80,21 @@ format: html
 :::
 
 :::
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  document.querySelectorAll(".event-date").forEach(function (el) {
+    const dateText = el.textContent.trim();
+    const eventDate = new Date(dateText);
+    eventDate.setHours(0, 0, 0, 0);
+
+    if (eventDate < today) {
+      el.classList.add("past-event-date");
+    } else {
+      el.classList.add("upcoming-event-date");
+    }
+  });
+});
+</script>
