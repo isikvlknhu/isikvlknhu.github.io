@@ -27,6 +27,8 @@ website:
         text: Events
       - href: datalab.qmd
         text: Data Lab
+      - href: contact.qmd
+        text: Contact
     right:
       - text: "Translate TR"
         href: "https://translate.google.com/translate?sl=auto&tl=tr&u=https://volkanisiklab.com"
