@@ -23,6 +23,10 @@ website:
         text: My Podcasts
       - href: events.qmd
         text: Events
+      - href: research.qmd
+        text: Research
+      - href: contact.qmd
+        text: Contact
       - href: datalab.qmd
         text: Data Lab
     right:

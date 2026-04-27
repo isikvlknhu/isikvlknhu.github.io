@@ -1,0 +1,88 @@
+---
+title: "Contact"
+format: html
+---
+
+## 📬 İletişim Bilgileri
+
+::: {.contact-grid}
+
+::: {.contact-card}
+### 📧 E-posta
+
+**Akademik:** volkani@hacettepe.edu.tr
+
+**Websitesi:** volkanisiklab.com
+:::
+
+::: {.contact-card}
+### 📞 Telefon
+
+**Ofis:** +90 312 311 60 15 - 129
+
+**Vocational School of Social Sciences**
+:::
+
+::: {.contact-card}
+### 📍 Ofis Adresi
+
+**Hacettepe Üniversitesi**
+**Vocational School of Social Sciences**
+Beytepe Kampüsü, Ankara, Türkiye
+
+[Google Maps](https://maps.google.com/?q=Hacettepe+University+Vocational+School+of+Social+Sciences){target="_blank"}
+:::
+
+::: {.contact-card}
+### 🕘 Ofis Saatleri
+
+**Danışmanlık:** Çarşamba 10:00 – 12:00
+
+**Diğer Ziyaretler:** Randevu ile
+:::
+
+:::
+
+---
+
+## 💬 İletişim Formu
+
+Araştırma işbirliği, medya soruları veya genel iletişim için aşağıdaki kanalları kullanabilirsiniz:
+
+::: {.contact-buttons}
+
+[📧 E-posta Gönder](mailto:volkani@hacettepe.edu.tr){.contact-btn .email}
+
+[💬 WhatsApp](https://wa.me/34600900949){.contact-btn .whatsapp}
+
+[🔗 LinkedIn](https://www.linkedin.com/in/do%C3%A7-dr-volkan-%C4%B1%C5%9F%C4%B1k-79150bbb/){.contact-btn .linkedin}
+
+:::
+
+---
+
+## 🏢 Kurum Bilgileri
+
+::: {.institution-info}
+
+**Hacettepe Üniversitesi**
+**Vocational School of Social Sciences**
+
+Beytepe Kampüsü
+06800 Beytepe, Ankara, Turkey
+
+**Website:** https://hacettepe.edu.tr
+
+**Department of Labour Economics and Industrial Relations**
+
+:::
+
+---
+
+## 📅 Randevu
+
+Bireysel görüşme, işbirliği veya medya talepleri için önceden randevu almanızı öneririm.
+
+**Randevu için:** volkani@hacettepe.edu.tr
+
+**WhatsApp:** +90 346 009 00 949
