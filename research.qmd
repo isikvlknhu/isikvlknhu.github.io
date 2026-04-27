@@ -9,6 +9,32 @@ format: html
 
 ::: {.section-shell}
 ## 📊 Completed Projects
+
+### Üniversite Öğrencileri Araştırma Projeleri Destek Programı (2209/A)
+
+**Proje Başlığı:** Staj Eğitimi Almış Turizm Öğrencilerinin Sektöre Yönelik Algı ve Tutumlarındaki Değişimin Analizi
+
+**Proje Yürütücüsü:** Yağmur ÖÇGÜNDER
+
+**Proje Ortakları:** Batuhan BARTAN, Bilge ALTUNBULAK ve Emirhan AKDENİZ
+
+**Danışman:** Doç. Dr. Volkan IŞIK
+
+**Proje Başlangıç ve Bitiş Tarihleri:** Nisan 2025 - Ocak 2026
+
+---
+
+### Üniversite Öğrencileri Araştırma Projeleri Destek Programı (2209/A)
+
+**Proje Başlığı:** Turizm Sektöründe Çalışma Hayatı Kalitesinin İncelenmesi: Antalya ve Ankara Mukayesesi Üzerinden Bir Değerlendirme
+
+**Proje Yürütücüsü:** Gülşen YILDIZ
+
+**Proje Ortakları:** Eylül Padır, Esma Nur Akçay ve Rümeysa Ayday
+
+**Danışman:** Doç. Dr. Volkan Işık
+
+**Proje Başlangıç ve Bitiş Tarihleri:** Nisan 2025 - Ocak 2026
 :::
 
 ::: {.section-shell}
