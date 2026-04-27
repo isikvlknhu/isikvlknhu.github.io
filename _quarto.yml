@@ -22,7 +22,7 @@ website:
       - href: podcasts.qmd
         text: My Podcasts
       - href: events.qmd
-        text: Upcoming Events
+        text: Events
       - href: datalab.qmd
         text: Data Lab
     right:
