@@ -1382,3 +1382,111 @@ main.content {
 #quarto-content.page-columns {
   grid-template-columns: minmax(0, 1fr) !important;
 }
+
+/* --- CONTACT PAGE --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 1.5rem 0 2rem;
+}
+
+.contact-card,
+.institution-info,
+.contact-form {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+}
+
+.contact-card {
+  padding: 20px;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1.2rem 0 1.6rem;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.contact-btn.email {
+  background: #2d4ea2;
+  color: #fff !important;
+}
+
+.contact-btn.whatsapp {
+  background: #25d366;
+  color: #fff !important;
+}
+
+.contact-btn.linkedin {
+  background: #0a66c2;
+  color: #fff !important;
+}
+
+.institution-info {
+  padding: 22px;
+  max-width: 760px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 760px;
+  margin-top: 1.2rem;
+  padding: 22px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+  color: #1f2937;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.contact-submit {
+  justify-self: start;
+  padding: 0.85rem 1.2rem;
+  border: 0;
+  border-radius: 999px;
+  background: #2d4ea2;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  opacity: 0.94;
+}
