@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -100,10 +101,6 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<style>html{ scroll-behavior: smooth; }</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -139,7 +136,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -189,14 +186,6 @@ window.Quarto = {
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Contact</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./datalab.html"> 
 <span class="menu-text">Data Lab</span></a>
   </li>  
@@ -222,17 +211,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#academic-profile" id="toc-academic-profile" class="nav-link active" data-scroll-target="#academic-profile">Academic Profile</a></li>
-  <li><a href="#explore-the-site" id="toc-explore-the-site" class="nav-link" data-scroll-target="#explore-the-site">Explore the Site</a></li>
-  <li><a href="#recent-posts" id="toc-recent-posts" class="nav-link" data-scroll-target="#recent-posts">Recent Posts</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -240,71 +219,42 @@ window.Quarto = {
 
 
 <div class="hero-section">
+<script>
+function translateToTurkish() {
+  const currentUrl = encodeURIComponent(window.location.href);
+  const translateUrl = "https://translate.google.com/translate?sl=auto&tl=tr&u=" + currentUrl;
+  window.open(translateUrl, "_blank");
+}
+</script>
 <div class="hero-image">
 <p><img src="images/profile.jpg" class="img-fluid" alt="Volkan Işık"></p>
 </div>
-<section id="assoc.-prof.-dr.-volkan-isik" class="level1 hero-content">
-<h1>Assoc. Prof.&nbsp;Dr.&nbsp;Volkan Isik</h1>
+<section id="doç.-dr.-volkan-işik" class="level1 hero-content">
+<h1>Doç. Dr.&nbsp;Volkan IŞIK</h1>
 <div class="name-subtitle">
-<p>Hacettepe University</p>
+<p>Associate Professor</p>
 </div>
 <div class="hero-subtitle">
 <p>Labour Economics | Social Policy | Social Entrepreneurship</p>
 </div>
 <div class="hero-affiliation">
-<p>A scholar working at the intersection of labour markets, social policy, and inclusive development. My work brings together academic research, teaching, and field-based policy experience.</p>
+<p>Hacettepe University<br>
+Vocational School of Social Sciences</p>
 </div>
 <div class="hero-email">
-<p><span><i class="bi bi-envelope"></i>volkani@hacettepe.edu.tr</span> <span class="contact-info"><i class="bi bi-telephone"></i>Office: +90 312 311 60 15 - 129</span> <span class="contact-info"><i class="bi bi-geo-alt"></i>Ankara, Turkiye</span></p>
+<p>📧 volkani@hacettepe.edu.tr <span class="contact-info">📞 Office: +90 312 311 60 15 - 129</span><br>
+<span class="contact-info">💬 <a href="https://wa.me/34600900949">Message Me on WhatsApp</a></span></p>
 </div>
 <div class="hero-links">
 <p><a href="https://www.linkedin.com/in/do%C3%A7-dr-volkan-%C4%B1%C5%9F%C4%B1k-79150bbb/" class="hero-link-chip" target="_blank">LinkedIn</a> <a href="https://x.com/volkannisik" class="hero-link-chip" target="_blank">Twitter</a> <a href="https://avesis.hacettepe.edu.tr/volkani" class="hero-link-chip" target="_blank">Avesis</a> <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" class="hero-link-chip" target="_blank">Web of Science</a> <a href="https://orcid.org/0000-0003-3690-969X" class="hero-link-chip" target="_blank">ORCID</a></p>
 </div>
 <div class="hero-buttons">
-<p><a href="./cv.html" class="main-btn">View CV</a> <a href="./publications.html" class="secondary-btn">Publications</a> <a href="./blog.html" class="ghost-btn">Recent Writing</a></p>
+<p><a href="./cv.html" class="main-btn">View CV</a> <a href="./publications.html" class="secondary-btn">Publications</a></p>
 </div>
 </section>
 </div>
-<div class="highlight-grid">
-<section id="research-focus" class="level3 highlight-card">
-<h3 class="anchored" data-anchor-id="research-focus">Research Focus</h3>
-<p>Labour market transitions, social entrepreneurship ecosystems, occupational health and safety, and evidence-based employment policy.</p>
-</section>
-<section id="teaching-and-training" class="level3 highlight-card">
-<h3 class="anchored" data-anchor-id="teaching-and-training">Teaching and Training</h3>
-<p>Courses, workshops, and project-based learning in labour economics, social policy, human resources, and applied research methods.</p>
-</section>
-<section id="projects-and-collaboration" class="level3 highlight-card">
-<h3 class="anchored" data-anchor-id="projects-and-collaboration">Projects and Collaboration</h3>
-<p>Open to academic partnerships, consultancy, invited lectures, and interdisciplinary projects with public, private, and civil society institutions.</p>
-</section>
-</div>
-<section id="academic-profile" class="level2 section-shell">
-<h2 class="anchored" data-anchor-id="academic-profile">Academic Profile</h2>
-<p>With more than 18 years of academic and professional experience, I work on questions around employment, inclusion, and social innovation. My recent work connects labour market analysis with practical policy design, especially for disadvantaged groups, vocational education, and the future of work.</p>
-<div class="stat-row">
-<section id="section" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="section">18+</h3>
-<p>Years of academic and professional experience</p>
-</section>
-<section id="section-1" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="section-1">3</h3>
-<p>Core fields: labour economics, social policy, social entrepreneurship</p>
-</section>
-<section id="international" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="international">International</h3>
-<p>Research, EU projects, and applied policy collaborations</p>
-</section>
-</div>
-</section>
-<section id="explore-the-site" class="level2 section-shell">
-<h2 class="anchored" data-anchor-id="explore-the-site">Explore the Site</h2>
-<div class="quick-links">
-<p><a href="./publications.html" class="quick-link-card">Research Publications</a> <a href="./cv.html" class="quick-link-card">Curriculum Vitae</a> <a href="./lectures.html" class="quick-link-card">Teaching and Lectures</a> <a href="./events.html" class="quick-link-card">Events and Activities</a> <a href="./datalab.html" class="quick-link-card">Data Lab Projects</a> <a href="./podcasts.html" class="quick-link-card">Podcasts and Media</a></p>
-</div>
-</section>
 <section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
+<h2 class="anchored" data-anchor-id="recent-posts">📝 Recent Posts</h2>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs=" data-listing-date-sort="1775682000000" data-listing-file-modified-sort="1777318184161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
@@ -445,11 +395,6 @@ Apr 7, 2026
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -768,5 +713,4 @@ Apr 7, 2026
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -12,16 +12,13 @@ listing:
     type: partial
 ---
 
-::: {.page-intro}
-Sosyal girisimcilik, sosyal politika, emek piyasalari ve akademik calismalar uzerine notlarim.
-:::
+Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.
 
-::: {.section-shell}
-## Topics
+<hr>
 
-This blog gathers writing on labour markets, social entrepreneurship, social policy, occupational safety, and current debates connected to academic and public life.
-:::
+<h3>Newsletter Subscription</h3>
 
-::: {.section-shell}
-## Latest Posts
-:::
+<p>
+Stay updated with my latest research, blog posts, and insights on
+social entrepreneurship, social policy, and labor markets.
+</p>

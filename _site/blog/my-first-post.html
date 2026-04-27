@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -71,17 +72,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -131,14 +128,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
-<span class="menu-text">Contact</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../datalab.html"> 
 <span class="menu-text">Data Lab</span></a>
   </li>  
@@ -164,26 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#ispanyada-sosyal-girişimcilik-ne-anlama-geliyor" id="toc-ispanyada-sosyal-girişimcilik-ne-anlama-geliyor" class="nav-link active" data-scroll-target="#ispanyada-sosyal-girişimcilik-ne-anlama-geliyor">İspanya’da sosyal girişimcilik ne anlama geliyor?</a></li>
-  <li><a href="#neden-ispanya-dikkat-çekici-bir-örnek" id="toc-neden-ispanya-dikkat-çekici-bir-örnek" class="nav-link" data-scroll-target="#neden-ispanya-dikkat-çekici-bir-örnek">Neden İspanya dikkat çekici bir örnek?</a>
-  <ul class="collapse">
-  <li><a href="#öne-çıkan-yönler" id="toc-öne-çıkan-yönler" class="nav-link" data-scroll-target="#öne-çıkan-yönler">Öne çıkan yönler</a></li>
-  </ul></li>
-  <li><a href="#ekosistemin-temel-bileşenleri" id="toc-ekosistemin-temel-bileşenleri" class="nav-link" data-scroll-target="#ekosistemin-temel-bileşenleri">Ekosistemin temel bileşenleri</a></li>
-  <li><a href="#iş-birliği-kültürü-neden-bu-kadar-önemli" id="toc-iş-birliği-kültürü-neden-bu-kadar-önemli" class="nav-link" data-scroll-target="#iş-birliği-kültürü-neden-bu-kadar-önemli">İş birliği kültürü neden bu kadar önemli?</a></li>
-  <li><a href="#finansman-meselesi-yalnızca-hibeye-dayalı-değil" id="toc-finansman-meselesi-yalnızca-hibeye-dayalı-değil" class="nav-link" data-scroll-target="#finansman-meselesi-yalnızca-hibeye-dayalı-değil">Finansman meselesi: yalnızca hibeye dayalı değil</a></li>
-  <li><a href="#üniversiteler-neden-kilit-aktörlerden-biri" id="toc-üniversiteler-neden-kilit-aktörlerden-biri" class="nav-link" data-scroll-target="#üniversiteler-neden-kilit-aktörlerden-biri">Üniversiteler neden kilit aktörlerden biri?</a></li>
-  <li><a href="#her-şey-güçlü-mü-karşılaşılan-güçlükler-de-var" id="toc-her-şey-güçlü-mü-karşılaşılan-güçlükler-de-var" class="nav-link" data-scroll-target="#her-şey-güçlü-mü-karşılaşılan-güçlükler-de-var">Her şey güçlü mü? Karşılaşılan güçlükler de var</a></li>
-  <li><a href="#türkiye-açısından-neden-önemli" id="toc-türkiye-açısından-neden-önemli" class="nav-link" data-scroll-target="#türkiye-açısından-neden-önemli">Türkiye açısından neden önemli?</a></li>
-  <li><a href="#sonuç" id="toc-sonuç" class="nav-link" data-scroll-target="#sonuç">Sonuç</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -395,11 +365,6 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -718,5 +683,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
