@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -100,10 +100,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
@@ -112,8 +108,35 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../lectures.html"> 
+<span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../podcasts.html"> 
 <span class="menu-text">My Podcasts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../events.html"> 
+<span class="menu-text">Upcoming Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../datalab.html"> 
+<span class="menu-text">Data Lab</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://translate.google.com/translate?sl=auto&amp;tl=tr&amp;u=https://volkanisiklab.com"> 
+<span class="menu-text">Translate TR</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -225,6 +248,27 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="sonuç">Sonuç</h2>
 <p>İspanya’da geçirdiğim bu süreç, sosyal girişimciliğin yalnızca sosyal fayda üretme iradesiyle değil, aynı zamanda doğru kurumlar, doğru ilişkiler ve doğru destek mekanizmalarıyla güçlendiğini gösterdi.</p>
 <p>Sosyal etki ile ekonomik sürdürülebilirliğin birlikte mümkün olduğu bir model arıyorsak, İspanya örneği üzerinde dikkatle düşünmeye değer.</p>
+<div class="share-buttons">
+<p><a class="share-btn x" href="" id="share-x" target="_blank" rel="noopener noreferrer">X’te Paylaş</a></p>
+<p><a class="share-btn linkedin" href="" id="share-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn’de Paylaş</a></p>
+<p><a class="share-btn instagram" href="#" onclick="copyInstagramLink(); return false;">Instagram için Linki Kopyala</a></p>
+</div>
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  document.getElementById("share-x").href =
+    `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+  document.getElementById("share-linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+  function copyInstagramLink() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Link kopyalandı.");
+    });
+  }
+</script>
 
 
 </section>
@@ -303,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/volkanisiklab\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

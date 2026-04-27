@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Volkan Işık</title>
+<link>https://volkanisiklab.com/blog.html</link>
+<atom:link href="https://volkanisiklab.com/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Academic website of Volkan Işık</description>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Wed, 08 Apr 2026 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>İspanya’da Sosyal Ekonomide Yeni Yasa/Yeni Dönem: Ley 1/2026 Ne Getiriyor?</title>
+  <link>https://volkanisiklab.com/blog/ley-2026-ispanya.html</link>
+  <description><![CDATA[ Yasanın tam metnine ulaşmak için: <a href="https://www.boe.es/boe/dias/2026/04/09/pdfs/BOE-A-2026-7967.pdf">BOE - Ley 1/2026</a> ]]></description>
+  <category>Sosyal Girişimcilik</category>
+  <guid>https://volkanisiklab.com/blog/ley-2026-ispanya.html</guid>
+  <pubDate>Wed, 08 Apr 2026 21:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>İş Sağlığı ve Güvenliğinde Küresel Görünüm: İlerleme Var, Ama Yeterli mi?</title>
+  <link>https://volkanisiklab.com/blog/workplace-safety.html</link>
+  <description><![CDATA[ A Global Snapshot of Workplace Safety ]]></description>
+  <category>İş Sağlığı ve Güvenliği</category>
+  <guid>https://volkanisiklab.com/blog/workplace-safety.html</guid>
+  <pubDate>Tue, 07 Apr 2026 21:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden Gözlemlerim</title>
+  <link>https://volkanisiklab.com/blog/my-first-post.html</link>
+  <description><![CDATA[ 2024 Haziran–Eylül döneminde İspanya’da yürüttüğüm gözlem ve değerlendirmeler ışığında sosyal girişimcilik ekosistemine dair notlar. ]]></description>
+  <category>Sosyal Girişimcilik</category>
+  <guid>https://volkanisiklab.com/blog/my-first-post.html</guid>
+  <pubDate>Mon, 06 Apr 2026 21:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
@@ -110,8 +106,35 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./lectures.html"> 
+<span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./podcasts.html"> 
 <span class="menu-text">My Podcasts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./events.html"> 
+<span class="menu-text">Upcoming Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./datalab.html"> 
+<span class="menu-text">Data Lab</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://translate.google.com/translate?sl=auto&amp;tl=tr&amp;u=https://volkanisiklab.com"> 
+<span class="menu-text">Translate TR</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -131,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Research Publications</h1>
-<p class="subtitle lead">Web of Science &amp; Scopus Indexed Articles</p>
+<p class="subtitle lead">Web of Science (SSCI &amp; AHCI), Scopus, ESCI and TR-Dizin Indexed Publications</p>
 </div>
 
 
@@ -162,78 +185,201 @@ async function loadPublications() {
     }
 
     const data = await response.json();
-    const groups = data.group || data["activities-summary"]?.works?.group || [];
+    const groups = data.group || [];
 
-    if (groups.length === 0) {
+    let works = [];
+    groups.forEach(group => {
+      const summaries = group["work-summary"] || [];
+      summaries.forEach(work => works.push(work));
+    });
+
+    if (works.length === 0) {
       container.innerHTML = "<p>Henüz yayın bulunamadı.</p>";
       return;
     }
 
-    let html = '<div class="pub-wrapper">';
+    function normalizeText(str) {
+      return (str || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")   // aksanları temizle
+        .replace(/&/g, "and")
+        .replace(/[^\w\s]/g, " ")          // noktalama işaretlerini temizle
+        .replace(/\s+/g, " ")
+        .trim();
+    }
 
-    groups.forEach(group => {
-      const work = group["work-summary"]?.[0];
-      if (!work) return;
+    function getDOI(work) {
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      for (const id of extIds) {
+        const idType = (id["external-id-type"] || "").toLowerCase();
+        const idValue = (id["external-id-value"] || "").trim().toLowerCase();
+        if (idType === "doi" && idValue) {
+          return idValue;
+        }
+      }
+      return "";
+    }
 
-      const title = work.title?.title?.value || "Başlıksız kayıt";
+    function getRecordUrl(work) {
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      for (const id of extIds) {
+        const idUrl = id["external-id-url"]?.value || "";
+        if (idUrl) return idUrl;
+      }
+      return work.url?.value || "";
+    }
+
+    function scoreWork(work) {
+      let score = 0;
+
+      const doi = getDOI(work);
+      const journal = work["journal-title"]?.value || "";
+      const year = work["publication-date"]?.year?.value || "";
+      const month = work["publication-date"]?.month?.value || "";
+      const day = work["publication-date"]?.day?.value || "";
+      const extIds = work["external-ids"]?.["external-id"] || [];
+      const title = work.title?.title?.value || "";
+
+      if (doi) score += 100;
+      if (journal) score += 20;
+      if (year) score += 10;
+      if (month) score += 3;
+      if (day) score += 2;
+      if (extIds.length > 0) score += 5;
+      if (title) score += 5;
+
+      return score;
+    }
+
+    function chooseBetterWork(existing, candidate) {
+      const existingType = (existing.type || "").toLowerCase();
+      const candidateType = (candidate.type || "").toLowerCase();
+
+      // Aynı kayıt hem book hem book-chapter görünüyorsa book-chapter tercih et
+      if (existingType === "book" && candidateType === "book-chapter") {
+        return candidate;
+      }
+      if (existingType === "book-chapter" && candidateType === "book") {
+        return existing;
+      }
+
+      // Daha zengin metadata taşıyan kaydı tercih et
+      return scoreWork(candidate) > scoreWork(existing) ? candidate : existing;
+    }
+
+    function titleSignature(title) {
+      const normalized = normalizeText(title);
+      const words = normalized.split(" ").filter(Boolean);
+
+      // İlk 10 kelimeyi alarak başlık varyasyonlarını biraz tolere eder
+      return words.slice(0, 10).join(" ");
+    }
+
+    const deduped = new Map();
+
+    works.forEach(work => {
+      const rawTitle = work.title?.title?.value || "";
+      const normalizedTitle = normalizeText(rawTitle);
+      const signature = titleSignature(rawTitle);
+      const doi = getDOI(work);
+
+      let key = "";
+
+      // 1) DOI varsa en güçlü eşleştirme
+      if (doi) {
+        key = `doi:${doi}`;
+      } else {
+        // 2) DOI yoksa başlık imzasına göre eşleştir
+        key = `title:${signature}`;
+      }
+
+      if (!deduped.has(key)) {
+        deduped.set(key, work);
+      } else {
+        const existing = deduped.get(key);
+        deduped.set(key, chooseBetterWork(existing, work));
+      }
+    });
+
+    works = Array.from(deduped.values());
+
+    // Ek güvenlik katmanı:
+    // Aynı başlık + aynı tür + çok benzer kayıtlar tekrar geldiyse ikinci kez temizle
+    const secondPass = new Map();
+
+    works.forEach(work => {
+      const type = (work.type || "").toLowerCase();
+      const year = work["publication-date"]?.year?.value || "";
+      const titleKey = titleSignature(work.title?.title?.value || "");
+      const doi = getDOI(work);
+
+      const key = doi
+        ? `doi2:${doi}`
+        : `fallback:${titleKey}|${type}|${year}`;
+
+      if (!secondPass.has(key)) {
+        secondPass.set(key, work);
+      } else {
+        const existing = secondPass.get(key);
+        secondPass.set(key, chooseBetterWork(existing, work));
+      }
+    });
+
+    works = Array.from(secondPass.values());
+
+    works.sort((a, b) => {
+      const yearA = parseInt(a["publication-date"]?.year?.value || "0", 10);
+      const yearB = parseInt(b["publication-date"]?.year?.value || "0", 10);
+
+      if (yearB !== yearA) return yearB - yearA;
+
+      const titleA = (a.title?.title?.value || "").toLowerCase();
+      const titleB = (b.title?.title?.value || "").toLowerCase();
+      return titleA.localeCompare(titleB);
+    });
+
+    const categorized = {
+      "Journal Articles": [],
+      "Books": [],
+      "Book Chapters": [],
+      "Other Publications": []
+    };
+
+    works.forEach(work => {
+      const type = (work.type || "").toLowerCase();
+
+      if (type === "journal-article") {
+        categorized["Journal Articles"].push(work);
+      } else if (type === "book") {
+        categorized["Books"].push(work);
+      } else if (type === "book-chapter") {
+        categorized["Book Chapters"].push(work);
+      } else {
+        categorized["Other Publications"].push(work);
+      }
+    });
+
+    function renderWork(work) {
+      const title = work.title?.title?.value || "Untitled record";
       const journal = work["journal-title"]?.value || "";
       const year = work["publication-date"]?.year?.value || "";
       const type = (work.type || "").replaceAll("-", " ");
-      const extIds = work["external-ids"]?.["external-id"] || [];
+      const doi = getDOI(work);
+      const recordUrl = getRecordUrl(work);
 
-let doiUrl = "";
-let recordUrl = "";
+      let doiLink = "";
+      let recordLink = "";
 
-extIds.forEach(id => {
-  const idType = (id["external-id-type"] || "").toLowerCase();
-  const idValue = id["external-id-value"] || "";
-  const idUrl = id["external-id-url"]?.value || "";
+      if (doi) {
+        doiLink = `<a class="pub-btn" href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI</a>`;
+      }
 
-  if (idType === "doi" && idValue) {
-    doiUrl = `https://doi.org/${idValue}`;
-  }
+      if (recordUrl) {
+        recordLink = `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank" rel="noopener noreferrer">View Record</a>`;
+      }
 
-  if (idUrl) {
-    recordUrl = idUrl;
-  }
-});
-
-// OA kontrolü (basit heuristic)
-const isOpenAccess =
-  recordUrl.includes("open") ||
-  recordUrl.includes("pdf") ||
-  recordUrl.includes("handle") ||
-  recordUrl.includes("researchgate");
-
-// link oluşturma
-let linksHtml = "";
-
-// DOI varsa (ve aynı değilse)
-if (doiUrl && doiUrl !== recordUrl) {
-  linksHtml += `<a class="pub-btn" href="${doiUrl}" target="_blank">DOI</a>`;
-}
-
-// record link varsa
-if (recordUrl) {
-  const label = isOpenAccess ? "Open Access" : "View Article";
-  linksHtml += `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank">${label}</a>`;
-}
-
-      extIds.forEach(id => {
-        const idType = (id["external-id-type"] || "").toLowerCase();
-        const idValue = id["external-id-value"] || "";
-        const idUrl = id["external-id-url"]?.value || "";
-
-        if (idType === "doi" && idValue) {
-          doiLink = `<a class="pub-btn" href="https://doi.org/${idValue}" target="_blank" rel="noopener noreferrer">DOI</a>`;
-        }
-
-        if (idUrl) {
-          recordLink = `<a class="pub-btn pub-btn-secondary" href="${idUrl}" target="_blank" rel="noopener noreferrer">Kayıt</a>`;
-        }
-      });
-
-      html += `
+      return `
         <div class="pub-item">
           <div class="pub-title">${title}</div>
           ${journal ? `<div class="pub-journal">${journal}</div>` : ""}
@@ -241,14 +387,27 @@ if (recordUrl) {
             ${year ? `<span class="pub-badge">${year}</span>` : ""}
             ${type ? `<span class="pub-badge pub-badge-light">${type}</span>` : ""}
           </div>
-        <div class="pub-links">
-          ${linksHtml}
-        </div>
+          <div class="pub-links">
+            ${doiLink}
+            ${recordLink}
+          </div>
         </div>
       `;
+    }
+
+    let html = "";
+
+    Object.entries(categorized).forEach(([sectionTitle, items]) => {
+      if (items.length === 0) return;
+
+      html += `<h2 class="pub-section-title">${sectionTitle}</h2>`;
+      html += `<div class="pub-wrapper">`;
+      items.forEach(work => {
+        html += renderWork(work);
+      });
+      html += `</div>`;
     });
 
-    html += "</div>";
     container.innerHTML = html;
 
   } catch (error) {
@@ -335,7 +494,7 @@ loadPublications();
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/volkanisiklab\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
