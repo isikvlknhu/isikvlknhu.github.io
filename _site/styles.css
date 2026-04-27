@@ -322,6 +322,11 @@ main.content,
   position: relative;
 }
 
+main.content {
+  padding-left: clamp(14px, 2.4vw, 32px);
+  padding-right: clamp(14px, 2.4vw, 32px);
+}
+
 #quarto-content,
 .quarto-container,
 .page-layout-full,
