@@ -3,112 +3,14 @@ title: "Research"
 format: html
 ---
 
-## 🔬 Aktif Araştırma Projeleri
-
-::: {.research-projects}
-
-::: {.project-card}
-::: {.project-status .status-active}
-Aktif
+::: {.section-shell}
+## 🔬 Active Research Projects
 :::
 
-### TÜBİTAK 1001 - Sosyal Girişimcilik ve Sosyal Yenilik
-
-**Araştırmacı:** Doç. Dr. Volkan Işık  
-**Kurum:** Hacettepe Üniversitesi  
-**Dönem:** 2024 – 2026
-
-**Özet:** Bu proje, Türkiye'de sosyal girişimciliğin gelişimi, sosyal yenilik mekanizmaları ve toplumsal etkilerini araştırmaktadır. Sosyal girişimlerin ekonomik sürdürülebilirliği ve toplumsal katkısı incelenmektedir.
-
-**Anahtar Kelimeler:** Sosyal Girişimcilik, Sosyal Yenilik, Sosyal Ekonomi, TÜBİTAK
+::: {.section-shell}
+## 📊 Completed Projects
 :::
 
-::: {.project-card}
-::: {.project-status .status-active}
-Aktif
-:::
-
-### AB Horizon Europe - Social Economy 4.0
-
-**Araştırmacı:** Doç. Dr. Volkan Işık (Partner)  
-**Kurum:** Hacettepe Üniversitesi  
-**Dönem:** 2025 – 2028
-
-**Özet:** Avrupa Birliği Horizon Europe programı kapsamında sosyal ekonomi 4.0 dönüşümü araştırılmaktadır. Dijitalleşme ve sosyal girişimcilik ilişkisi incelenmektedir.
-
-**Anahtar Kelimeler:** Horizon Europe, Dijital Dönüşüm, Sosyal Ekonomi, AB Projesi
-:::
-
-:::
-
----
-
-## 📊 Tamamlanmış Projeler
-
-::: {.research-projects}
-
-::: {.project-card .project-completed}
-### TÜBİTAK 1003 - İş Sağlığı ve Güvenliği Politikası
-
-**Araştırmacı:** Doç. Dr. Volkan Işık  
-**Kurum:** Hacettepe Üniversitesi  
-**Dönem:** 2020 – 2023
-
-**Özet:** Türkiye'de iş sağlığı ve güvenliği politikalarının etkinliği ve iş kazalarının önlenmesi için politika önerileri geliştirilmiştir.
-
-**Anahtar Kelimeler:** İş Sağlığı, Güvenlik Politikası, İş Kazaları
-:::
-
-::: {.project-card .project-completed}
-### Kalkınma Bakanlığı - Sosyal Yardımlaşma Araştırması
-
-**Araştırmacı:** Doç. Dr. Volkan Işık  
-**Kurum:** Hacettepe Üniversitesi  
-**Dönem:** 2019 – 2020
-
-**Özet:** Türkiye'de sosyal yardımlaşma sisteminin etkinliği ve sosyal koruma mekanizmalarının değerlendirilmesi.
-
-**Anahtar Kelimeler:** Sosyal Yardım, Sosyal Koruma, Sosyal Politika
-:::
-
-:::
-
----
-
-## 🎯 Araştırma Alanları
-
-::: {.research-areas}
-
-::: {.area-card}
-### 📈 Labour Economics
-
-İşgücü piyasası analizleri, istihdam politikaları, işsizlik ve ücret dinamikleri araştırma alanlarıdır.
-
-[Detaylı Bilgi](./labour-market.html)
-:::
-
-::: {.area-card}
-### 🏛️ Social Policy
-
-Sosyal güvenlik, sosyal yardımlar, sosyal koruma ve sosyal adalet konularında araştırmalar yapılmaktadır.
-
-[Detaylı Bilgi](./social-economy.html)
-:::
-
-::: {.area-card}
-### 🚀 Social Entrepreneurship
-
-Sosyal girişimcilik, sosyal yenilik, sosyal işletmecilik ve toplumsal etki ölçümü alanlarında çalışmalar yürütülmektedir.
-
-[Detaylı Bilgi](./social-economy.html)
-:::
-
-::: {.area-card}
-### ⚠️ Occupational Health & Safety
-
-İş sağlığı ve güvenliği politikaları, iş kazaları analizi ve iş yeri güvenliği konularında araştırmalar.
-
-[Detaylı Bilgi](./occupational-accidents.html)
-:::
-
+::: {.section-shell}
+## 🎯 Research Areas
 :::

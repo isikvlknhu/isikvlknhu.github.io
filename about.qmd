@@ -3,57 +3,70 @@ title: "About"
 format: html
 ---
 
-## 👤 Assoc. Prof. Dr. Volkan Işık
+::: {.page-intro}
+## About Volkan Isik
 
 I am an academic specializing in **labour economics, social policy, and social entrepreneurship**. My work focuses on analysing labour market dynamics, designing inclusive employment policies, and developing sustainable socio-economic models.
 
-I have over **18 years of academic and professional experience**, including research, teaching, and project-based work with **EU-funded programs, TÜBİTAK, and regional development agencies**.
+I have over **18 years of academic and professional experience**, including research, teaching, and project-based work with **EU-funded programs, TUBITAK, and regional development agencies**.
+:::
 
-My research primarily addresses:
-- Labour market transitions and employment policies  
-- Social entrepreneurship ecosystems  
-- Occupational health and safety  
-- Disadvantaged groups and inclusive labour markets  
-- The future of work and artificial intelligence  
+::: {.highlight-grid}
+::: {.highlight-card}
+### Research
+Labour market transitions, occupational health and safety, social entrepreneurship, and inclusive labour markets.
+:::
 
----
+::: {.highlight-card}
+### Practice
+Field research, impact analysis, project reporting, and evidence-based policy recommendations.
+:::
 
-## 🎯 Areas of Expertise
+::: {.highlight-card}
+### Collaboration
+Academic partnerships, consultancy projects, training design, and institutional cooperation.
+:::
+:::
 
-### 📌 Social Entrepreneurship & Business Model Development
+::: {.section-shell}
+## Areas of Expertise
+
+### Social Entrepreneurship and Business Model Development
 Design and analysis of impact-driven ventures, sustainable business models, and social entrepreneurship ecosystems.
 
-### ⚖️ Labour Law and Employment Regulations
+### Labour Law and Employment Regulations
 Employment contracts, termination processes, employer obligations, and practical legal frameworks governing labour relations.
 
-### 🛡️ Social Security Systems
+### Social Security Systems
 Structure and functioning of social insurance schemes, public pension systems, and institutional applications.
 
-### 🦺 Occupational Health and Safety (OHS)
-Workplace accidents, occupational diseases, risk assessment, and regulatory frameworks (including OHS legislation).
+### Occupational Health and Safety
+Workplace accidents, occupational diseases, risk assessment, and regulatory frameworks, including OHS legislation.
 
-### 👥 Human Resource Management
+### Human Resource Management
 Recruitment, performance management, compensation systems, motivation, job analysis, and organizational processes.
 
-### 📊 Labour Market Analysis & Data-Driven Decision Making
+### Labour Market Analysis and Data-Driven Decision Making
 Quantitative and qualitative analysis of labour markets, policy evaluation, and evidence-based decision processes.
+:::
 
----
-
-## 🌍 Academic and Professional Approach
+::: {.section-shell}
+## Academic and Professional Approach
 
 My work integrates:
+
 - **Academic rigor**
 - **Policy relevance**
 - **Applied research**
 - **Impact-oriented analysis**
 
 I aim to bridge the gap between **theoretical knowledge and real-world applications**, producing insights that support policymakers, institutions, and organizations.
+:::
 
----
-
-## 🤝 Collaboration
+::: {.section-shell}
+## Collaboration
 
 I am open to **academic collaborations, research partnerships, and consultancy projects**.
 
-📧 volkani@hacettepe.edu.tr
+`volkani@hacettepe.edu.tr`
+:::

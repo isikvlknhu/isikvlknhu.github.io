@@ -13,23 +13,15 @@ listing:
 ---
 
 ::: {.hero-section}
-<script>
-function translateToTurkish() {
-  const currentUrl = encodeURIComponent(window.location.href);
-  const translateUrl = "https://translate.google.com/translate?sl=auto&tl=tr&u=" + currentUrl;
-  window.open(translateUrl, "_blank");
-}
-</script>
 ::: {.hero-image}
 ![](images/profile.jpg){alt="Volkan Işık"}
 :::
 
 ::: {.hero-content}
-
-# Doç. Dr. Volkan IŞIK
+# Assoc. Prof. Dr. Volkan Isik
 
 ::: {.name-subtitle}
-Associate Professor
+Hacettepe University
 :::
 
 ::: {.hero-subtitle}
@@ -37,14 +29,13 @@ Labour Economics | Social Policy | Social Entrepreneurship
 :::
 
 ::: {.hero-affiliation}
-Hacettepe University  
-Vocational School of Social Sciences
+A scholar working at the intersection of labour markets, social policy, and inclusive development. My work brings together academic research, teaching, and field-based policy experience.
 :::
 
 ::: {.hero-email}
-📧 volkani@hacettepe.edu.tr
-<span class="contact-info">📞 Office: +90 312 311 60 15 - 129</span>  
-<span class="contact-info">💬 [ Message Me on WhatsApp ](https://wa.me/34600900949)</span>
+<span><i class="bi bi-envelope"></i>volkani@hacettepe.edu.tr</span>
+<span class="contact-info"><i class="bi bi-telephone"></i>Office: +90 312 311 60 15 - 129</span>
+<span class="contact-info"><i class="bi bi-geo-alt"></i>Ankara, Turkiye</span>
 :::
 
 ::: {.hero-links}
@@ -58,12 +49,65 @@ Vocational School of Social Sciences
 ::: {.hero-buttons}
 [View CV](./cv.html){.main-btn}
 [Publications](./publications.html){.secondary-btn}
+[Recent Writing](./blog.html){.ghost-btn}
+:::
+:::
 :::
 
+::: {.highlight-grid}
+::: {.highlight-card}
+### Research Focus
+Labour market transitions, social entrepreneurship ecosystems, occupational health and safety, and evidence-based employment policy.
+:::
+
+::: {.highlight-card}
+### Teaching and Training
+Courses, workshops, and project-based learning in labour economics, social policy, human resources, and applied research methods.
+:::
+
+::: {.highlight-card}
+### Projects and Collaboration
+Open to academic partnerships, consultancy, invited lectures, and interdisciplinary projects with public, private, and civil society institutions.
 :::
 :::
 
-## 📝 Recent Posts
+::: {.section-shell}
+## Academic Profile
+
+With more than 18 years of academic and professional experience, I work on questions around employment, inclusion, and social innovation. My recent work connects labour market analysis with practical policy design, especially for disadvantaged groups, vocational education, and the future of work.
+
+::: {.stat-row}
+::: {.stat-card}
+### 18+
+Years of academic and professional experience
+:::
+
+::: {.stat-card}
+### 3
+Core fields: labour economics, social policy, social entrepreneurship
+:::
+
+::: {.stat-card}
+### International
+Research, EU projects, and applied policy collaborations
+:::
+:::
+:::
+
+::: {.section-shell}
+## Explore the Site
+
+::: {.quick-links}
+[Research Publications](./publications.html){.quick-link-card}
+[Curriculum Vitae](./cv.html){.quick-link-card}
+[Teaching and Lectures](./lectures.html){.quick-link-card}
+[Events and Activities](./events.html){.quick-link-card}
+[Data Lab Projects](./datalab.html){.quick-link-card}
+[Podcasts and Media](./podcasts.html){.quick-link-card}
+:::
+:::
+
+## Recent Posts
 
 ::: {#recent-posts}
 :::
