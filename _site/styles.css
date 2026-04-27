@@ -1355,3 +1355,25 @@ td, th {
     margin-bottom: 18px;
   }
 }
+
+/* --- FORCE HIDE RIGHT SIDEBAR / TOC --- */
+#quarto-margin-sidebar,
+.margin-sidebar,
+div#quarto-margin-sidebar,
+.page-columns .quarto-sidebar-toc,
+.page-columns .sidebar.margin-sidebar {
+  display: none !important;
+}
+
+.page-layout-article #quarto-document-content,
+.page-layout-full #quarto-document-content,
+main.content.column-page,
+main.content {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#quarto-content.page-columns {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
