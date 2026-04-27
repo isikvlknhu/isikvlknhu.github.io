@@ -86,6 +86,13 @@ format: html
 **Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
 [🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
 :::
+
+:::
+
+## 📅 Upcoming Events
+
+::: {.events-list}
+
 ::: {.event-card}
 ::: {.event-date}
 08 May 2026
