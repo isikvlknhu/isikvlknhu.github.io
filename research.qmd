@@ -5,6 +5,16 @@ format: html
 
 ::: {.section-shell}
 ## 🔬 Active Research Projects
+
+### Hacettepe Üniversitesi BAP SÇP-2025-22118
+
+**Proje Türü:** Çağrılı
+
+**Proje Rolü:** Araştırmacı
+
+**Proje Adı:** Dijital Kariyer Merkezi: Yapay Zeka Destekli Kariyer Geliştirme, Planlama ve Yönetimi Platformu
+
+**Amaç:** Hacettepe Üniversitesi öğrencileri ve mezunları için yapay zeka destekli, kişiselleştirilmiş ve sürdürülebilir bir dijital kariyer merkezi platformu geliştirmek; kariyer planlama, danışmanlık ve beceri geliştirme hizmetlerini tek çatı altında toplamak.
 :::
 
 ::: {.section-shell}
