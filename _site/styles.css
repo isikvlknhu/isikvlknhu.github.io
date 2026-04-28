@@ -1145,35 +1145,38 @@ a.listing-category[href*="%C4%B0spanya%20Notlar%C4%B1"] {
 
 .share-buttons a,
 .share-buttons button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 10px 16px;
-  border-radius: 9px;
+  border-radius: 999px;
   font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;
-  border: none;
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #2d4ea2 !important;
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.share-x {
-  background: #111;
-  color: #fff !important;
-}
-
-.share-linkedin {
-  background: #0a66c2;
-  color: #fff !important;
-}
-
+.share-btn.x,
+.share-btn.linkedin,
+.share-btn.instagram,
+.share-x,
+.share-linkedin,
 .share-instagram {
-  background: #e1306c;
-  color: #fff !important;
+  background: transparent;
+  color: #2d4ea2 !important;
+  border-color: #cbd5e1;
 }
 
 .share-buttons a:hover,
 .share-buttons button:hover {
-  opacity: 0.88;
   text-decoration: none;
+  background: #eef3ff;
+  border-color: #b7c7ee;
+  color: #1d3f91 !important;
 }
 
 /* --- PODCASTS & MISC --- */
