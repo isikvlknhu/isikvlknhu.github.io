@@ -35,6 +35,66 @@ format: html
 **Danışman:** Doç. Dr. Volkan Işık
 
 **Proje Başlangıç ve Bitiş Tarihleri:** Nisan 2025 - Ocak 2026
+
+---
+
+### EU Project (İŞKUR)
+
+**Role:** Senior Non-Key Expert
+
+**Year:** 2024
+
+**Scope:** Training delivery on migrants and long-term unemployed; impact analysis.
+
+---
+
+### KfW and Ministry of Education (MEB)
+
+**Role:** Senior Non-Key Expert
+
+**Year:** 2024
+
+**Scope:** Interview design, fieldwork, analysis of findings, final report preparation.
+
+---
+
+### EU Project (İŞKUR)
+
+**Role:** Senior Non-Key Expert
+
+**Year:** 2022 - 2023
+
+**Scope:** Research and reporting on evidence-based employment services for disadvantaged groups, especially migrants.
+
+---
+
+### Eastern Anatolia Development Agency (DAKA)
+
+**Role:** Team Leader
+
+**Year:** 2019 - 2020
+
+**Scope:** Project for harmonization of vocational education and labour market in the TRB2 Region.
+
+---
+
+### EU Project (HAK-İŞ - MÜSİAD)
+
+**Role:** Junior / Senior Non-Key Expert
+
+**Year:** 2016 - 2017
+
+**Scope:** Training on labour law, OHS, social dialogue, industrial relations, productivity, innovation, and atypical work.
+
+---
+
+### TÜBİTAK Project (Gazi University - İŞKUR)
+
+**Role:** Project Scholar
+
+**Year:** 2008 - 2011
+
+**Scope:** Labour market information collection, analysis, questionnaire design, and reporting.
 :::
 
 ::: {.section-shell}
