@@ -9,6 +9,16 @@ format: html
 
 ::: {.event-card}
 ::: {.event-date}
+01 May 2026
+:::
+
+### TRT Türkiye'nin Sesi Radyosu Memleket Treni Programı-Konuk
+### Çalışma Yaşamının Dünü ve Bugünü
+
+[🔗 Dinlemek için](https://radyo.trt.net.tr/kanallar/tsr){target="_blank"}
+:::
+
+::: {.event-date}
 08 May 2026
 :::
 
