@@ -17,7 +17,7 @@ format: html
 
 [🔗 Dinlemek için](https://radyo.trt.net.tr/kanallar/tsr){target="_blank"}
 :::
-
+::: {.event-card}
 ::: {.event-date}
 08 May 2026
 :::
