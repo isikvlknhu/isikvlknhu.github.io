@@ -38,6 +38,7 @@ Beytepe Campus, Ankara, Turkey
 
 ::: {.contact-card}
 ### 🕘 Office Hours
+**Office Days:** Monday to Friday: 08:30-17:00
 
 **Advising:** Wednesday 10:00 - 12:00
 
@@ -69,7 +70,7 @@ For research collaboration, media inquiries, or general communication, you can u
 ::: {.institution-info}
 
 Hacettepe University  
-Vocational School of Social Sciences  
+Vocational School of Social Sciences
 Beytepe Campus  
 06800 Beytepe, Ankara, Turkey
 
@@ -82,8 +83,6 @@ Beytepe Campus
 I recommend scheduling in advance for one-on-one meetings, collaboration requests, or media inquiries.
 
 **For appointments:** volkani@hacettepe.edu.tr
-
-**WhatsApp:** +90 346 009 00 949
 
 ### Send a Message
 
@@ -100,5 +99,5 @@ I recommend scheduling in advance for one-on-one meetings, collaboration request
   <label for="contact-message">Message</label>
   <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
 
-  <button type="submit" class="contact-submit">Open Email Draft</button>
+  <button type="submit" class="contact-submit">Send Email</button>
 </form>
