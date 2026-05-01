@@ -1,5 +1,4 @@
 ---
----
 title: "Events"
 format: html
 ---
@@ -87,6 +86,11 @@ function renderCard(event, isPast) {
   return '<div class="event-card' + pastClass + '"><div class="event-date">' + event.label + "</div>" + titlesHtml + locationHtml + linkHtml + "</div>";
 }
 
+function parseLocalDate(isoDate) {
+  const parts = isoDate.split("-").map(Number);
+  return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -94,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const upcomingContainer = document.getElementById("upcoming-events");
   const pastContainer = document.getElementById("past-events");
 
-  const upcoming = EVENTS.filter(function(e) { return new Date(e.date) >= today; })
-    .sort(function(a, b) { return new Date(a.date) - new Date(b.date); });
-  const past = EVENTS.filter(function(e) { return new Date(e.date) < today; })
-    .sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+  const upcoming = EVENTS.filter(function(e) { return parseLocalDate(e.date) >= today; })
+    .sort(function(a, b) { return parseLocalDate(a.date) - parseLocalDate(b.date); });
+  const past = EVENTS.filter(function(e) { return parseLocalDate(e.date) < today; })
+    .sort(function(a, b) { return parseLocalDate(b.date) - parseLocalDate(a.date); });
 
   upcomingContainer.innerHTML = upcoming.length
     ? upcoming.map(function(e) { return renderCard(e, false); }).join("")
