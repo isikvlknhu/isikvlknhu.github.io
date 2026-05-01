@@ -88,6 +88,19 @@ img:hover {
   color: #444;
 }
 
+.pub-badge-citations {
+  background: #f3f4f6;
+  color: #888;
+  font-style: italic;
+}
+
+.pub-badge-citations-loaded {
+  background: #ecfdf5;
+  color: #065f46;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .pub-links {
   display: flex;
   gap: 0.55rem;
