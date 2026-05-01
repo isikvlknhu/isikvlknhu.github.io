@@ -5,11 +5,11 @@ format: html
 
 ## 📅 Upcoming Events
 
-<div id="upcoming-events" class="events-list"></div>
+<div id="upcoming-events-list" class="events-list"></div>
 
 ## 📂 Past Events
 
-<div id="past-events" class="events-list"></div>
+<div id="past-events-list" class="events-list"></div>
 
 <script>
 const EVENTS = [
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const upcomingContainer = document.getElementById("upcoming-events");
-  const pastContainer = document.getElementById("past-events");
+  const upcomingContainer = document.getElementById("upcoming-events-list");
+  const pastContainer = document.getElementById("past-events-list");
 
   const upcoming = EVENTS.filter(function(e) { return parseLocalDate(e.date) >= today; })
     .sort(function(a, b) { return parseLocalDate(a.date) - parseLocalDate(b.date); });
