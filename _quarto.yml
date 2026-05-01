@@ -6,7 +6,20 @@ project:
 website:
   title: "Volkan Işık"
   site-url: https://volkanisiklab.com
-  description: "Academic website of Volkan Işık"
+  description: "Academic website of Volkan Işık – Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University."
+  image: images/profile.jpg
+  open-graph:
+    title: "Volkan Işık | Academic Website"
+    description: "Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University."
+    image: images/profile.jpg
+    locale: en_US
+    site-name: "Volkan Işık Lab"
+  twitter-card:
+    title: "Volkan Işık | Academic Website"
+    description: "Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University."
+    image: images/profile.jpg
+    creator: "@volkannisik"
+    card-style: summary_large_image
   navbar:
     left:
       - href: index.qmd
@@ -41,6 +54,7 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+    section-divs: false
     include-in-header:
       - text: |
           <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">

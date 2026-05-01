@@ -5,128 +5,123 @@ format: html
 
 ## 📅 Upcoming Events
 
-::: {.events-list}
-
-::: {.event-card}
-::: {.event-date}
-01 May 2026
-:::
-
-### TRT Türkiye'nin Sesi Radyosu Memleket Treni Programı-Konuk
-### Çalışma Yaşamının Dünü ve Bugünü
-
-[🔗 Dinlemek için](https://radyo.trt.net.tr/kanallar/tsr){target="_blank"}
-:::
-
-::: {.event-card}
-::: {.event-date}
-08 May 2026
-:::
-
-### Hacettepe University Social Entrepreneurship Training of Trainers Program- Workshop Day
-### Ankara Development Agency 2026 Social Innovation and Social Development Technical Support Programme – Project Application Workshop
-
-**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
-[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
-:::
-
-::: {.event-card}
-::: {.event-date}
-18 May 2026
-:::
-
-### TÜBİTAK Science Talks-2: Social Entrepreneurship – The Art of Changing the World
-
-**Location:** Yayla Mesleki ve Teknik Anadolu Lisesi, Zonguldak
-:::
-
-::: {.event-card}
-::: {.event-date}
-22 May 2026
-:::
-
-### TÜBİTAK Science Talks-3: Social Entrepreneurship – The Art of Changing the World
-
-**Location:** Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu
-:::
-
-:::
+<div id="upcoming-events" class="events-list"></div>
 
 ## 📂 Past Events
 
-::: {.events-list}
+<div id="past-events" class="events-list"></div>
 
-::: {.event-card .past-event}
-::: {.event-date}
-03 April 2026
-:::
+<!-- All events are defined here. JavaScript will automatically sort them into Upcoming or Past based on today's date. -->
+<template id="all-events">
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 1/4
+  <div class="event-card" data-date="2026-05-01">
+    <div class="event-date">01 May 2026</div>
+    <h3>TRT Türkiye'nin Sesi Radyosu Memleket Treni Programı-Konuk</h3>
+    <h3>Çalışma Yaşamının Dünü ve Bugünü</h3>
+    <p><a href="https://radyo.trt.net.tr/kanallar/tsr" target="_blank">🔗 Dinlemek için</a></p>
+  </div>
 
-**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
-[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
-:::
+  <div class="event-card" data-date="2026-05-08">
+    <div class="event-date">08 May 2026</div>
+    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program- Workshop Day</h3>
+    <h3>Ankara Development Agency 2026 Social Innovation and Social Development Technical Support Programme – Project Application Workshop</h3>
+    <p><strong>Location:</strong> Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+    <a href="https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126" target="_blank">🔗 Etkinlik Detayı</a></p>
+  </div>
 
-::: {.event-card .past-event}
-::: {.event-date}
-10 April 2026
-:::
+  <div class="event-card" data-date="2026-05-18">
+    <div class="event-date">18 May 2026</div>
+    <h3>TÜBİTAK Science Talks-2: Social Entrepreneurship – The Art of Changing the World</h3>
+    <p><strong>Location:</strong> Yayla Mesleki ve Teknik Anadolu Lisesi, Zonguldak</p>
+  </div>
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 2/4
+  <div class="event-card" data-date="2026-05-22">
+    <div class="event-date">22 May 2026</div>
+    <h3>TÜBİTAK Science Talks-3: Social Entrepreneurship – The Art of Changing the World</h3>
+    <p><strong>Location:</strong> Gerede Hacı Sadık Öztosun Anadolu Lisesi, Bolu</p>
+  </div>
 
-**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
-[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
-:::
+  <div class="event-card" data-date="2026-04-24">
+    <div class="event-date">24 April 2026</div>
+    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 4/4</h3>
+    <p><strong>Location:</strong> Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+    <a href="https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126" target="_blank">🔗 Etkinlik Detayı</a></p>
+  </div>
 
-::: {.event-card .past-event}
-::: {.event-date}
-16 April 2026
-:::
+  <div class="event-card" data-date="2026-04-17">
+    <div class="event-date">17 April 2026</div>
+    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 3/4</h3>
+    <p><strong>Location:</strong> Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+    <a href="https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126" target="_blank">🔗 Etkinlik Detayı</a></p>
+  </div>
 
-### TÜBİTAK Science Talks-1: Social Entrepreneurship – The Art of Changing the World
+  <div class="event-card" data-date="2026-04-16">
+    <div class="event-date">16 April 2026</div>
+    <h3>TÜBİTAK Science Talks-1: Social Entrepreneurship – The Art of Changing the World</h3>
+    <p><strong>Location:</strong> Ankara Lisesi, Ankara</p>
+  </div>
 
-**Location:** Ankara Lisesi, Ankara
-:::
+  <div class="event-card" data-date="2026-04-10">
+    <div class="event-date">10 April 2026</div>
+    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 2/4</h3>
+    <p><strong>Location:</strong> Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+    <a href="https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126" target="_blank">🔗 Etkinlik Detayı</a></p>
+  </div>
 
-::: {.event-card .past-event}
-::: {.event-date}
-17 April 2026
-:::
+  <div class="event-card" data-date="2026-04-03">
+    <div class="event-date">03 April 2026</div>
+    <h3>Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 1/4</h3>
+    <p><strong>Location:</strong> Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
+    <a href="https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126" target="_blank">🔗 Etkinlik Detayı</a></p>
+  </div>
 
-### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 3/4
-
-**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
-[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
-:::
-
-::: {.event-card .past-event}
-::: {.event-date}
-24 April 2026
-:::
-
-### Hacettepe University Social Entrepreneurship Training of Trainers Program-Week 4/4
-
-**Location:** Seminar Hall, Department of Sociology, Beytepe Campus, Hacettepe University
-[🔗 Etkinlik Detayı](https://etkinlikler.hacettepe.edu.tr//tr/sosyal_girisimcilik_egiticiler-3126){target="_blank"}
-:::
-
-:::
+</template>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  document.querySelectorAll(".event-date").forEach(function (el) {
-    const dateText = el.textContent.trim();
-    const eventDate = new Date(dateText);
+  const template = document.getElementById("all-events");
+  const upcomingContainer = document.getElementById("upcoming-events");
+  const pastContainer = document.getElementById("past-events");
+
+  const cards = Array.from(template.content.querySelectorAll(".event-card"));
+
+  const upcoming = [];
+  const past = [];
+
+  cards.forEach(function (card) {
+    const dateStr = card.getAttribute("data-date");
+    const eventDate = new Date(dateStr);
     eventDate.setHours(0, 0, 0, 0);
 
-    if (eventDate < today) {
-      el.classList.add("past-event-date");
+    if (eventDate >= today) {
+      upcoming.push({ date: eventDate, el: card });
     } else {
-      el.classList.add("upcoming-event-date");
+      past.push({ date: eventDate, el: card });
     }
   });
+
+  // Upcoming: ascending (soonest first)
+  upcoming.sort((a, b) => a.date - b.date);
+  // Past: descending (most recent first)
+  past.sort((a, b) => b.date - a.date);
+
+  upcoming.forEach(function (item) {
+    upcomingContainer.appendChild(item.el);
+  });
+
+  past.forEach(function (item) {
+    item.el.classList.add("past-event");
+    pastContainer.appendChild(item.el);
+  });
+
+  if (upcoming.length === 0) {
+    upcomingContainer.innerHTML = "<p><em>No upcoming events at the moment.</em></p>";
+  }
+  if (past.length === 0) {
+    pastContainer.innerHTML = "<p><em>No past events.</em></p>";
+  }
 });
 </script>

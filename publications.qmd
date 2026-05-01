@@ -4,7 +4,7 @@ subtitle: "Web of Science (SSCI & AHCI), Scopus, ESCI and TR-Dizin Indexed Publi
 format: html
 ---
 
-<div id="pub-list">Downloading...</div>
+<div id="pub-list"><div class="pub-loading">⏳ Loading publications from ORCID…</div></div>
 
 <script>
 async function loadPublications() {
@@ -243,7 +243,11 @@ async function loadPublications() {
     container.innerHTML = html;
 
   } catch (error) {
-    container.innerHTML = `<p>Yayınlar yüklenirken hata oluştu: ${error.message}</p>`;
+    container.innerHTML = `
+      <div class="pub-error">
+        <p>⚠️ Publications could not be loaded at this time.</p>
+        <p>You can view the full list on <a href="https://orcid.org/0000-0003-3690-969X" target="_blank" rel="noopener noreferrer">ORCID</a> or <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" target="_blank" rel="noopener noreferrer">Web of Science</a>.</p>
+      </div>`;
   }
 }
 

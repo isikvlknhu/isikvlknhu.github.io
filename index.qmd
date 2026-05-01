@@ -67,4 +67,17 @@ Vocational School of Social Sciences
 
 ::: {#recent-posts}
 :::
+
+<div id="no-posts-msg" style="display:none; color:#6b7280; font-style:italic;">No posts yet — check back soon.</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const listing = document.getElementById("recent-posts");
+  const msg = document.getElementById("no-posts-msg");
+  if (listing && msg) {
+    const items = listing.querySelectorAll(".quarto-post, .listing-item");
+    if (items.length === 0) msg.style.display = "block";
+  }
+});
+</script>
 <!-- test -->
