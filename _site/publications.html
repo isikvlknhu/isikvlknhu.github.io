@@ -74,6 +74,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Volkan Işık | Academic Website">
+<meta property="og:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
+<meta property="og:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta property="og:site_name" content="Volkan Işık">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Volkan Işık | Academic Website">
+<meta name="twitter:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
+<meta name="twitter:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta name="twitter:creator" content="@volkannisik">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -180,7 +190,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div id="pub-list">
-Downloading…
+<div class="pub-loading">
+⏳ Loading publications from ORCID…
+</div>
 </div>
 <script>
 async function loadPublications() {
@@ -387,13 +399,16 @@ async function loadPublications() {
         recordLink = `<a class="pub-btn pub-btn-secondary" href="${recordUrl}" target="_blank" rel="noopener noreferrer">View Record</a>`;
       }
 
+      const doiAttr = doi ? `data-doi="${doi}"` : "";
+
       return `
-        <div class="pub-item">
+        <div class="pub-item" ${doiAttr}>
           <div class="pub-title">${title}</div>
           ${journal ? `<div class="pub-journal">${journal}</div>` : ""}
           <div class="pub-meta">
             ${year ? `<span class="pub-badge">${year}</span>` : ""}
             ${type ? `<span class="pub-badge pub-badge-light">${type}</span>` : ""}
+            ${doi ? `<span class="pub-badge pub-badge-citations" data-cite-doi="${doi}">⏳ citations</span>` : ""}
           </div>
           <div class="pub-links">
             ${doiLink}
@@ -418,9 +433,45 @@ async function loadPublications() {
 
     container.innerHTML = html;
 
+    // Fetch citation counts from CrossRef for all DOIs
+    fetchCitationCounts();
+
   } catch (error) {
-    container.innerHTML = `<p>Yayınlar yüklenirken hata oluştu: ${error.message}</p>`;
+    container.innerHTML = `
+      <div class="pub-error">
+        <p>⚠️ Publications could not be loaded at this time.</p>
+        <p>You can view the full list on <a href="https://orcid.org/0000-0003-3690-969X" target="_blank" rel="noopener noreferrer">ORCID</a> or <a href="https://www.webofscience.com/wos/author/record/ADT-9246-2022" target="_blank" rel="noopener noreferrer">Web of Science</a>.</p>
+      </div>`;
   }
+}
+
+async function fetchCitationCounts() {
+  const badges = document.querySelectorAll("[data-cite-doi]");
+  if (badges.length === 0) return;
+
+  // Fetch in parallel, up to all at once (CrossRef allows generous rate limits)
+  const fetchOne = async (badge) => {
+    const doi = badge.getAttribute("data-cite-doi");
+    try {
+      const res = await fetch(
+        `https://api.crossref.org/works/${encodeURIComponent(doi)}?select=is-referenced-by-count`,
+        { headers: { "User-Agent": "volkanisiklab.com/1.0 (mailto:volkani@hacettepe.edu.tr)" } }
+      );
+      if (!res.ok) throw new Error("not found");
+      const json = await res.json();
+      const count = json?.message?.["is-referenced-by-count"];
+      if (typeof count === "number") {
+        badge.textContent = `📣 ${count} citation${count !== 1 ? "s" : ""}`;
+        badge.classList.add("pub-badge-citations-loaded");
+      } else {
+        badge.remove();
+      }
+    } catch {
+      badge.remove();
+    }
+  };
+
+  await Promise.all(Array.from(badges).map(fetchOne));
 }
 
 loadPublications();

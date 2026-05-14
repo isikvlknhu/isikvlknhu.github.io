@@ -14,6 +14,17 @@ format: html
 <script>
 const EVENTS = [
   {
+    date: "2026-05-13",
+    label: "13-15 May 2026",
+    titles: [
+      "2026 2nd International Conference on Artificial Intelligence and Education, Taicang, China",
+      "Paper: Artificial Intelligence as a Cognitive Partner in Entrepreneurial Idea Generation: Experimental Evidence from University Students",
+      "Authors: Assoc.Prof.Dr. Mustafa Ozguven, Prof.Dr. Mustafa Caglar Ozdemir, and Assoc.Prof.Dr. Volkan Isik"
+    ],
+    location: "Taicang, China",
+    link: null
+  },
+  {
     date: "2026-05-01",
     label: "01 May 2026",
     titles: ["TRT T\u00fcrkiye'nin Sesi Radyosu Memleket Treni Program\u0131-Konuk", "\u00c7al\u0131\u015fma Ya\u015fam\u0131n\u0131n D\u00fcn\u00fc ve Bug\u00fcn\u00fc"],

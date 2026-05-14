@@ -8,7 +8,12 @@
 <title>Volkan Işık</title>
 <link>https://volkanisiklab.com/blog.html</link>
 <atom:link href="https://volkanisiklab.com/blog.xml" rel="self" type="application/rss+xml"/>
-<description>Academic website of Volkan Işık</description>
+<description>Academic website of Volkan Işık – Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.</description>
+<image>
+<url>https://volkanisiklab.com/images/profile.jpg</url>
+<title>Volkan Işık</title>
+<link>https://volkanisiklab.com/blog.html</link>
+</image>
 <generator>quarto-1.9.37</generator>
 <lastBuildDate>Wed, 08 Apr 2026 21:00:00 GMT</lastBuildDate>
 <item>

@@ -134,6 +134,16 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Volkan Işık | Academic Website">
+<meta property="og:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
+<meta property="og:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta property="og:site_name" content="Volkan Işık">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Volkan Işık | Academic Website">
+<meta name="twitter:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
+<meta name="twitter:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta name="twitter:creator" content="@volkannisik">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -233,7 +243,7 @@ function translateToTurkish() {
 <div class="hero-image">
 <p><img src="images/profile.jpg" class="img-fluid" alt="Volkan Işık"></p>
 </div>
-<section id="doç.-dr.-volkan-işik" class="level1 hero-content">
+<section id="doç.-dr.-volkan-işik" class="hero-content">
 <h1>Doç. Dr.&nbsp;Volkan IŞIK</h1>
 <div class="name-subtitle">
 <p>Associate Professor</p>
@@ -257,8 +267,7 @@ Vocational School of Social Sciences</p>
 </div>
 </section>
 </div>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">📝 Recent Posts</h2>
+<h2 id="recent-posts" class="anchored">📝 Recent Posts</h2>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs=" data-listing-date-sort="1775682000000" data-listing-file-modified-sort="1777318184161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
@@ -306,11 +315,23 @@ Apr 7, 2026
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<div id="no-posts-msg" style="display:none; color:#6b7280; font-style:italic;">
+No posts yet — check back soon.
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const listing = document.getElementById("recent-posts");
+  const msg = document.getElementById("no-posts-msg");
+  if (listing && msg) {
+    const items = listing.querySelectorAll(".quarto-post, .listing-item");
+    if (items.length === 0) msg.style.display = "block";
+  }
+});
+</script>
 <!-- test -->
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
