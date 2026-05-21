@@ -1,0 +1,87 @@
+---
+title: "Gece Atılan WhatsApp Mesajı Artık Fazla Mesai Sayılabilir"
+date: 2026-05-21
+categories:
+  - İş Hukuku
+  - Çalışma Hayatı
+  - Dijital Emek
+description: "İstanbul BAM'ın Mayıs 2026 kararı ışığında mesai dışı dijital talimatların fazla çalışma hukukuna etkisi."
+format: html
+---
+
+![Mesai bitti, bağlantı bitmeli infografiği](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="100%"}
+
+Mayıs 2026'nın ortasında Türk iş hukuku için önemli bir eşik aşıldı.
+
+İstanbul Bölge Adliye Mahkemesi, mesai saatleri dışında işveren tarafından WhatsApp üzerinden iletilen iş talimatlarının belirli koşullar altında fazla çalışma kapsamında değerlendirilebileceğine hükmetti ve işçiye fazla mesai ücreti ödenmesine karar verdi. Kararın tam metni henüz kamuoyuyla paylaşılmamış olsa da medyaya yansıyan hukuki değerlendirmelere göre mahkeme üç temel kriteri esas aldı: mesajın doğrudan iş emri niteliği taşıması, çalışan üzerinde sürekli erişilebilir kalma baskısı oluşturulması ve mesai saatleri dışında sisteme giriş yapılarak fiilen görev icra edilmesi.
+
+Bu karar tek başına durmuyor. Yargıtay 9. Hukuk Dairesi'nin son dönem kararları da dijital kayıtların, iş yerindeki fiili çalışma düzeninin ve işverenin somut talimatlarının fazla mesai davalarında birincil ispat araçları olduğunu tutarlı biçimde vurguluyor. İstanbul BAM'ın bu kararı, o yönelimi daha somut bir zemine taşıyor.
+
+## Hangi Dijital Kayıtlar Delil Sayılabilir?
+
+İş hukuku uzmanlarına göre fazla mesai davalarında kullanılabilecek dijital kanıtlar artık oldukça geniş bir yelpazeye yayılıyor:
+
+- WhatsApp yazışmaları ve grup mesajları
+- Microsoft Teams, Slack veya benzer platformlardaki görev kayıtları
+- Zoom, Meet gibi uygulamaların toplantı logları
+- Kurumsal e-posta trafikleri ve gönderim saatleri
+- Şirket sistemlerine ait giriş-çıkış logları
+
+4857 sayılı İş Kanunu'na göre haftalık 45 saatin üzerindeki çalışmalar fazla mesai kapsamına giriyor. Mesai sonrasında gönderilen ve yanıt gerektiren iş emirlerinin bu hesaplamaya dahil edilip edilemeyeceği, artık mahkemeler tarafından somut olarak ele alınan bir soru.
+
+## Bu Tartışma Neden Şimdi Güncelleşti?
+
+Pandemi dönemiyle birlikte uzaktan çalışma modeli kalıcı hale geldi. Bununla birlikte "işin nerede bittiği" sorusu da belirsizleşti. Akşam sekizde gelen bir WhatsApp mesajı bir görev talimatı mı, yoksa iş arkadaşlığının sıradan bir parçası mı? Yanıt vermek beklenti mi, yoksa çalışanın isteğine bırakılmış bir tercih mi?
+
+Bu soruların cevabı, çalışanın hukuki konumunu doğrudan etkiliyor. İşveren tarafından düzenli görev verilmesi, sürekli dönüş beklenmesi ve gece çalışma talimatı gönderilmesi, fazla çalışma iddiasını güçlendiren unsurlar arasında artık açıkça sayılıyor.
+
+## Avrupa'da Bu Mesele Nasıl Çözüldü?
+
+Türkiye'de bu tartışma yargı kararları üzerinden ilerlemeye başlarken, birçok Avrupa ülkesi konuyu doğrudan yasal güvenceye bağladı.
+
+İspanya, bağlantıyı koparma hakkını üç ayrı yasal düzenlemeyle çerçeveledi: Estatuto de los Trabajadores'ın 20bis maddesi, Ley Orgánica 3/2018'in (LOPDGDD) 88. maddesi ve Ley 10/2021 de trabajo a distancia'nın 18. maddesi. Yasal çalışma süresi ya da toplu sözleşmeyle belirlenen süreler dışında çalışanların dijital bağlantı kesme hakkı güvence altında; işverenler bu hakkın nasıl kullanılacağını tanımlayan bir iç politika belirlemekle yükümlü.
+
+Fransa, 2016 yılında kabul edilen ve 1 Ocak 2017'de yürürlüğe giren El Khomri Kanunu ile bu hakkı işçi mevzuatına taşıyan ilk ülkelerden biri oldu. Elli ve üzeri çalışanı olan işletmelerde konu işçi temsilcileriyle müzakere edilerek belirleniyor. 2018'de Fransa Yüksek Mahkemesi'nin bir işvereni çalışanını mesai dışında sürekli erişilebilir kılmaktan ötürü 60.000 Euro tazminata mahkum etmesi, yasanın pratikte sonuç üretebileceğini gösterdi.
+
+Almanya'da ulusal düzeyde bu konuya özgü bir yasa yok. Buna karşın Volkswagen, 2012'de toplu sözleşme kapsamındaki çalışanlar için mesai bitiminden 30 dakika sonra e-posta iletimini otomatik olarak durduran ve mesai başlangıcından 30 dakika önce yeniden başlatan bir düzenlemeyi hayata geçirdi. Yasa olmadan da kurumsal iradenin bu meseleyi şekillendirebileceğini gösteren bir örnek.
+
+## Türkiye'de Bundan Sonra Ne Olur?
+
+Türkiye'de bağlantıyı koparma hakkını doğrudan düzenleyen bir yasal çerçeve henüz yok. Ancak İstanbul BAM kararı, bu boşluğun yargı içtihadı yoluyla doldurulmaya başlandığını gösteriyor.
+
+Çalışma hukuku açısından gelişme şu anlama geliyor: Mesai sonrası dijital iş talimatları artık "gayri resmi bir istek" olarak değil, çalışma süresi tartışmasına konu olabilecek hukuki bir olgu olarak ele alınıyor. Bu durum hem çalışanlar hem işverenler hem de İK departmanları için somut sonuçlar doğuruyor.
+
+Uzaktan çalışmanın normalleştiği bir ortamda "ofisten çıkmak" ile "işten çıkmak" giderek farklı şeyler ifade etmeye başlıyor. Türk iş hukukunun bu farka ne zaman ve nasıl net bir yanıt vereceği ise önümüzdeki yıllarda hem yargı hem de yasamanın gündeminde kalmaya devam edecek.
+
+<div class="share-buttons">
+  <a class="share-btn x"
+     href=""
+     id="share-x"
+     target="_blank" rel="noopener noreferrer">X'te Paylaş</a>
+
+  <a class="share-btn linkedin"
+     href=""
+     id="share-linkedin"
+     target="_blank" rel="noopener noreferrer">LinkedIn'de Paylaş</a>
+
+  <a class="share-btn instagram"
+     href="#"
+     onclick="copyInstagramLink(); return false;">Instagram için Linki Kopyala</a>
+</div>
+
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  document.getElementById("share-x").href =
+    `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+  document.getElementById("share-linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+  function copyInstagramLink() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Link kopyalandı.");
+    });
+  }
+</script>

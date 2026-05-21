@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-05-21">
+<meta name="description" content="İstanbul BAM’ın Mayıs 2026 kararı ışığında mesai dışı dijital talimatların fazla çalışma hukukuna etkisi.">
 
-<title>Blog – Volkan Işık</title>
+<title>Gece Atılan WhatsApp Mesajı Artık Fazla Mesai Sayılabilir – Volkan Işık</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,76 +72,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Volkan Işık" href="blog.xml" data-external="1"><meta property="og:title" content="Volkan Işık | Academic Website">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Volkan Işık | Academic Website">
 <meta property="og:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
-<meta property="og:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta property="og:image" content="https://volkanisiklab.com/blog/images/profile.jpg">
 <meta property="og:site_name" content="Volkan Işık">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:title" content="Volkan Işık | Academic Website">
 <meta name="twitter:description" content="Associate Professor in Labour Economics, Social Policy and Social Entrepreneurship at Hacettepe University.">
-<meta name="twitter:image" content="https://volkanisiklab.com/images/profile.jpg">
+<meta name="twitter:image" content="https://volkanisiklab.com/blog/images/profile.jpg">
 <meta name="twitter:creator" content="@volkannisik">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -153,7 +95,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Volkan Işık</span>
     </a>
   </div>
@@ -164,43 +106,43 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html"> 
+    <a class="nav-link" href="../lectures.html"> 
 <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./podcasts.html"> 
+    <a class="nav-link" href="../podcasts.html"> 
 <span class="menu-text">My Podcasts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
+    <a class="nav-link" href="../events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./datalab.html"> 
+    <a class="nav-link" href="../datalab.html"> 
 <span class="menu-text">Data Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -210,7 +152,7 @@ window.Quarto = {
 <span class="menu-text">Translate TR</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -231,14 +173,30 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Gece Atılan WhatsApp Mesajı Artık Fazla Mesai Sayılabilir</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">İş Hukuku</div>
+    <div class="quarto-category">Çalışma Hayatı</div>
+    <div class="quarto-category">Dijital Emek</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    İstanbul BAM’ın Mayıs 2026 kararı ışığında mesai dışı dijital talimatların fazla çalışma hukukuna etkisi.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 21, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -248,121 +206,62 @@ window.Quarto = {
 </header>
 
 
-<p>Sosyal girişimcilik, sosyal politika, emek piyasaları ve akademik çalışmalar üzerine notlarım.</p>
-<hr>
-<h3 class="anchored">
-Newsletter Subscription
-</h3>
-<p>
-Stay updated with my latest research, blog posts, and insights on social entrepreneurship, social policy, and labor markets.
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Mesai bitti, bağlantı bitmeli infografiği</figcaption>
+</figure>
+</div>
+<p>Mayıs 2026’nın ortasında Türk iş hukuku için önemli bir eşik aşıldı.</p>
+<p>İstanbul Bölge Adliye Mahkemesi, mesai saatleri dışında işveren tarafından WhatsApp üzerinden iletilen iş talimatlarının belirli koşullar altında fazla çalışma kapsamında değerlendirilebileceğine hükmetti ve işçiye fazla mesai ücreti ödenmesine karar verdi. Kararın tam metni henüz kamuoyuyla paylaşılmamış olsa da medyaya yansıyan hukuki değerlendirmelere göre mahkeme üç temel kriteri esas aldı: mesajın doğrudan iş emri niteliği taşıması, çalışan üzerinde sürekli erişilebilir kalma baskısı oluşturulması ve mesai saatleri dışında sisteme giriş yapılarak fiilen görev icra edilmesi.</p>
+<p>Bu karar tek başına durmuyor. Yargıtay 9. Hukuk Dairesi’nin son dönem kararları da dijital kayıtların, iş yerindeki fiili çalışma düzeninin ve işverenin somut talimatlarının fazla mesai davalarında birincil ispat araçları olduğunu tutarlı biçimde vurguluyor. İstanbul BAM’ın bu kararı, o yönelimi daha somut bir zemine taşıyor.</p>
+<h2 id="hangi-dijital-kayıtlar-delil-sayılabilir" class="anchored">Hangi Dijital Kayıtlar Delil Sayılabilir?</h2>
+<p>İş hukuku uzmanlarına göre fazla mesai davalarında kullanılabilecek dijital kanıtlar artık oldukça geniş bir yelpazeye yayılıyor:</p>
+<ul>
+<li>WhatsApp yazışmaları ve grup mesajları</li>
+<li>Microsoft Teams, Slack veya benzer platformlardaki görev kayıtları</li>
+<li>Zoom, Meet gibi uygulamaların toplantı logları</li>
+<li>Kurumsal e-posta trafikleri ve gönderim saatleri</li>
+<li>Şirket sistemlerine ait giriş-çıkış logları</li>
+</ul>
+<p>4857 sayılı İş Kanunu’na göre haftalık 45 saatin üzerindeki çalışmalar fazla mesai kapsamına giriyor. Mesai sonrasında gönderilen ve yanıt gerektiren iş emirlerinin bu hesaplamaya dahil edilip edilemeyeceği, artık mahkemeler tarafından somut olarak ele alınan bir soru.</p>
+<h2 id="bu-tartışma-neden-şimdi-güncelleşti" class="anchored">Bu Tartışma Neden Şimdi Güncelleşti?</h2>
+<p>Pandemi dönemiyle birlikte uzaktan çalışma modeli kalıcı hale geldi. Bununla birlikte “işin nerede bittiği” sorusu da belirsizleşti. Akşam sekizde gelen bir WhatsApp mesajı bir görev talimatı mı, yoksa iş arkadaşlığının sıradan bir parçası mı? Yanıt vermek beklenti mi, yoksa çalışanın isteğine bırakılmış bir tercih mi?</p>
+<p>Bu soruların cevabı, çalışanın hukuki konumunu doğrudan etkiliyor. İşveren tarafından düzenli görev verilmesi, sürekli dönüş beklenmesi ve gece çalışma talimatı gönderilmesi, fazla çalışma iddiasını güçlendiren unsurlar arasında artık açıkça sayılıyor.</p>
+<h2 id="avrupada-bu-mesele-nasıl-çözüldü" class="anchored">Avrupa’da Bu Mesele Nasıl Çözüldü?</h2>
+<p>Türkiye’de bu tartışma yargı kararları üzerinden ilerlemeye başlarken, birçok Avrupa ülkesi konuyu doğrudan yasal güvenceye bağladı.</p>
+<p>İspanya, bağlantıyı koparma hakkını üç ayrı yasal düzenlemeyle çerçeveledi: Estatuto de los Trabajadores’ın 20bis maddesi, Ley Orgánica 3/2018’in (LOPDGDD) 88. maddesi ve Ley 10/2021 de trabajo a distancia’nın 18. maddesi. Yasal çalışma süresi ya da toplu sözleşmeyle belirlenen süreler dışında çalışanların dijital bağlantı kesme hakkı güvence altında; işverenler bu hakkın nasıl kullanılacağını tanımlayan bir iç politika belirlemekle yükümlü.</p>
+<p>Fransa, 2016 yılında kabul edilen ve 1 Ocak 2017’de yürürlüğe giren El Khomri Kanunu ile bu hakkı işçi mevzuatına taşıyan ilk ülkelerden biri oldu. Elli ve üzeri çalışanı olan işletmelerde konu işçi temsilcileriyle müzakere edilerek belirleniyor. 2018’de Fransa Yüksek Mahkemesi’nin bir işvereni çalışanını mesai dışında sürekli erişilebilir kılmaktan ötürü 60.000 Euro tazminata mahkum etmesi, yasanın pratikte sonuç üretebileceğini gösterdi.</p>
+<p>Almanya’da ulusal düzeyde bu konuya özgü bir yasa yok. Buna karşın Volkswagen, 2012’de toplu sözleşme kapsamındaki çalışanlar için mesai bitiminden 30 dakika sonra e-posta iletimini otomatik olarak durduran ve mesai başlangıcından 30 dakika önce yeniden başlatan bir düzenlemeyi hayata geçirdi. Yasa olmadan da kurumsal iradenin bu meseleyi şekillendirebileceğini gösteren bir örnek.</p>
+<h2 id="türkiyede-bundan-sonra-ne-olur" class="anchored">Türkiye’de Bundan Sonra Ne Olur?</h2>
+<p>Türkiye’de bağlantıyı koparma hakkını doğrudan düzenleyen bir yasal çerçeve henüz yok. Ancak İstanbul BAM kararı, bu boşluğun yargı içtihadı yoluyla doldurulmaya başlandığını gösteriyor.</p>
+<p>Çalışma hukuku açısından gelişme şu anlama geliyor: Mesai sonrası dijital iş talimatları artık “gayri resmi bir istek” olarak değil, çalışma süresi tartışmasına konu olabilecek hukuki bir olgu olarak ele alınıyor. Bu durum hem çalışanlar hem işverenler hem de İK departmanları için somut sonuçlar doğuruyor.</p>
+<p>Uzaktan çalışmanın normalleştiği bir ortamda “ofisten çıkmak” ile “işten çıkmak” giderek farklı şeyler ifade etmeye başlıyor. Türk iş hukukunun bu farka ne zaman ve nasıl net bir yanıt vereceği ise önümüzdeki yıllarda hem yargı hem de yasamanın gündeminde kalmaya devam edecek.</p>
+<div class="share-buttons">
+<p><a class="share-btn x" href="" id="share-x" target="_blank" rel="noopener noreferrer">X’te Paylaş</a></p>
+<p><a class="share-btn linkedin" href="" id="share-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn’de Paylaş</a></p>
+<p><a class="share-btn instagram" href="#" onclick="copyInstagramLink(); return false;">Instagram için Linki Kopyala</a></p>
+</div>
+<script>
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  document.getElementById("share-x").href =
+    `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+  document.getElementById("share-linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+  function copyInstagramLink() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Link kopyalandı.");
+    });
+  }
+</script>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUM0JUIwJUM1JTlGJTIwSHVrdWt1JTJDJUMzJTg3YWwlQzQlQjElQzUlOUZtYSUyMEhheWF0JUM0JUIxJTJDRGlqaXRhbCUyMEVtZWs=" data-listing-date-sort="1779310800000" data-listing-file-modified-sort="1779347109425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="695">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/gece-atilan-whatsapp-mesaji-fazla-mesai.html" class="no-external">Gece Atılan WhatsApp Mesajı Artık Fazla Mesai Sayılabilir</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwJUM1JTlGJTIwSHVrdWt1'); return false;">İş Hukuku</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3YWwlQzQlQjElQzUlOUZtYSUyMEhheWF0JUM0JUIx'); return false;">Çalışma Hayatı</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGlqaXRhbCUyMEVtZWs='); return false;">Dijital Emek</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/gece-atilan-whatsapp-mesaji-fazla-mesai.html" class="no-external">
-<p>İstanbul BAM’ın Mayıs 2026 kararı ışığında mesai dışı dijital talimatların fazla çalışma hukukuna etkisi.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/gece-atilan-whatsapp-mesaji-fazla-mesai.html" class="no-external">
-<div class="listing-date">
-May 21, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs=" data-listing-date-sort="1775682000000" data-listing-file-modified-sort="1777318184161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/ley-2026-ispanya.html" class="no-external">İspanya’da Sosyal Ekonomide Yeni Yasa/Yeni Dönem: Ley 1/2026 Ne Getiriyor?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs='); return false;">Sosyal Girişimcilik</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/ley-2026-ispanya.html" class="no-external">
-Yasanın tam metnine ulaşmak için: BOE - Ley 1/2026
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/ley-2026-ispanya.html" class="no-external">
-<div class="listing-date">
-Apr 9, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUM0JUIwJUM1JTlGJTIwU2ElQzQlOUZsJUM0JUIxJUM0JTlGJUM0JUIxJTIwdmUlMjBHJUMzJUJDdmVubGklQzQlOUZp" data-listing-date-sort="1775595600000" data-listing-file-modified-sort="1777318184161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/workplace-safety.html" class="no-external">İş Sağlığı ve Güvenliğinde Küresel Görünüm: İlerleme Var, Ama Yeterli mi?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwJUM1JTlGJTIwU2ElQzQlOUZsJUM0JUIxJUM0JTlGJUM0JUIxJTIwdmUlMjBHJUMzJUJDdmVubGklQzQlOUZp'); return false;">İş Sağlığı ve Güvenliği</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/workplace-safety.html" class="no-external">
-<p>A Global Snapshot of Workplace Safety</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/workplace-safety.html" class="no-external">
-<div class="listing-date">
-Apr 8, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs=" data-listing-date-sort="1775509200000" data-listing-file-modified-sort="1777318184161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="750">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/my-first-post.html" class="no-external">İspanya’da Sosyal Girişimcilik: Güçlü Bir Ekosistemin İçinden Gözlemlerim</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29zeWFsJTIwR2lyaSVDNSU5RmltY2lsaWs='); return false;">Sosyal Girişimcilik</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/my-first-post.html" class="no-external">
-<p>2024 Haziran–Eylül döneminde İspanya’da yürüttüğüm gözlem ve değerlendirmeler ışığında sosyal girişimcilik ekosistemine dair notlar.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/my-first-post.html" class="no-external">
-<div class="listing-date">
-Apr 7, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
