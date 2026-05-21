@@ -9,7 +9,7 @@ description: "İstanbul Bölge Adliye Mahkemesi kararı ve Bağlantıyı Koparma
 format: html
 ---
 
-![Mesai bitti, bağlantı bitmeli infografiği](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="50%"}
+![Mesai bitti, bağlantı bitmeli..](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="50%"}
 
 İstanbul Bölge Adliye Mahkemesi, mesai saatleri dışında işveren tarafından WhatsApp üzerinden iletilen iş talimatlarının belirli koşullar altında fazla çalışma kapsamında değerlendirilebileceğine hükmetti ve işçiye fazla mesai ücreti ödenmesine karar verdi. Kararın tam metni henüz kamuoyuyla paylaşılmamış olsa da medyaya yansıyan hukuki değerlendirmelere göre mahkeme üç temel kriteri esas aldı: mesajın doğrudan iş emri niteliği taşıması, çalışan üzerinde sürekli erişilebilir kalma baskısı oluşturulması ve mesai saatleri dışında sisteme giriş yapılarak fiilen görev icra edilmesi.
 
