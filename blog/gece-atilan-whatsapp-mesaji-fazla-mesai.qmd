@@ -9,7 +9,7 @@ description: "İstanbul BAM'ın Mayıs 2026 kararı ışığında mesai dışı 
 format: html
 ---
 
-![Mesai bitti, bağlantı bitmeli infografiği](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="100%"}
+![Mesai bitti, bağlantı bitmeli infografiği](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="50%"}
 
 Mayıs 2026'nın ortasında Türk iş hukuku için önemli bir eşik aşıldı.
 
