@@ -5,7 +5,7 @@ categories:
   - İş Hukuku
   - Çalışma Hayatı
   - Dijital Emek
-description: "İstanbul BAM'ın Mayıs 2026 kararı ışığında mesai dışı dijital talimatların fazla çalışma hukukuna etkisi."
+description: "İstanbul Bölge Adliye Mahkemesi kararı ve Bağlantıyı Koparma Hakkı."
 format: html
 ---
 
