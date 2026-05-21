@@ -11,8 +11,6 @@ format: html
 
 ![Mesai bitti, bağlantı bitmeli infografiği](../images/gece-atilan-whatsapp-mesaji-fazla-mesai.png){fig-align="center" width="50%"}
 
-Mayıs 2026'nın ortasında Türk iş hukuku için önemli bir eşik aşıldı.
-
 İstanbul Bölge Adliye Mahkemesi, mesai saatleri dışında işveren tarafından WhatsApp üzerinden iletilen iş talimatlarının belirli koşullar altında fazla çalışma kapsamında değerlendirilebileceğine hükmetti ve işçiye fazla mesai ücreti ödenmesine karar verdi. Kararın tam metni henüz kamuoyuyla paylaşılmamış olsa da medyaya yansıyan hukuki değerlendirmelere göre mahkeme üç temel kriteri esas aldı: mesajın doğrudan iş emri niteliği taşıması, çalışan üzerinde sürekli erişilebilir kalma baskısı oluşturulması ve mesai saatleri dışında sisteme giriş yapılarak fiilen görev icra edilmesi.
 
 Bu karar tek başına durmuyor. Yargıtay 9. Hukuk Dairesi'nin son dönem kararları da dijital kayıtların, iş yerindeki fiili çalışma düzeninin ve işverenin somut talimatlarının fazla mesai davalarında birincil ispat araçları olduğunu tutarlı biçimde vurguluyor. İstanbul BAM'ın bu kararı, o yönelimi daha somut bir zemine taşıyor.
@@ -65,7 +63,7 @@ Bu tablonun ortaya koyduğu bir gerçek var: Dönüşümü her zaman yasa tek ba
 
 ## Türkiye'de Bundan Sonra Ne Olur?
 
-Türkiye'de bağlantıyı koparma hakkını doğrudan düzenleyen bir yasal çerçeve henüz yok. Ancak İstanbul BAM kararı, bu boşluğun yargı içtihadı yoluyla doldurulmaya başlandığını gösteriyor.
+Türkiye'de bağlantıyı koparma hakkını doğrudan düzenleyen bir yasal çerçeve henüz yok. Ancak İstanbul Bölge Adliyesi Mahkemesi kararı, bu boşluğun yargı içtihadı yoluyla doldurulmaya başlandığını gösteriyor.
 
 Mesai sonrası dijital iş talimatları artık "gayri resmi bir istek" olarak değil, çalışma süresi tartışmasına konu olabilecek hukuki bir olgu olarak ele alınıyor. Bu durum hem çalışanlar hem işverenler hem de İK departmanları için somut sonuçlar doğuruyor.
 
