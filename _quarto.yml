@@ -58,6 +58,7 @@ format:
     section-divs: false
     include-in-header:
       - text: |
+          <meta name="google-site-verification" content="TARJ_SDJse3VINyjQdOvUUc93uh2CXAdeP61q0pEIb8" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLZD0TXFHC"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
