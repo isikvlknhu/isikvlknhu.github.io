@@ -14,6 +14,17 @@ format: html
 <script>
 const EVENTS = [
   {
+    date: "2026-07-18",
+    label: "18-19 July 2026",
+    titles: [
+      "Resilient and Sustainable Economic and Social Development under Geopolitical and Environmental Pressures - esd Conference",
+      "Oral presentation accepted: Fostering Sustainable Social Enterprises: A Qualitative Analysis of Spain's Entrepreneurship Ecosystem",
+      "Authors: Volkan Isik and Jose David Barbera Tomas"
+    ],
+    location: "Prague, Czech Republic",
+    link: null
+  },
+  {
     date: "2026-05-13",
     label: "13-15 May 2026",
     titles: [
