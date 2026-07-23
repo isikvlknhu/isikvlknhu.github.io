@@ -3,7 +3,7 @@ title: "About"
 format: html
 ---
 
-## 👤 Assoc. Prof. Dr. Volkan Işık
+## 👤 Prof. Dr. Volkan Işık
 
 I am an academic specializing in **labour economics, social policy, and social entrepreneurship**. My work focuses on analysing labour market dynamics, designing inclusive employment policies, and developing sustainable socio-economic models.
 
