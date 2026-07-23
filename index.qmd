@@ -29,7 +29,7 @@ function translateToTurkish() {
 # Prof. Dr. Volkan IŞIK
 
 ::: {.name-subtitle}
-Associate Professor
+Professor
 :::
 
 ::: {.hero-subtitle}
