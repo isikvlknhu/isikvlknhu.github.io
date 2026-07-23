@@ -3,7 +3,7 @@ title: "CV"
 format: html
 ---
 
-## Assoc. Prof. Dr. Volkan Işık
+## Prof. Dr. Volkan Işık
 
 **Labour Economics | Social Policy | Social Entrepreneurship**
 
@@ -18,7 +18,7 @@ Ankara, Türkiye
 
 ## Profile
 
-Associate Professor with more than **18 years of academic and professional experience** in labour economics, social policy, occupational health and safety, labour law, social entrepreneurship, and labour market analysis. Experienced in teaching, academic research, EU-funded projects, TÜBİTAK-supported research, impact analysis, training design, and policy-oriented reporting.  
+Professor with more than **18 years of academic and professional experience** in labour economics, social policy, occupational health and safety, labour law, social entrepreneurship, and labour market analysis. Experienced in teaching, academic research, EU-funded projects, TÜBİTAK-supported research, impact analysis, training design, and policy-oriented reporting.  
 
 My work combines **academic research, field-based analysis, and applied project experience**, with a particular focus on labour market transitions, disadvantaged groups, social entrepreneurship ecosystems, and the future of work.
 
@@ -26,7 +26,8 @@ My work combines **academic research, field-based analysis, and applied project 
 
 ## Current Position
 
-- **Associate Professor**, Hacettepe University *(since January 2019)*
+- **Professor**, Hacettepe University *(2026-Present)*
+- **Associate Professor**, Hacettepe University *(2019-2026)*
 - **Deputy Manager**, Vocational School of Social Sciences *(2022–Present)*
 - **Deputy Manager**, Career Development Application and Research Center *(2024–Present)*
 
