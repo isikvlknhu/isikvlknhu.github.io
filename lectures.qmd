@@ -3,7 +3,7 @@ title: "Lectures"
 format: html
 ---
 
-## 2025–2026 Bahar Dönemi Ders Programı
+## 2026–2027 Güz Dönemi Ders Programı
 
 ::: {.schedule-wrapper}
 
@@ -11,18 +11,10 @@ format: html
 ### 📅 Pazartesi
 
 ::: {.course-item}
-<span class="time">08:40–11:30</span>
-<div>
-<strong>SBY 202 – Girişimcilik</strong><br>
-<span class="location">Derslik Z-02</span>
-</div>
-:::
-
-::: {.course-item}
 <span class="time">13:40–16:30</span>
 <div>
-<strong>BYA 114 – Bilgisayar Büro Programları (Şube 1)</strong><br>
-<span class="location">Lab-1</span>
+<strong>MVU 123/111 – Ofis Programları-I</strong><br>
+<span class="location">Derslik Z-05</span>
 </div>
 :::
 :::
@@ -31,41 +23,31 @@ format: html
 ### 📅 Salı
 
 ::: {.course-item}
-<span class="time">13:40–16:30</span>
+<span class="time">08:40–10:30</span>
 <div>
-<strong>BYA 114 – Bilgisayar Büro Programları (Şube 2)</strong><br>
-<span class="location">Lab-1</span>
+<strong>BYA 207 – İş ve Sosyal Güvenlik Hukuku</strong><br>
+<span class="location">Derslik 205</span>
 </div>
 :::
 :::
 
 ::: {.day-card}
-### 📅 Çarşamba
+### 📅 Perşembe
 
 ::: {.course-item}
-<span class="time">13:40–15:30</span>
+<span class="time">09:40–12:30</span>
 <div>
-<strong>TOT 208 – İş Sağlığı ve Güvenliği</strong><br>
-<span class="location">Derslik 105</span>
+<strong>SEC 271 – İş Sağlığı ve Güvenliği</strong><br>
+<span class="location">Derslik Z-04</span>
 </div>
 :::
-
-::: {.course-item}
-<span class="time">15:40–17:30</span>
-<div>
-<strong>TOT 224 – Satış Yönetimi</strong><br>
-<span class="location">Derslik 105</span>
-</div>
-:::
-:::
-
 :::
 
 ::: {.office-hours}
 ### 🕘 Danışmanlık Saatleri
 
 **Gün:** Çarşamba  
-**Saat:** 10:00 – 12:00
+**Saat:** 09:00 – 11:00
 :::
 
 ---
@@ -75,35 +57,27 @@ format: html
 ::: {.course-cards}
 
 ::: {.course-card}
-### 🚀 SBY 202 – Girişimcilik
+### 🚀 BYA 207 – İş ve Sosyal Güvenlik Hukuku
 
-Girişimcilik kavramı, iş fikri geliştirme ve iş modeli oluşturma süreçlerini kapsar.
+Bireysel iş hukuku ve sosyal güvenlik hukuku hakkında bilgi sahibi olunmasını sağlamak, temel konularla ilgili ulusal düzenlemeleri ve mahkeme kararlarını tartışmak, mevzuattan ve/veya uygulamadan kaynaklanan sorunları, bu sorunların çözüm yollarının geniş bir bakış açısıyla ele alınabilmesini sağlamak.
 
-[📄 Ders İzlencesi](https://drive.google.com/file/d/1DBG-lLrooSs8rZL29ey5KR--RSguEg6u/view?usp=sharing){.syllabus-btn target="_blank"}
+[📄 Ders İzlencesi](https://docs.google.com/document/d/1Sl-PUHicASzjeav04fWhsSV3qgTdrWXu/edit?usp=sharing&ouid=111610888896083868710&rtpof=true&sd=true){.syllabus-btn target="_blank"}
 :::
 
 ::: {.course-card}
-### 💻 BYA 114 – Bilgisayar Büro Programları
+### 💻 MVU 123/111 – Ofis Programları-I
 
-Ofis yazılımları ve temel dijital becerilere odaklanır.
+Kelime işlemci programı araçlarını kullanarak evrak hazırlayabilmek, hesap tablosu programlarında veri girişi, analiz ve işlemler yapmak, sunum hazırlamak, yapay zeka araçları ile bütünleşik ofis programlarını kullanabilmek.
 
 [📄 Ders İzlencesi](https://drive.google.com/file/d/1gepDTVIT_kFsl1lLUmpkNIFNDkH9iYQS/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 ::: {.course-card}
-### ⚠️ TOT 208 – İş Sağlığı ve Güvenliği
+### ⚠️ SEC 271 – İş Sağlığı ve Güvenliği
 
-İSG kavramı, riskler ve önleyici yaklaşım ele alınır.
+Multidisipliner bir alan olan iş sağlığı ve güvenliğine ilişkin başlıca risklerin ve korunma yollarını öğrenmek, iş kazaları ve meslek hastalıklarına karşı alınabilecek önlemler hususunda yenilikçi yaklaşımların benimsenmek.
 
 [📄 Ders İzlencesi](https://drive.google.com/file/d/1iLjIAgHRqq7h8xkyz7jj0Sk3W23cTcGG/view?usp=sharing){.syllabus-btn target="_blank"}
-:::
-
-::: {.course-card}
-### 📈 TOT 224 – Satış Yönetimi
-
-Satış süreçleri ve müşteri ilişkileri yönetimi.
-
-[📄 Ders İzlencesi](https://drive.google.com/file/d/1GXlY8tXYazwtVjytsztu52lQp6e0FZIz/view?usp=sharing){.syllabus-btn target="_blank"}
 :::
 
 :::
