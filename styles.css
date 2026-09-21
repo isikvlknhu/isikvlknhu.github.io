@@ -581,7 +581,7 @@ a.listing-category[href*="%C4%B0spanya%20Notlar%C4%B1"] {
 }
 
 #listing-recent-posts .quarto-post:nth-child(-n + 3)::before {
-  content: "Yeni!";
+  content: "New!";
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
