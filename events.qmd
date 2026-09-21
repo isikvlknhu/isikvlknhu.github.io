@@ -14,6 +14,36 @@ format: html
 <script>
 const EVENTS = [
   {
+    date: "2026-10-16",
+    label: "16 Ekim 2026 Cuma",
+    titles: [
+      "25. ÇALIŞMA EKONOMİSİ VE ENDÜSTRİ İLİŞKİLERİ KONGRESİ",
+      "13.30–15.00 — Paralel Oturumlar – IV",
+      "İstihdamın Niteliği, Sosyal Ekonomi ve Verimlilik Oturumu",
+      "15.30–17.00 — Paralel Oturumlar – V",
+      "Gençlik, NEET ve İşgücü Piyasası"
+    ],
+    details: [
+      "Türkiye’de Sosyal Ekonomi Verilerinde Ölçüm Sürekliliği ve Düşük Kooperatif İstihdam Payı (2009-2024) Bildiri Sunumu",
+      "Oturum Başkanı: Prof. Dr. Volkan Işık"
+    ],
+    location: "ANADOLU HOTELS DİDİM CLUB, DİDİM-AYDIN",
+    link: null
+  },
+  {
+    date: "2026-10-08",
+    label: "8–9 Ekim 2026",
+    titles: [
+      "Uluslararası Öğrenci Hackathonu"
+    ],
+    details: [
+      "Hacettepe Üniversitesi ev sahipliğinde",
+      "IOM Sürdürülebilir ve Sosyal Açıdan Kapsayıcı İş Gücü Piyasasına Entegrasyon Projesi (İstihdam Edilebilirlik Projesi)"
+    ],
+    location: "Hacettepe Üniversitesi",
+    link: null
+  },
+  {
     date: "2026-07-18",
     label: "18-19 July 2026",
     titles: [
@@ -102,10 +132,11 @@ const EVENTS = [
 
 function renderCard(event, isPast) {
   const titlesHtml = event.titles.map(t => "<h3>" + t + "</h3>").join("");
+  const detailsHtml = (event.details || []).map(t => "<p class=\"event-detail\">" + t + "</p>").join("");
   const locationHtml = event.location ? "<p><strong>Location:</strong> " + event.location + "</p>" : "";
   const linkHtml = event.link ? '<p><a href="' + event.link.url + '" target="_blank" rel="noopener noreferrer">' + event.link.text + "</a></p>" : "";
   const pastClass = isPast ? " past-event" : "";
-  return '<div class="event-card' + pastClass + '"><div class="event-date">' + event.label + "</div>" + titlesHtml + locationHtml + linkHtml + "</div>";
+  return '<div class="event-card' + pastClass + '"><div class="event-date">' + event.label + "</div>" + titlesHtml + detailsHtml + locationHtml + linkHtml + "</div>";
 }
 
 function parseLocalDate(isoDate) {
