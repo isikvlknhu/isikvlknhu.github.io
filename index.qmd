@@ -76,15 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const msg = document.getElementById("no-posts-msg");
   if (listing && msg) {
     const items = listing.querySelectorAll(".quarto-post, .listing-item");
-    Array.from(items).slice(0, 3).forEach(function (item) {
-      const title = item.querySelector(".listing-title");
-      if (title && !title.querySelector(".new-badge")) {
-        const badge = document.createElement("span");
-        badge.className = "new-badge";
-        badge.textContent = "Yeni!";
-        title.prepend(badge);
-      }
-    });
     if (items.length === 0) msg.style.display = "block";
   }
 });
