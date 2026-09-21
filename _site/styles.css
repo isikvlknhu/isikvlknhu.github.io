@@ -573,6 +573,22 @@ a.listing-category[href*="%C4%B0spanya%20Notlar%C4%B1"] {
   margin-bottom: 8px;
 }
 
+#listing-recent-posts .new-badge {
+  display: inline-block;
+  margin-right: 9px;
+  color: #c1121f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+  animation: new-badge-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes new-badge-blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
 #listing-recent-posts .listing-description {
   color: #4b5563;
   line-height: 1.7;
